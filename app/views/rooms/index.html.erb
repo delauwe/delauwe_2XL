@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <% @rooms.each do |room| %>
+    <div class="col-xs-12 col-md-4 col-lg-4">
+      <%= link_to apartment_path(room.apartment) do %>
+        <div class="card">
+          <div class="card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path room.photos.first.url %>');">
+          </div>
+          <div class="card-content">
+            <%= room.name %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <%end%>
+  </div>
+</div>

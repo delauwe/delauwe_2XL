@@ -96,11 +96,5 @@ odette = Apartment.new(
   )
 odette.save!
 
-Photo.create(
-  url: "https://source.unsplash.com/random",
-  apartment_id: 2,
-  room_id: 2,
-  )
-
 
 
