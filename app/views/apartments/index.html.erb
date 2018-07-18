@@ -1,2 +1,25 @@
-<h1>Apartments#index</h1>
-<p>Find me in app/views/apartments/index.html.erb</p>
+<div class="container">
+  <div class="row">
+    <% @apartments.each do |apartment| %>
+    <div class="col-xs-12 col-md-4 col-lg-4">
+      <%= link_to apartment_path(apartment) do %>
+        <div class="card">
+          <div class="card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_tag apartment.photo %>');">
+          </div>
+          <div class="card-content">
+            <%= apartment.name %>
+            <%= apartment.location %>
+            <%= apartment.price %>
+            <%= apartment.price_per_room %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <%end%>
+  </div>
+</div>
+
+
+
+
+
