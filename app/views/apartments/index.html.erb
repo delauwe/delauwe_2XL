@@ -1,46 +1,43 @@
 <div class="container">
   <div class="row margin-top">
     <% @apartments.each do |apartment| %>
-    <div class="col-xs-12 col-md-4 col-lg-4">
-      <%= link_to apartment_path(apartment) do %>
-        <div class="card">
-          <div class="card-images">
-            <div id="carousel-example-generic" class="carousel slide full-height" data-ride="carousel" data-interval="false">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <% apartment.photos.each_with_index do |photo, index| %>
-                <li data-target="#carousel-example-generic" data-slide-to= "<%= index %>" class="<%= 'active' if index == 0 %>" ></li>
-                <% end %>
-              </ol>
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner full-height" role="listbox">
-
-                  <div class="item active card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path apartment.photos.first.url %>');"></div>
-
-                <% apartment.photos.each do |photo| %>
-                    <div class="item card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path photo.url %>');"></div>
-                <% end %>
+      <div class="col-xs-12 col-md-4 col-lg-4">
+        <%= link_to apartment_path(apartment) do %>
+          <div class="card">
+            <div class="card-images">
+              <div id="carousel-images-<%= apartment.id %>" class="carousel slide full-height" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators carousel-indicators-better">
+                  <% apartment.photos.each_with_index do |_photo, index| %>
+                  <li data-target="#carousel-images-<%= apartment.id %>" data-slide-to= "<%= index %>" class="<%= 'active' if index == 0 %>" ></li>
+                  <% end %>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner full-height" role="listbox">
+                  <% apartment.photos.each_with_index do |photo, index| %>
+                      <div class="item <%= "active" if index == 0 %> card-image" style="background-image: url('<%= cl_image_path photo.url %>');"></div>
+                  <% end %>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-images-<%= apartment.id %>" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-images-<%= apartment.id %>" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+            </div>
+            <div class="card-content">
+              <p class="kaki bold no-margin-bottom"><%= apartment.category.capitalize %> - <%= apartment.number_of_rooms %> chambres</p>
+              <p class="no-margin-bottom smaller-font-size"><%= apartment.location %></p>
+              <p class="no-margin-bottom smaller-font-size"><%= apartment.name %></p>
+              <p class="no-margin-bottom smaller-font-size"><%= apartment.price_per_room %> € par chambre</p>
             </div>
           </div>
-          <div class="card-content">
-            <%= apartment.name %>
-            <%= apartment.location %>
-            <%= apartment.price %>
-            <%= apartment.price_per_room %>
-          </div>
-        </div>
-      <% end %>
-    </div>
+        <% end %>
+      </div>
     <%end%>
   </div>
 </div>

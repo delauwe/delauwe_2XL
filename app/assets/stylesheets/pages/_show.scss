@@ -1,0 +1,21 @@
+.banner {
+  height: 500px;
+  // width: 100%;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.margin {
+  margin: 20px;
+}
+
+

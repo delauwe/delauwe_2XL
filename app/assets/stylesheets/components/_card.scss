@@ -1,13 +1,12 @@
 .card {
-  height: 500px;
+  height: 400px;
   color: black;
   margin-bottom: 30px;
-  box-shadow: 1px 1px 2px #B3B3B3;
   position: relative ;
-  box-shadow: 0px 0px 5px $pink;
+  box-shadow: 0px 0px 15px  $pink;
 
 
-  &:hover .image {
+  &:hover .card-image {
     opacity: 0.8;
     text-decoration: none;
   }
@@ -31,7 +30,7 @@
 
 .card-content {
   display:flex;
-  align-items: center;
+  flex-direction: column;
   justify-content:space-around;
   height: 30%;
   width: 100%;
@@ -44,5 +43,33 @@
 
 .margin-top {
   margin-top: 30px;
+}
+
+.kaki {
+  color: $kaki;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.smaller-font-size {
+  font-size: 15px;
+}
+
+.carousel-indicators-better {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
 }
 
