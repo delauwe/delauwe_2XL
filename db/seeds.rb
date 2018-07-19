@@ -20,7 +20,6 @@ alice = Apartment.new(
   commodities: "Séjour, salle à manger, terrasse, 2 salles de bains, 3 w.c, laverie.",
   price: 2275,
   price_per_room: 455,
-  photo:"https://source.unsplash.com/random",
   )
 alice.save!
 
@@ -32,7 +31,6 @@ camille = Apartment.new(
   commodities: "Séjour, 1 salle de bain, 1 salle de douche, 1 w.c, lave linge",
   price: 1720,
   price_per_room: 430,
-  photo:"https://source.unsplash.com/random",
   )
 camille.save!
 
@@ -44,7 +42,6 @@ claire = Apartment.new(
   commodities: "Séjour, terrasse, 1 chambre mezzanine, salle de bain, salle de douche, 1 w.c, laverie",
   price: 1200,
   price_per_room: 400,
-  photo: "https://source.unsplash.com/random",
   )
 claire.save!
 
@@ -56,7 +53,6 @@ francine = Apartment.new(
   commodities: "Séjour, 2 salles de bains, 1 w.c, lave linge",
   price: 2250,
   price_per_room: 450,
-  photo:"https://source.unsplash.com/random",
   )
 francine.save!
 
@@ -68,7 +64,6 @@ jules = Apartment.new(
   commodities: "Séjour-salle à manger, 2 salles de bains, 2 w.c, lave linge",
   price: 2730,
   price_per_room: 455,
-  photo:"https://source.unsplash.com/random",
   )
 jules.save!
 
@@ -80,7 +75,6 @@ lucie = Apartment.new(
   commodities: "Séjour-salle à manger, 1 salle de bain, 1 salle de douche, 2 w.c, lave linge",
   price: 1720,
   price_per_room: 430,
-  photo:"https://source.unsplash.com/random",
   )
 lucie.save!
 
@@ -92,7 +86,6 @@ odette = Apartment.new(
   commodities: "Séjour-salle à manger, 1 salle de bain, 1 salle de douche, 1 w.c, lave linge",
   price: 1400,
   price_per_room: 350,
-  photo:"https://source.unsplash.com/random",
   )
 odette.save!
 
