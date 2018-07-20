@@ -1,7 +1,4 @@
-<div class="container">
-  <div class="row margin-top">
-    <% @apartments.each do |apartment| %>
-      <div class="col-xs-12 col-md-4 col-lg-4">
+<div class="col-xs-12 col-md-4 col-lg-4">
         <%= link_to apartment_path(apartment) do %>
           <div class="card">
             <div class="card-images">
@@ -38,12 +35,3 @@
           </div>
         <% end %>
       </div>
-
-    <%end%>
-  </div>
-</div>
-
-
-
-
-

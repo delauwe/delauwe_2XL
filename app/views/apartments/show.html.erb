@@ -22,13 +22,20 @@
   </div>
 </div>
 <div class="container">
-  <div class="basic-info">
-    <p class="no-margin-bottom bigger-font-size bold"><%= @apartment.name %></p>
+<!--   <div class="basic-info">
+    <p class="no-margin-bottom bigger-font-size bold"><%= @apartment %></p>
     <p class="kaki bold no-margin-bottom category-apartment"><%= @apartment.category.capitalize %> - <%= @apartment.number_of_rooms %> chambres meublées</p>
-    <p class="no-margin-bottom smaller-font-size"><%= @apartment.location %></p>
+
     <p class="no-margin-bottom smaller-font-size"><%= @apartment.price_per_room %> € par chambre + charges</p>
-  </div>
+  </div> -->
   <div class="details">
-    <p><%= @apartment.commodities %></p>
+    <h4><%= @apartment.name %></p>
+    <p><%= @apartment.category.capitalize %></p>
+    <p class="no-margin-bottom smaller-font-size"><%= @apartment.location %></p>
+  </div>
+  <div class="carasteristics">
+    <% number_of_bathroom = @apartment.bathroom %>
+    <p><%= image_tag "size.png", height: 20 %> <%= @apartment.size %>  m2 <%= image_tag "bathroom.png", height: 20 %> <%= number_of_bathroom <= 1 ? "#{number_of_bathroom} salle de bains" : "#{number_of_bathroom} salles de bains" %></p>
+
   </div>
 </div>
