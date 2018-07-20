@@ -1,4 +1,4 @@
-<div class="margin">
+<div class="wrapper">
   <div id="carousel-images-<%= @apartment.id %>" class="carousel slide full-height" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators carousel-indicators-better">
       <% @apartment.photos.each_with_index do |_photo, index| %>
@@ -19,5 +19,16 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+  </div>
+</div>
+<div class="container">
+  <div class="basic-info">
+    <p class="no-margin-bottom bigger-font-size bold"><%= @apartment.name %></p>
+    <p class="kaki bold no-margin-bottom category-apartment"><%= @apartment.category.capitalize %> - <%= @apartment.number_of_rooms %> chambres meublées</p>
+    <p class="no-margin-bottom smaller-font-size"><%= @apartment.location %></p>
+    <p class="no-margin-bottom smaller-font-size"><%= @apartment.price_per_room %> € par chambre + charges</p>
+  </div>
+  <div class="details">
+    <p><%= @apartment.commodities %></p>
   </div>
 </div>
