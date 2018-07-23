@@ -9,6 +9,7 @@ gem 'puma'
 gem 'rails', '5.2.0'
 gem 'redis'
 gem 'pundit'
+gem 'figaro'
 
 
 
@@ -21,6 +22,8 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
+gem 'omniauth-facebook'
+
 
 
 group :development do
