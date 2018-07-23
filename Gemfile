@@ -20,8 +20,8 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
-gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
+gem 'cloudinary'
 gem 'omniauth-facebook'
 
 
