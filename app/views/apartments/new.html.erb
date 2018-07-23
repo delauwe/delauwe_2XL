@@ -1,2 +1,26 @@
-<h1>Apartments#new</h1>
-<p>Find me in app/views/apartments/new.html.erb</p>
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+    <div class="form">
+      <h3>Ajouter un nouvel appartement</h3>
+      <%= simple_form_for(@apartment) do |f| %>
+      <%= f.input :name, placeholder: "Nom", label: false %>
+      <%= f.input :location, placeholder: "Localisation" %>
+      <%= f.input :size, placeholder: "m2", label: false %>
+      <%= f.input :price, placeholder: "prix", label: false %>
+      <%= f.input :price_per_room, placeholder: "Prix par chambre", label: false %>
+      <%= f.input :category, placeholder: "Catégorie", label: false %>
+      <%= f.input :photo, placeholder: "Ajouter une photo", label: false %>
+      <%= f.input :shower_room, placeholder: "Salle de douche ?", label: false %>
+      <%= f.input :bathroom, placeholder: "Combien de salle de bain ?", label: false %>
+      <%= f.input :toilets, placeholder: "Combien de toilettes ?", label: false %>
+      <%= f.input :living_room, label: "Séjour ?" %>
+      <%= f.input :dining_room, label: "Salle à manger ?" %>
+      <%= f.input :washing_room, label: "Laverie ?" %>
+      <%= f.input :washing_machine, label: "Machine à laver ?" %>
+      <%= f.input :terrace, label: "Terrasse ?"  %>
+      <%= f.button :submit %>
+
+      <% end %>
+    </div>
+  </div>
+</div>

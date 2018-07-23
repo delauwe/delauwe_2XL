@@ -10,15 +10,17 @@ class ApartmentsController < ApplicationController
   end
 
   def new
-    @apartment = current_user.apartments.new
+    @apartment = Apartment.new
     authorize @apartment
   end
 
   def create
-    @apartment = current_user.apartments.new(apartment_params)
+    @apartment = Apartment.new(apartment_params)
     authorize @apartment
     if @apartment.save
-      redirect_to @apartment
+      redirect_to apartment_path(@apartment)
+    else
+      render :new
     end
   end
 
@@ -41,6 +43,10 @@ class ApartmentsController < ApplicationController
   def set_apartment
     @apartment = Apartment.find(params[:id])
     authorize @apartment
+  end
+
+  def apartment_params
+    params.require(:apartment).permit(:name, :location, :size, :number_of_rooms, :price, :price_per_room, :category, :photo, :bathroom, :toilets, :terrace, :living_room, :dining_room, :kitchen, :washing_machine, :washing_room, :shower_room)
   end
 
 end
