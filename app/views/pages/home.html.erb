@@ -1,8 +1,28 @@
-  <div class="banner-cover" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://res.cloudinary.com/elsaszymczak/image/upload/v1531924963/Alice%20D./terrasse.jpg');">
-      <div class="banner-content">
-        <h1>2XL - Colocation & appartement</h1>
-        <p>Trouvez votre logement idéal</p>
-        <a class="btn-border-pink">Découvrir</a>
+<div class="banner-cover" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 50%), url(https://res.cloudinary.com/elsaszymczak/image/upload/v1531924963/Alice%20D./terrasse.jpg);">
+  <div class="banner-content">
+    <h1>Trouvez votre logement idéal</h1>
+    <p>Colocations & appartements</p>
+    <a class="btn-border-pink">Découvrir</a>
+  </div>
+</div>
+<div class="container">
+  <div class="home-tag">
+    <p class="tag-kaki smaller-font-size">Coloc</p>
+    <p class="tag-gray smaller-font-size">Lille</p>
+  </div>
+  <div class="row margin-top">
+    <% @apartments.each do |apartment| %>
+      <%= render "shared/card", apartment: apartment %>
+    <% end %>
+  </div>
+  <div class="home-tag">
+    <p class="tag-kaki smaller-font-size">Appartement</p>
+    <p class="tag-gray smaller-font-size">Lille</p>
+  </div>
+    <div class="row margin-top">
+    <% @apartments.each do |apartment| %>
+      <%= render "shared/card", apartment: apartment %>
+    <% end %>
+  </div>
 
-      </div>
-    </div>
+</div>

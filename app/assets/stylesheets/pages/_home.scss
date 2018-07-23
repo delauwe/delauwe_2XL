@@ -2,7 +2,7 @@
 .banner-cover {
   color: white;
   text-align: center;
-  height: 50vh;
+  height: 70vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position: center;
@@ -21,4 +21,16 @@
   color: rgb(255, 255, 255);
   opacity: 0.6;
   margin-bottom: 30px;
+}
+
+// .container-2xl {
+//   margin: 30px 30px;
+// }
+
+.home-tag {
+  margin-top: 30px;
+
+  p {
+    margin-right: 10px;
+  }
 }

@@ -1,16 +1,18 @@
 // Import Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 // Define fonts for body and headers
-$body-font: "Open Sans", "Helvetica", "sans-serif";
-$headers-font: "Raleway", "Helvetica", "sans-serif";
+$body-font: "Roboto", "sans-serif";
+$headers-font: "EB Garamond", "serif";
+
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
+//   font-family: "Book Antiqua";
+//   // src: font-url('FontFile.eot');
+//   // src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+//   //      font-url('FontFile.woff') format('woff'),
+//     src: font-url('911Fonts.com_BookAntiquaRegular__-_911fonts.com_fonts_qu8k.ttf') format('truetype')
+//        font-url('911Fonts.com_BookAntiquaRegular__-_911fonts.com_fonts_qu8k (1)') format('truetype')
 // }
 // $my-font: "Font Name";

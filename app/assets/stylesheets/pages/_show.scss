@@ -18,6 +18,7 @@
   margin: 20px;
 }
 
+// left-part
 .basic-info {
   margin-top: 20px;
 }
@@ -28,4 +29,65 @@
 
 .category-apartment {
   font-size: 20px;
+}
+
+.span-commodities {
+  margin-right: 10px;
+}
+
+.carasteristics img, .details img {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.small-margin-bottom img {
+  margin-bottom: 2px;
+}
+
+.description {
+  border: solid 3px $dark-gray;
+}
+
+// right-part
+
+.right-part {
+  margin-top: 12.5px;
+}
+.pink-background {
+  background-color: $pink;
+  color: white;
+  padding: 5px 45px;
+  box-shadow: 2px 3px 7px #C4C4C4;
+  border-radius: 3px;
+}
+
+.flexbox-show {
+  display: flex;
+  justify-content: space-around;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.flexbox-show {
+  margin-top: 20px;
+}
+
+.details h4 {
+  font-weight: bolder;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.text-black {
+  color: black;
+}
+
+.flex-grow {
+  flex-grow: 0.4;
 }

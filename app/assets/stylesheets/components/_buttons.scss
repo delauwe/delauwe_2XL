@@ -11,6 +11,8 @@
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  font-family: "EB Garamond";
+  font-weight: 500;
 
   &:hover {
     text-decoration: none;
@@ -20,7 +22,7 @@
 }
 
 .btn-border-gray {
-  border: 3px solid $light-gray;
+  border: 3px solid #C4C4C4;
   padding: 10px 16px;
   font-size: 23px;
   line-height: 1.3333333;
@@ -32,11 +34,12 @@
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  font-family: "EB Garamond";
+  font-weight: 500;
 
   &:hover {
     text-decoration: none;
-    color: black;
-    background-color: $light-gray;
+    color: white;
+    background-color: #C4C4C4;
   }
-
 }

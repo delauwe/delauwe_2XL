@@ -22,20 +22,59 @@
   </div>
 </div>
 <div class="container">
-<!--   <div class="basic-info">
-    <p class="no-margin-bottom bigger-font-size bold"><%= @apartment %></p>
-    <p class="kaki bold no-margin-bottom category-apartment"><%= @apartment.category.capitalize %> - <%= @apartment.number_of_rooms %> chambres meublées</p>
-
-    <p class="no-margin-bottom smaller-font-size"><%= @apartment.price_per_room %> € par chambre + charges</p>
-  </div> -->
-  <div class="details">
-    <h4><%= @apartment.name %></p>
-    <p><%= @apartment.category.capitalize %></p>
-    <p class="no-margin-bottom smaller-font-size"><%= @apartment.location %></p>
-  </div>
-  <div class="carasteristics">
-    <% number_of_bathroom = @apartment.bathroom %>
-    <p><%= image_tag "size.png", height: 20 %> <%= @apartment.size %>  m2 <%= image_tag "bathroom.png", height: 20 %> <%= number_of_bathroom <= 1 ? "#{number_of_bathroom} salle de bains" : "#{number_of_bathroom} salles de bains" %></p>
-
+  <div class="flexbox-show">
+    <div class="left-part">
+      <div class="details">
+        <h4><%= @apartment.name %></h4></p>
+        <p class="tag-kaki smaller-font-size"><%= @apartment.category.capitalize %></p>
+        <p class="smaller-font-size"><%= image_tag "pin.png", height: 15 %><%= @apartment.location %></p>
+      </div>
+      <div class="carasteristics smaller-font-size">
+        <p class="no-margin-bottom">
+          <span class="span-commodities"><%= image_tag "size.png", height: 15 %> <%= @apartment.size %>m2</span>
+          <span class="span-commodities"><%= image_tag "chambre.png", height: 20 %> <%= @apartment.number_of_rooms%> chambres</span>
+          <% number_of_bathroom = @apartment.bathroom %>
+          <span class="span-commodities"><%= image_tag "bathroom.png", height: 15 %> <%= number_of_bathroom <= 1 ? "#{number_of_bathroom} salle de bains" : "#{number_of_bathroom} salles de bains" %> </span>
+          <span class="span-commodities"><%= image_tag "toilet.png", height: 15 %> <%= @apartment.toilets %> w.c</span>
+        </p>
+        <p>
+          <% if @apartment.terrace? %>
+            <span class="span-commodities">
+              <%= image_tag "sun.png", height: 15 %> terrasse
+            </span>
+          <% end %>
+          <% if @apartment.living_room? %>
+            <span class="span-commodities small-margin-bottom">
+              <%= image_tag "sofa.png", height: 15 %> séjour
+            </span>
+          <% end %>
+          <% if @apartment.dining_room? %>
+            <span class="span-commodities">
+              <%= image_tag "table.png", height: 15 %> salle à manger
+            </span>
+          <% end %>
+          <span class="span-commodities"> <%= image_tag "kitchen.png", height: 15 %> cuisine</span>
+          <% if @apartment.washing_room? %>
+            <span class="span-commodities small-margin-bottom">
+              <%= image_tag "laverie.png", height: 15 %> laverie
+            </span>
+          <% else %>
+            <span class="span-commodities small-margin-bottom">
+              <%= image_tag "laverie.png", height: 15 %> machine à laver
+            </span>
+          <% end %>
+        </p>
+      </div>
+      <div class="description">
+        <p>@apartment.description</p>
+      </div>
+    </div>
+    <div class="right-part">
+      <p class="pink-background smaller-font-size"> <span class="price"><%= @apartment.price_per_room %> € </span> par chambre + charges</p>
+      <div class="buttons">
+        <%= link_to "Réserver", "#", class: "btn-border-pink text-black flex-grow" %>
+        <%= link_to "Visiter", "#", class: "btn-border-gray text-black flex-grow" %>
+      </div>
+    </div>
   </div>
 </div>
