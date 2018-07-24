@@ -2,27 +2,33 @@
   <div class="banner-content">
     <h1>Trouvez votre logement idéal</h1>
     <p>Colocations & appartements</p>
-    <a class="btn-border-pink">Découvrir</a>
+    <%= link_to "Découvrir", apartments_path, class: "btn-border-pink" %>
   </div>
 </div>
 <div class="container">
-  <div class="home-tag">
-    <p class="tag-kaki smaller-font-size">Coloc</p>
-    <p class="tag-gray smaller-font-size">Lille</p>
-  </div>
-  <div class="row margin-top">
-    <% @apartments.each do |apartment| %>
-      <%= render "shared/card", apartment: apartment %>
-    <% end %>
-  </div>
-  <div class="home-tag">
-    <p class="tag-kaki smaller-font-size">Appartement</p>
-    <p class="tag-gray smaller-font-size">Lille</p>
-  </div>
+  <div class="home-content">
+    <h2>Nos logements</h2>
+    <div class="home-tag">
+      <p class="tag-kaki smaller-font-size">Coloc</p>
+      <p class="tag-gray smaller-font-size">Lille</p>
+    </div>
     <div class="row margin-top">
-    <% @apartments.each do |apartment| %>
-      <%= render "shared/card", apartment: apartment %>
-    <% end %>
+      <% @apartments.each do |apartment| %>
+        <% if apartment.category == "coloc" %>
+          <%= render "shared/card", apartment: apartment %>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="home-tag">
+      <p class="tag-kaki smaller-font-size">Appartement</p>
+      <p class="tag-gray smaller-font-size">Lille</p>
+    </div>
+      <div class="row margin-top">
+      <% @apartments.each do |apartment| %>
+        <% if apartment.category == "Appart" %>
+          <%= render "shared/card", apartment: apartment %>
+        <% end %>
+      <% end %>
+    </div>
   </div>
-
 </div>

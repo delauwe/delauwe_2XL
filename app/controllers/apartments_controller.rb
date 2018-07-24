@@ -1,5 +1,6 @@
 class ApartmentsController < ApplicationController
-   before_action :set_apartment, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!, only: [:index, :show]
+  before_action :set_apartment, only: [:show, :edit, :update, :destroy]
 
 
   def index

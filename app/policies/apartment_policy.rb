@@ -14,9 +14,9 @@ class ApartmentPolicy < ApplicationPolicy
   end
 
   def update?
-    record.user == user
+    record.user == admin
   end
   def destroy?
-    record.user == user
+    record.user == admin
   end
 end

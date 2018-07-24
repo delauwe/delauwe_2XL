@@ -25,12 +25,24 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
+              <% if apartment.category == "coloc" %>
+                <div class="tag-pink card-price-tag"><%= apartment.price_per_room %> <span>€ </span></div>
+              <% else %>
+                <div class="tag-pink card-price-tag"><%= apartment.price %> <span>€ </span></div>
+              <% end %>
             </div>
             <div class="card-content">
-              <p class="kaki bold no-margin-bottom"><%= apartment.category.capitalize %> - <%= apartment.number_of_rooms %> chambres</p>
-              <p class="no-margin-bottom smaller-font-size"><%= apartment.location %></p>
-              <p class="no-margin-bottom smaller-font-size"><%= apartment.name %></p>
-              <p class="no-margin-bottom smaller-font-size"><%= apartment.price_per_room %> € par chambre</p>
+              <%#= apartment.category.capitalize %>
+              <div class="card-first-line">
+                <p class="kaki bold no-margin-bottom"> <%= apartment.name %></p>
+                <div><% apartment.number_of_rooms.times do %><%= image_tag "chambre.png", height: 20 %><% end %></div>
+              </div>
+              <p class="no-margin-bottom smaller-font-size"> <%= image_tag "pin.png", height: 15 %> <%= apartment.location %></p>
+              <% if apartment.category == "coloc" %>
+                <p class="no-margin-bottom smaller-font-size"><%= apartment.price_per_room %> € par chambre </p>
+              <% else %>
+                <p class="no-margin-bottom smaller-font-size"><%= apartment.price %> €</p>
+              <% end %>
             </div>
           </div>
         <% end %>

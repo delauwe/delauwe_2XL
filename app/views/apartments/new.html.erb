@@ -1,26 +1,44 @@
-<div class="row">
-  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-    <div class="form">
-      <h3>Ajouter un nouvel appartement</h3>
-      <%= simple_form_for(@apartment) do |f| %>
-      <%= f.input :name, placeholder: "Nom", label: false %>
-      <%= f.input :location, placeholder: "Localisation" %>
-      <%= f.input :size, placeholder: "m2", label: false %>
-      <%= f.input :price, placeholder: "prix", label: false %>
-      <%= f.input :price_per_room, placeholder: "Prix par chambre", label: false %>
-      <%= f.input :category, placeholder: "Catégorie", label: false %>
-      <%= f.input :photo, placeholder: "Ajouter une photo", label: false %>
-      <%= f.input :shower_room, placeholder: "Salle de douche ?", label: false %>
-      <%= f.input :bathroom, placeholder: "Combien de salle de bain ?", label: false %>
-      <%= f.input :toilets, placeholder: "Combien de toilettes ?", label: false %>
-      <%= f.input :living_room, label: "Séjour ?" %>
-      <%= f.input :dining_room, label: "Salle à manger ?" %>
-      <%= f.input :washing_room, label: "Laverie ?" %>
-      <%= f.input :washing_machine, label: "Machine à laver ?" %>
-      <%= f.input :terrace, label: "Terrasse ?"  %>
-      <%= f.button :submit %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div class="form-apartment">
+        <h1>Ajouter un nouvel appartement</h1>
+        <%= simple_form_for(@apartment) do |f| %>
+        <div class="row">
+          <div class="col-xs-6">
+            <%= f.input :name, placeholder: "Alice D.", label: "Nom" %>
+          </div>
+          <div class="col-xs-6">
+            <%= f.input :location, placeholder: "Au pied du métro Cormontaigne", label: "Localisation" %>
+          </div>
+        </div>
+        <%= f.input :size, placeholder: "m2", label: false %>
+        <%= f.input :price, placeholder: "prix", label: false %>
+        <%= f.input :price_per_room, placeholder: "Prix par chambre", label: false %>
+        <%= f.input :category, placeholder: "Catégorie", collection: ["Coloc", "Appart"], prompt: "Catégorie?" %>
+        <%= f.input :photo, placeholder: "Ajouter une photo", label: false %>
+        <%= f.input :shower_room, placeholder: "Salle de douche ?", label: false %>
+        <%= f.input :bathroom, placeholder: "Combien de salle de bain ?", label: false %>
+        <%= f.input :toilets, placeholder: "Combien de toilettes ?", label: false %>
+        <div class="commodities">
+          <%= f.input :living_room, label: "Séjour ?" %>
+          <%= f.input :dining_room, label: "Salle à manger ?" %>
+          <%= f.input :washing_room, label: "Laverie ?" %>
+          <%= f.input :washing_machine, label: "Machine à laver ?" %>
+          <%= f.input :terrace, label: "Terrasse ?"  %>
 
-      <% end %>
+          <div class="commodities">
+          <fieldset class="form-group boolean optional apartment_living_room"><div class="form-check"><input name="apartment[living_room]" type="hidden" value="0"><input class="form-check-input boolean optional" type="checkbox" value="1" name="apartment[living_room]" id="apartment_living_room"><label class="form-check-label boolean optional" for="apartment_living_room">Séjour ?</label></div></fieldset>
+          <fieldset class="form-group boolean optional apartment_dining_room"><div class="form-check"><input name="apartment[dining_room]" type="hidden" value="0"><input class="form-check-input boolean optional" type="checkbox" value="1" name="apartment[dining_room]" id="apartment_dining_room"><label class="form-check-label boolean optional" for="apartment_dining_room">Salle à manger ?</label></div></fieldset>
+          <fieldset class="form-group boolean optional apartment_washing_room form-group-valid"><div class="form-check"><input name="apartment[washing_room]" type="hidden" value="0"><input class="form-check-input is-valid boolean optional" type="checkbox" value="1" checked="checked" name="apartment[washing_room]" id="apartment_washing_room"><label class="form-check-label boolean optional" for="apartment_washing_room">Laverie ?</label></div></fieldset>
+          <fieldset class="form-group boolean optional apartment_washing_machine form-group-valid"><div class="form-check"><input name="apartment[washing_machine]" type="hidden" value="0"><input class="form-check-input is-valid boolean optional" type="checkbox" value="1" checked="checked" name="apartment[washing_machine]" id="apartment_washing_machine"><label class="form-check-label boolean optional" for="apartment_washing_machine">Machine à laver ?</label></div></fieldset>
+          <fieldset class="form-group boolean optional apartment_terrace"><div class="form-check"><input name="apartment[terrace]" type="hidden" value="0"><input class="form-check-input boolean optional" type="checkbox" value="1" name="apartment[terrace]" id="apartment_terrace"><label class="form-check-label boolean optional" for="apartment_terrace">Terrasse ?</label></div></fieldset>
+        </div>
+        </div>
+        <%= f.button :submit %>
+
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

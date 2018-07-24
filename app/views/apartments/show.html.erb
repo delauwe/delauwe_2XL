@@ -35,7 +35,7 @@
           <span class="span-commodities"><%= image_tag "chambre.png", height: 20 %> <%= @apartment.number_of_rooms%> chambres</span>
           <% number_of_bathroom = @apartment.bathroom %>
           <span class="span-commodities"><%= image_tag "bathroom.png", height: 15 %> <%= number_of_bathroom <= 1 ? "#{number_of_bathroom} salle de bains" : "#{number_of_bathroom} salles de bains" %> </span>
-          <span class="span-commodities"><%= image_tag "toilet.png", height: 15 %> <%= @apartment.toilets %> w.c</span>
+          <span class="span-commodities"><%= image_tag "toilet.png", height: 15 %> <%= @apartment.toilet %> w.c</span>
         </p>
         <p>
           <% if @apartment.terrace? %>

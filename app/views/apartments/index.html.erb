@@ -1,8 +1,13 @@
 <div class="container">
+  <div class="title">
+    <h3>Nos colocations</h3>
+  </div>
   <div class="row margin-top">
     <% @apartments.each do |apartment| %>
-      <%= render "shared/card", apartment: apartment %>
-    <%end%>
+      <% if apartment.category == "coloc" %>
+        <%= render "shared/card", apartment: apartment %>
+      <%end%>
+    <% end %>
   </div>
 </div>
 

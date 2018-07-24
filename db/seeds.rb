@@ -7,13 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "destroying seed"
+
 Photo.destroy_all
 puts "No more photos"
 Room.destroy_all
 puts "No more rooms"
 Apartment.destroy_all
 puts "No more apartments"
-
 
 puts "Creating apartments"
 
@@ -22,19 +22,19 @@ alice = Apartment.new(
   size: 130,
   number_of_rooms: 5,
   name: "Alice D.",
-  living_room: true,
-  dining_room: true,
-  terrace: true,
-  bathroom: 2,
-  toilets: 3,
-  washing_room: true,
-  washing_machine: false,
   price: 2275,
   price_per_room: 455,
-  category: "coloc"
-  )
+  category: "coloc",
+  bathroom: 2,
+  toilet: 3,
+  terrace: true,
+  washing_machine: false,
+  washing_room: true,
+  dining_room: true,
+  living_room: true,
+  kitchen: true,
+)
 alice.save!
-
 
 alice_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924961/Alice%20D./chambre1.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925746/Alice%20D./chambre%202/chambre2.jpg",
@@ -47,7 +47,7 @@ alice_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924961
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924962/Alice%20D./sejour2.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924963/Alice%20D./terrasse.jpg"]
 
- alice_array.each do |url|
+alice_array.each do |url|
   alice.remote_photo_url = url
 end
 
@@ -55,7 +55,6 @@ alice_array.each do |url|
   photo = Photo.new(url: url)
   photo.apartment = alice
   photo.save!
-
 end
 
 
@@ -64,14 +63,13 @@ camille = Apartment.create(
   size: 83,
   number_of_rooms: 4,
   name: "Camille D.",
-  bathroom: 1,
-  toilets: 1,
-  shower_room: 1,
-  washing_room: false,
-  living_room: true,
   price: 1720,
   price_per_room: 430,
-  category: "coloc"
+  category: "coloc",
+  bathroom: 1,
+  toilet: 1,
+  shower_room: 1,
+  living_room: true,
 )
 
 camille_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531925056/Camille%20D./chambre1.jpg",
@@ -103,17 +101,18 @@ claire = Apartment.create(
   size: 70,
   number_of_rooms: 3,
   name: "Claire D.",
+  price: 1200,
+  price_per_room: 400,
+  category: "coloc",
   living_room: true,
   terrace: true,
   bathroom: 1,
   shower_room: 1,
-  toilets: 1,
+  toilet: 1,
   washing_room: true,
   washing_machine: false,
-  price: 1200,
-  price_per_room: 400,
-  category: "coloc"
-  )
+  kitchen: true,
+)
 
 claire_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924330/Claire%20D./chambre1.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924330/Claire%20D./chambre2.jpg",
@@ -142,14 +141,16 @@ francine = Apartment.create(
   size: 136,
   number_of_rooms: 5,
   name: "Francine D.",
-  living_room: true,
-  bathroom: 2,
-  toilets: 1,
-  washing_room: false,
   price: 2250,
   price_per_room: 450,
-  category: "coloc"
-  )
+  category: "coloc",
+  living_room: true,
+  bathroom: 2,
+  toilet: 1,
+  washing_machine: true,
+  kitchen: true,
+)
+
 francine_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531990135/Francine%20D./chambre1.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924484/Francine%20D./chambre2.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924484/Francine%20D./chambre3.jpg",
@@ -178,18 +179,20 @@ jules = Apartment.create(
   size: 140,
   number_of_rooms: 6,
   name: "Jules D.",
-  bathroom: 2,
-  toilets: 2,
-  washing_room: false,
   price: 2730,
   price_per_room: 455,
-  category: "coloc"
-  )
+  category: "coloc",
+  bathroom: 2,
+  toilet: 2,
+  washing_room: false,
+  washing_machine: true,
+  living_room: true,
+  kitchen: true,
+)
+
 jules_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./chambre1.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./chambre2.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./chambre3.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./chambre4.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./chambre4.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./chambre4.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./couloir.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./cuisine.jpg",
@@ -200,7 +203,8 @@ jules_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./vue.jpg",
 ]
- jules_array.each do |url|
+
+jules_array.each do |url|
   jules.remote_photo_url = url
 end
 
@@ -215,14 +219,18 @@ lucie = Apartment.create(
   size: 100,
   number_of_rooms: 4,
   name: "Lucie D.",
-  bathroom: 1,
-  shower_room: 1,
-  toilets: 2,
-  washing_room: false,
   price: 1720,
   price_per_room: 430,
-  category: "coloc"
-  )
+  category: "coloc",
+  bathroom: 1,
+  shower_room: 1,
+  toilet: 2,
+  washing_room: false,
+  washing_machine: true,
+  living_room: true,
+  kitchen: true,
+)
+
 lucie_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924710/Lucie.D/chambre1.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924711/Lucie.D/chambre2.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924710/Lucie.D/chambre3.jpg",
@@ -249,14 +257,18 @@ odette = Apartment.create(
   size: 83,
   number_of_rooms: 4,
   name: "Odette D.",
-  bathroom: 1,
-  shower_room: 1,
-  toilets: 1,
-  washing_room: false,
   price: 1400,
   price_per_room: 350,
-  category: "coloc"
+  category: "coloc",
+  bathroom: 1,
+  shower_room: 1,
+  toilet: 1,
+  washing_room: false,
+  washing_machine: true,
+  living_room: true,
+  kitchen: true,
 )
+
 odette_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924785/Odette%20D./chambre1.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924785/Odette%20D./chambre2.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924785/Odette%20D./chambre3.jpg",
@@ -269,7 +281,8 @@ odette_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v153192478
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./terrasse.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./toilettes.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./vue.jpg"]
- odette_array.each do |url|
+
+odette_array.each do |url|
   odette.remote_photo_url = url
 end
 
@@ -279,5 +292,71 @@ odette_array.each do |url|
   photo.save!
 end
 
+appart302 = Apartment.create(
+  location: "Au pied du métro Cormontaigne",
+  size: 45,
+  number_of_rooms: 1,
+  name: "Appart 302",
+  price: 780,
+  category: "Appart",
+  bathroom: 1,
+  toilet: 1,
+  washing_room: true,
+  washing_machine: false,
+  living_room: true,
+  kitchen: true,
+)
 
+appart302_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-chambre2.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-salon.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-salle_a_manger.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-toilette.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-cuisine.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-pieces.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-cuisine2.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-chambre.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-_salle_de_bain.jpg"]
 
+appart302_array.each do |url|
+  appart302.remote_photo_url = url
+end
+
+appart302_array.each do |url|
+  photo = Photo.new(url: url)
+  photo.apartment = appart302
+  photo.save!
+end
+
+appart303 = Apartment.create(
+  location: "Au pied du métro Cormontaigne",
+  size: 45,
+  number_of_rooms: 1,
+  name: "Appart 303",
+  price: 750,
+  category: "Appart",
+  bathroom: 1,
+  toilet: 1,
+  washing_room: true,
+  washing_machine: false,
+  living_room: true,
+  kitchen: true,
+)
+
+appart303_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532436564/Appart%20-%20303/303_-_cuisine.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436564/Appart%20-%20303/303-_toilette.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436564/Appart%20-%20303/303-chambre2.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436563/Appart%20-%20303/303_-_sejour.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436563/Appart%20-%20303/303_-_salon.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436563/Appart%20-%20303/303_-_couloir.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436563/Appart%20-%20303/303_-_chambre.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1532436563/Appart%20-%20303/303_-_salle_de_bain.jpg"]
+
+appart303_array.each do |url|
+  appart303.remote_photo_url = url
+end
+
+appart303_array.each do |url|
+  photo = Photo.new(url: url)
+  photo.apartment = appart303
+  photo.save!
+end
