@@ -26,7 +26,6 @@
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    min-height: 70px;
   }
 }
 
@@ -52,8 +51,15 @@
     p {
     font-size: 15px;
     margin-bottom: 30px;
+    }
   }
 
+  .home-content {
+  h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
   }
+}
 
 }
