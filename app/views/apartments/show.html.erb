@@ -70,7 +70,11 @@
       </div>
     </div>
     <div class="right-part">
-      <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price_per_room %> € </span> + charges</p>
+      <% if @apartment.category == "coloc" %>
+          <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price_per_room %> € </span> + charges</p>
+        <% else %>
+           <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price %> € </span> + charges</p>
+        <% end %>
       <div class="buttons">
         <%= link_to "Pré-réserver", "https://docs.google.com/forms/d/e/1FAIpQLScFlItNbbbMVsVucvpQUKOoHCj-SLS0IYoMklJMoZiUGIT17A/viewform", class: "btn-border-pink text-black margin-right" %>
         <%= link_to "Nous contacter", "http://m.me/2XLcoloc.chambresalouer", class: "btn-border-gray text-black" %>
@@ -84,7 +88,11 @@
         <p class="tag-kaki smaller-font-size"><%= @apartment.category.capitalize %></p>
       </div>
       <div class="right-part-mobile">
-        <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price_per_room %> € </span> + charges</p>
+        <% if @apartment.category == "coloc" %>
+          <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price_per_room %> € </span> + charges</p>
+        <% else %>
+           <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price %> € </span> + charges</p>
+        <% end %>
       </div>
     </div>
     <p class="smaller-font-size"><%= image_tag "pin.png", height: 15 %><%= @apartment.location %></p>
