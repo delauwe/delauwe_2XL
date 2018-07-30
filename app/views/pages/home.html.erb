@@ -13,11 +13,14 @@
       <p class="tag-gray smaller-font-size">Lille</p>
     </div>
     <div class="row margin-top">
-      <% @apartments.each do |apartment| %>
+      <% @apartments.first(3).each do |apartment| %>
         <% if apartment.category == "coloc" %>
           <%= render "shared/card", apartment: apartment %>
         <% end %>
       <% end %>
+      <div class="home-button">
+        <%= link_to "Découvrir toutes les colocs", apartments_path, class: "lgn" %>
+      </div>
     </div>
     <div class="home-tag">
       <p class="tag-kaki smaller-font-size">Appartement</p>

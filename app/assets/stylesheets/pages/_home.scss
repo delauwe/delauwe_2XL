@@ -12,20 +12,24 @@
 }
 .banner-cover h1 {
   font-size: 50px;
+  min-height: 70px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 }
 .banner-cover p {
   font-size: 25px;
-  font-weight: lighter;
-  color: rgb(255, 255, 255);
-  opacity: 0.6;
+  // font-weight: lighter;
+  // color: rgb(255, 255, 255);
+  // opacity: 0.6;
   margin-bottom: 30px;
 }
 
 .home-content {
   h2 {
-    text-align: center
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    min-height: 70px;
   }
 }
 
@@ -35,4 +39,13 @@
   p {
     margin-right: 10px;
   }
+}
+
+.home-button {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media(max-width: 768px) {
+
 }

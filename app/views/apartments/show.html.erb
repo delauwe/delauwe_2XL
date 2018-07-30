@@ -22,7 +22,7 @@
   </div>
 </div>
 <div class="container">
-  <div class="flexbox-show">
+  <div class="flexbox-show hidden-xs hidden-sm">
     <div class="left-part">
       <div class="details">
         <h4><%= @apartment.name %></h4></p>
@@ -65,16 +65,69 @@
           <% end %>
         </p>
       </div>
-      <div class="description">
-        <p>@apartment.description</p>
+      <div class="description smaller-font-size">
+        <p><%= @apartment.description  %></p>
       </div>
     </div>
     <div class="right-part">
-      <p class="pink-background smaller-font-size"> <span class="price"><%= @apartment.price_per_room %> € </span> par chambre + charges</p>
+      <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price_per_room %> € </span> + charges</p>
       <div class="buttons">
-        <%= link_to "Réserver", "https://docs.google.com/forms/d/e/1FAIpQLScFlItNbbbMVsVucvpQUKOoHCj-SLS0IYoMklJMoZiUGIT17A/viewform", class: "btn-border-pink text-black flex-grow" %>
-        <%= link_to "Visiter", "https://www.facebook.com/2XLcoloc.chambresalouer/", class: "btn-border-gray text-black flex-grow" %>
+        <%= link_to "Pré-réserver", "https://docs.google.com/forms/d/e/1FAIpQLScFlItNbbbMVsVucvpQUKOoHCj-SLS0IYoMklJMoZiUGIT17A/viewform", class: "btn-border-pink text-black margin-right" %>
+        <%= link_to "Nous contacter", "https://www.facebook.com/messages/t/314138672074369", class: "btn-border-gray text-black" %>
       </div>
+    </div>
+  </div>
+  <div class="hidden-md hidden-lg">
+    <div class="details">
+      <div class="left-part-mobile">
+        <h4><%= @apartment.name %></h4></p>
+        <p class="tag-kaki smaller-font-size"><%= @apartment.category.capitalize %></p>
+      </div>
+      <div class="right-part-mobile">
+        <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price_per_room %> € </span> + charges</p>
+      </div>
+    </div>
+    <p class="smaller-font-size"><%= image_tag "pin.png", height: 15 %><%= @apartment.location %></p>
+    <div class="carasteristics smaller-font-size">
+      <p class="no-margin-bottom">
+        <span class="span-commodities"><%= image_tag "size.png", height: 15 %> <%= @apartment.size %>m2</span>
+        <span class="span-commodities"><%= image_tag "chambre.png", height: 20 %> <%= @apartment.number_of_rooms%> chambres</span>
+        <% number_of_bathroom = @apartment.bathroom %>
+        <span class="span-commodities"><%= image_tag "bathroom.png", height: 15 %> <%= number_of_bathroom <= 1 ? "#{number_of_bathroom} salle de bains" : "#{number_of_bathroom} salles de bains" %> </span>
+        <span class="span-commodities"><%= image_tag "toilet.png", height: 15 %> <%= @apartment.toilet %> w.c</span>
+        <% if @apartment.terrace? %>
+          <span class="span-commodities">
+            <%= image_tag "sun.png", height: 15 %> terrasse
+          </span>
+        <% end %>
+        <% if @apartment.living_room? %>
+          <span class="span-commodities small-margin-bottom">
+            <%= image_tag "sofa.png", height: 15 %> séjour
+          </span>
+        <% end %>
+        <% if @apartment.dining_room? %>
+          <span class="span-commodities">
+            <%= image_tag "table.png", height: 15 %> salle à manger
+          </span>
+        <% end %>
+        <span class="span-commodities"> <%= image_tag "kitchen.png", height: 15 %> cuisine</span>
+        <% if @apartment.washing_room? %>
+          <span class="span-commodities small-margin-bottom">
+            <%= image_tag "laverie.png", height: 15 %> laverie
+          </span>
+        <% else %>
+          <span class="span-commodities small-margin-bottom">
+            <%= image_tag "laverie.png", height: 15 %> machine à laver
+          </span>
+        <% end %>
+      </p>
+    </div>
+    <div class="description smaller-font-size">
+      <p><%= @apartment.description  %></p>
+    </div>
+    <div class="buttons">
+      <%= link_to "Pré-réserver", "https://docs.google.com/forms/d/e/1FAIpQLScFlItNbbbMVsVucvpQUKOoHCj-SLS0IYoMklJMoZiUGIT17A/viewform", class: "btn-border-pink text-black margin-right" %>
+      <%= link_to "Nous contacter", "https://www.facebook.com/messages/t/314138672074369", class: "btn-border-gray text-black" %>
     </div>
   </div>
 </div>

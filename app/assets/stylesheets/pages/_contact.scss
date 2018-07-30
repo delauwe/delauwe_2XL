@@ -1,0 +1,49 @@
+.contact {
+  h1 {
+    text-align: center;
+  }
+
+
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+}
+
+@media(max-width: 768px){
+.contact-content {
+  display: inline;
+  text-align: center;
+   margin-top: 50px;
+
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.info {
+  margin-top: 50px;
+}
+
+}
