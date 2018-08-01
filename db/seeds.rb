@@ -25,7 +25,7 @@ alice = Apartment.new(
   price: 2275,
   price_per_room: 455,
   category: "coloc",
-  bathroom: 2,
+  bathroom: 3,
   toilet: 3,
   terrace: true,
   washing_machine: false,
@@ -33,7 +33,8 @@ alice = Apartment.new(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  description: "Trés joli appartement entièrement meublé et équipé. 5 chambres. Belle terrasse. Emplacement top au pied du métro, bus et station V'Lille.
+  description: "Charme et espace 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
+En rez-de-chaussée : grand séjour sur terrasse et grande cuisine ouverte. 4 grandes chambres dont 2 en cave anglaise + 1 chambre plus petite à l'étage, buanderie. 3 salles de bains, 3 wc. Laverie.
 Bail de 12 mois : 455 €/mois par chambre + charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
   Bail court : prix à négocier.")
 alice.save!
@@ -75,7 +76,7 @@ camille = Apartment.create(
   shower_room: 1,
   living_room: true,
   description: "Quartier Vauban. Dans résidence calme, au 5e et dernier étage, ascenseur. 5 pièces 83 m², entièrement équipé et meublé, excellent état : séjour, cuisine américaine avec lave-vaisselle, terrasse exposée sud-ouest, salle de douche, wc séparés, lave et sèche-linge, 4 chambres toutes avec nombreux placards, literie bon état, bureaux.
-  Bail de 12 mois : 435 €/mois.chambre + 85 charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
+  Bail de 12 mois : 430 €/mois.chambre + 85 charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
   Bail court : prix à négocier."
 )
 
@@ -247,7 +248,9 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  description: "Bel appartement de 100 m2 en excellent état, 4 belles chambres meublées, bureau, literie, 1 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Séjour. Salle de douche.
+  description: "Quartier Vauban.colocation 4 jeunes actif.s.ves, très calmes, non fumeurs.
+Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
+Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, wc séparés, salle de douche.
   Bail de 12 mois : 430  €/mois + charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier. "
 )
 
