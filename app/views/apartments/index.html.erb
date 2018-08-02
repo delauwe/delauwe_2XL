@@ -1,12 +1,22 @@
 <div class="container">
   <div class="title">
-    <h3>Nos colocations</h3>
+    <h3>Nos colocs</h3>
   </div>
   <div class="row margin-top">
     <% @apartments.each do |apartment| %>
       <% if apartment.category == "coloc" %>
         <%= render "shared/card", apartment: apartment %>
       <%end%>
+    <% end %>
+  </div>
+  <div class="title">
+    <h3>Nos apparts</h3>
+  </div>
+  <div class="row margin-top">
+    <% @apartments.each do |apartment| %>
+      <% if apartment.category == "Appart" %>
+        <%= render "shared/card", apartment: apartment %>
+      <% end %>
     <% end %>
   </div>
 </div>

@@ -26,7 +26,7 @@
       <p class="tag-kaki smaller-font-size">Appartement</p>
       <p class="tag-gray smaller-font-size">Lille</p>
     </div>
-      <div class="row margin-top">
+    <div class="row margin-top">
       <% @apartments.each do |apartment| %>
         <% if apartment.category == "Appart" %>
           <%= render "shared/card", apartment: apartment %>
