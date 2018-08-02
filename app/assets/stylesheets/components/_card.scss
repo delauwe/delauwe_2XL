@@ -45,11 +45,28 @@
 
 .card-content {
   display:flex;
-  flex-direction: column;
-  justify-content:space-around;
+  // flex-direction: column;
+  justify-content:space-between;
   height: 30%;
   width: 100%;
   padding: 10px;
+}
+
+.card-content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h5 {
+    color: $kaki
+  }
+}
+
+.card-content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .full-height {
@@ -101,38 +118,26 @@
   right: 10px;
 }
 
-// .number_of_rooms {
-//   position: absolute;
-//   top: 10px;
-//   left: 10px;
-// }
-
-.card-first-line {
-  display: flex;
-  justify-content: space-between;
-
-  p {
-    color: $kaki
-  }
-}
-
 .card-category-tag {
   position: absolute;
   top: 10px;
   left: 10px;
 }
 
+
+
+
+
 @media (max-width: 768px) {
 
-.title {
+  .title {
   margin-bottom: 35px;
 
-
-  h3 {
-    font-size: 38px;
-    font-weight: bold;
+    h3 {
+      font-size: 38px;
+      font-weight: bold;
+    }
   }
-}
 
 }
 

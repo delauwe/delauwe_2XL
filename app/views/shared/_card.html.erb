@@ -34,16 +34,19 @@
       </div>
       <div class="card-content">
         <%#= apartment.category.capitalize %>
-        <div class="card-first-line">
-          <p class="bold no-margin-bottom"> <%= apartment.name %></p>
-          <div><% apartment.number_of_rooms.times do %><%= image_tag "chambre.png", height: 20 %><% end %></div>
+        <div class="card-content-left">
+          <h5 class="bold no-margin-bottom"> <%= apartment.name %></h5>
+          <p class="no-margin-bottom smaller-font-size"> <%= image_tag "pin.png", height: 15 %> <%= apartment.location %></p>
+          <% if apartment.category == "coloc" %>
+            <p class="no-margin-bottom smaller-font-size"><%= apartment.price_per_room %> € par chambre </p>
+          <% else %>
+            <p class="no-margin-bottom smaller-font-size"><%= apartment.price %> €</p>
+          <% end %>
         </div>
-        <p class="no-margin-bottom smaller-font-size"> <%= image_tag "pin.png", height: 15 %> <%= apartment.location %></p>
-        <% if apartment.category == "coloc" %>
-          <p class="no-margin-bottom smaller-font-size"><%= apartment.price_per_room %> € par chambre </p>
-        <% else %>
-          <p class="no-margin-bottom smaller-font-size"><%= apartment.price %> €</p>
-        <% end %>
+        <div class="card-content-right">
+          <div><% apartment.number_of_rooms.times do %><%= image_tag "chambre.png", height: 20 %><% end %></div>
+          <%= link_to "Aller plus loin", apartment_path(apartment), class: "btn-border-pink btn-color-black btn-small" %>
+        </div>
       </div>
     </div>
   <% end %>
