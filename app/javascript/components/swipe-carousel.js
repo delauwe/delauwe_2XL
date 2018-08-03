@@ -1,6 +1,6 @@
 function swipeCarousel () {
   $(document).ready(function() {
-     $(".carousel").swiperight(function() {
+     $("#carousel-images-<%= apartment.id %>").swiperight(function() {
         $(this).carousel('prev');
       });
      $(".carousel").swipeleft(function() {
