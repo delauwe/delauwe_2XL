@@ -3,7 +3,7 @@ function swipeCarousel () {
      $("#carousel-images-<%= apartment.id %>").swiperight(function() {
         $(this).carousel('prev');
       });
-     $(".carousel").swipeleft(function() {
+     $("#carousel-images-<%= apartment.id %>").swipeleft(function() {
         $(this).carousel('next');
      });
   });
