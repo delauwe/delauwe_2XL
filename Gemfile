@@ -10,6 +10,8 @@ gem 'rails', '5.2.0'
 gem 'redis'
 gem 'pundit'
 gem 'figaro'
+gem 'jquery_mobile_rails'
+
 
 
 
