@@ -4,4 +4,6 @@
 
 import "bootstrap";
 import { cardCarousel } from "../components/card-carousel";
+cardCarousel();
 import { swipeCarousel } from "../components/swipe-carousel";
+swipeCarousel();

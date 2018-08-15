@@ -12,8 +12,7 @@ gem 'pundit'
 gem 'figaro'
 gem 'jquery_mobile_rails'
 
-
-
+gem 'activeadmin'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
