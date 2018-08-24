@@ -18,13 +18,13 @@ puts "No more apartments"
 puts "Creating apartments"
 
 alice = Apartment.new(
-  location: "Au pied du métro Cormontaigne",
+  # location: "Au pied du métro Cormontaigne",
   size: 130,
   number_of_rooms: 5,
   name: "Alice D.",
   price: 2275,
   price_per_room: 455,
-  category: "coloc",
+  # category: "Flatsharing",
   bathroom: 3,
   toilet: 3,
   terrace: true,
@@ -33,17 +33,26 @@ alice = Apartment.new(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  description: "Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
-En rez-de-chaussée : grand séjour sur terrasse et grande cuisine ouverte. 4 grandes chambres dont 2 en cave anglaise + 1 chambre plus petite à l'étage, buanderie. 2 salles de bains, 1 salle d'eau et 3 WCs. Laverie.
-Bail de 12 mois : 455 €/mois par chambre + charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
-Bail court : prix à négocier."
+  availability: Date.parse("sept 1 2019"),
+  # description: "Cosy apartment"
   )
 alice.save!
 
-Apartment::Translation.create(apartment_id: alice.id, locale: "fr", location: "Lille", category: "coloc", description: "Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
+Apartment::Translation.create(
+  apartment_id: alice.id,
+  locale: "fr", location: "Au pied du métro Cormontaigne",
+  category: "coloc",
+  description: "Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
 En rez-de-chaussée : grand séjour sur terrasse et grande cuisine ouverte. 4 grandes chambres dont 2 en cave anglaise + 1 chambre plus petite à l'étage, buanderie. 2 salles de bains, 1 salle d'eau et 3 WCs. Laverie.
 Bail de 12 mois : 455 €/mois par chambre + charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
 Bail court : prix à négocier.")
+
+
+Apartment::Translation.create(
+  apartment_id: alice.id,
+  locale: "en", location: "In front of the metro station Cormontaigne",
+  category: "flatsharing",
+  description: "Cosy apartment")
 
 alice_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924962/Alice%20D./sejour.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924962/Alice%20D./sejour2.jpg",
@@ -69,22 +78,33 @@ end
 
 
 camille = Apartment.create(
-  location: "Au pied du métro Port de Lille",
   size: 83,
   number_of_rooms: 4,
   name: "Camille D.",
   price: 1720,
   price_per_room: 430,
-  category: "coloc",
   bathroom: 1,
   terrace: true,
   toilet: 1,
   shower_room: 1,
   living_room: true,
+  availability: Date.parse("sept 1 2019"),
+)
+
+Apartment::Translation.create(
+  apartment_id: camille.id,
+  locale: "fr", location: "Au pied du métro Port de Lille",
+  category: "coloc",
   description: "Quartier Vauban. Dans résidence calme, au 5e et dernier étage, ascenseur. 5 pièces 83 m², entièrement équipé et meublé, excellent état : séjour, cuisine américaine avec lave-vaisselle, terrasse exposée sud-ouest, salle de douche, wc séparés, lave et sèche-linge, 4 chambres toutes avec nombreux placards, literie bon état, bureaux.
   Bail de 12 mois : 430 €/mois.chambre + 85 charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
-  Bail court : prix à négocier."
-)
+  Bail court : prix à négocier.")
+
+
+Apartment::Translation.create(
+  apartment_id: camille.id,
+  locale: "en", location: "In front of the metro station Port de Lille",
+  category: "flatsharing",
+  description: "Cosy apartment")
 
 camille_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531925061/Camille%20D./sejour.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925061/Camille%20D./sejour2.jpg",
@@ -110,13 +130,11 @@ camille_array.each do |url|
 end
 
 claire = Apartment.create(
-  location: "Au pied du métro Cormontaigne",
   size: 70,
   number_of_rooms: 3,
   name: "Claire D.",
   price: 1200,
   price_per_room: 400,
-  category: "coloc",
   living_room: true,
   terrace: true,
   bathroom: 1,
@@ -125,11 +143,26 @@ claire = Apartment.create(
   washing_room: true,
   washing_machine: false,
   kitchen: true,
+  availability: Date.parse("sept 1 2019"),
+)
+
+Apartment::Translation.create(
+  apartment_id: claire.id,
+  locale: "fr", location: "Au pied du métro Port de Lille",
+  category: "coloc",
   description: "Trés joli T3 entièrement meublé et équipé. 2 chambres + mezzanine. Belle terrasse. Idéal couple avec 1 enfant ou petite colocation constituée de 2 jeunes actifs. Emplacement top au pied du métro, bus et station V'Lille.
   Location courte durée 6 mois maximum renouvelable.
   1200 euro/mois toutes charges comprises- ménage 1h/semaine.
-  Possibilité de louer un box en sus."
-)
+  Possibilité de louer un box en sus.")
+
+
+Apartment::Translation.create(
+  apartment_id: claire.id,
+  locale: "en", location: "In front of the metro station Port de Lille",
+  category: "flatsharing",
+  description: "Cosy apartment")
+
+
 
 claire_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924331/Claire%20D./sejour.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924331/Claire%20D./sejour2.jpg",
@@ -154,24 +187,36 @@ claire_array.each do |url|
 end
 
 francine = Apartment.create(
-  location: "Place Maréchal Leclerc - Vauban",
   size: 136,
   number_of_rooms: 5,
   name: "Francine D.",
   price: 2250,
   price_per_room: 450,
-  category: "coloc",
   living_room: true,
   bathroom: 2,
   toilet: 1,
   washing_machine: true,
   kitchen: true,
+  availability: Date.parse("sept 1 2019"),
+)
+
+Apartment::Translation.create(
+  apartment_id: francine.id,
+  locale: "fr", location: "Place Maréchal Leclerc - Vauban",
+  category: "coloc",
   description: "Quartier Vauban, Place Maréchal Leclerc. 5 chambres dans colocation de 5 jeunes actifs, spacieux appartement, libre immédiatement.
   Grand appartement excellent état au rez-de-chaussée (double accès), dans un immeuble de standing (entrée sécurisée), entièrement meublé et équipé, 5 belles chambres très spacieuses, toutes avec placards, bureau, literie neuve, cuisine très bien équipée (frigo américain, lave-vaisselle), 2 salles de bains, 2 wc. Lave-linge, sèche-linge.
   Les charges comprennent wifi, électricité, charges de copropriété, 2 h ménage par semaine.
   Parking ou box en sus.
   455 E/chambre hors charges. (Bail court possible prix sur demande)"
-)
+  )
+
+
+Apartment::Translation.create(
+  apartment_id: francine.id,
+  locale: "en", location: "Place Maréchal Leclerc - Vauban",
+  category: "flatsharing",
+  description: "Cosy apartment")
 
 francine_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924486/Francine%20D./sejour.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924484/Francine%20D./cuisine.jpg",
@@ -198,22 +243,33 @@ francine_array.each do |url|
 end
 
 jules = Apartment.create(
-  location: "Place Maréchal Leclerc - Vauban",
   size: 140,
   number_of_rooms: 6,
   name: "Jules D.",
   price: 2730,
   price_per_room: 455,
-  category: "coloc",
   bathroom: 2,
   toilet: 2,
   washing_room: false,
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  description: "Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
-  Bail de 12 mois : 455  €/mois + charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier. "
+  availability: Date.parse("sept 1 2019"),
 )
+
+Apartment::Translation.create(
+  apartment_id: jules.id,
+  locale: "fr", location: "Place Maréchal Leclerc - Vauban",
+  category: "coloc",
+  description: "Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
+  Bail de 12 mois : 455  €/mois + charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier. ")
+
+
+Apartment::Translation.create(
+  apartment_id: jules.id,
+  locale: "en", location: "Place Maréchal Leclerc - Vauban",
+  category: "flatsharing",
+  description: "Cosy apartment")
 
 jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./vue.jpg",
@@ -240,13 +296,11 @@ jules_array.each do |url|
 end
 
 lucie = Apartment.create(
-  location: "Au pied du métro Cormontaigne",
   size: 100,
   number_of_rooms: 4,
   name: "Lucie D.",
   price: 1720,
   price_per_room: 430,
-  category: "coloc",
   bathroom: 1,
   shower_room: 1,
   toilet: 2,
@@ -254,11 +308,25 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  description: "Quartier Vauban.colocation 4 jeunes actif.s.ves, très calmes, non fumeurs.
-Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
-Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, wc séparés, salle de douche.
-  Bail de 12 mois : 430  €/mois + charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier. "
+  availability: Date.parse("sept 1 2019"),
 )
+
+
+Apartment::Translation.create(
+  apartment_id: lucie.id,
+  locale: "fr", location: "Au pied du métro Cormontaigne",
+  category: "coloc",
+  description: "Quartier Vauban.colocation 4 jeunes actif.s.ves, très calmes, non fumeurs.
+    Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
+    Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, wc séparés, salle de douche.
+    Bail de 12 mois : 430  €/mois + charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
+
+
+Apartment::Translation.create(
+  apartment_id: lucie.id,
+  locale: "en", location: "In front of the metro station Cormontaigne",
+  category: "flatsharing",
+  description: "Cosy apartment")
 
 lucie_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924713/Lucie.D/sejour.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924712/Lucie.D/cuisine.jpg",
@@ -283,13 +351,11 @@ lucie_array.each do |url|
 end
 
 odette = Apartment.create(
-  location: "Jean-Baptiste Lebas - Roubaix",
   size: 83,
   number_of_rooms: 4,
   name: "Odette D.",
   price: 1400,
   price_per_room: 350,
-  category: "coloc",
   bathroom: 1,
   shower_room: 1,
   toilet: 1,
@@ -297,9 +363,24 @@ odette = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
+  availability: Date.parse("sept 1 2019"),
   description: "Bel appartement de 83 m2 excellent état, au 5ème , 4 belles chambres meublées avec grands placards, bureau, literie, 1 salles de douche, 1 salle d’eau, 1 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine.
   350  €/mois + charges (wifi, copropriété, électricité, 1h de ménage par semaine). Frais de dossier pour bail court (inférieur à 12 mois)"
 )
+
+Apartment::Translation.create(
+  apartment_id: odette.id,
+  locale: "fr", location: "Jean-Baptiste Lebas - Roubaix",
+  category: "coloc",
+  description: "Bel appartement de 83 m2 excellent état, au 5ème , 4 belles chambres meublées avec grands placards, bureau, literie, 1 salles de douche, 1 salle d’eau, 1 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine.
+  350  €/mois + charges (wifi, copropriété, électricité, 1h de ménage par semaine). Frais de dossier pour bail court (inférieur à 12 mois)"
+  )
+
+Apartment::Translation.create(
+  apartment_id: odette.id,
+  locale: "en", location: "Jean-Baptiste Lebas - Roubaix",
+  category: "flatsharing",
+  description: "Cosy apartment")
 
 odette_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./sejour.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./sejour2.jpg",
@@ -325,7 +406,6 @@ odette_array.each do |url|
 end
 
 appart302 = Apartment.create(
-  location: "Au pied du métro Cormontaigne",
   size: 45,
   number_of_rooms: 1,
   name: "Appart 302",
@@ -337,8 +417,25 @@ appart302 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  description: "T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant. Courte durée à négocier. Quartier Vauban, situé au pied du métro et commerces. Au 2ème étage d'une maison ancienne, très beau 2 pièces de 45 m² entièrement meublé, lumineux, très bon état. Ménage hebdomadaire. Lingerie. Tous services Wifi. (Bail de 1 à 12 mois). 780 E/mois + provision charges. Garage possible en sus."
+  availability: Date.parse("sept 1 2019"),
 )
+
+Apartment::Translation.create(
+  apartment_id: appart302.id,
+  locale: "fr", location: "Au pied du métro Cormontaigne",
+  category: "Appart",
+  description: "T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
+  Courte durée à négocier. Quartier Vauban, situé au pied du métro et commerces.
+  Au 2ème étage d'une maison ancienne, très beau 2 pièces de 45 m² entièrement meublé, lumineux, très bon état.
+  Ménage hebdomadaire. Lingerie. Tous services Wifi. (Bail de 1 à 12 mois). 780 E/mois + provision charges.
+  Garage possible en sus.")
+
+
+Apartment::Translation.create(
+  apartment_id: appart302.id,
+  locale: "en", location: "In front of the metro station Cormontaigne",
+  category: "Apartment",
+  description: "Cosy apartment")
 
 appart302_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-salon.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-salle_a_manger.jpg",
@@ -362,22 +459,35 @@ appart302_array.each do |url|
 end
 
 appart303 = Apartment.create(
-  location: "Au pied du métro Cormontaigne",
   size: 45,
   number_of_rooms: 1,
   name: "Appart 303",
   price: 750,
-  category: "Appart",
   bathroom: 1,
   toilet: 1,
   washing_room: true,
   washing_machine: false,
   living_room: true,
   kitchen: true,
+  availability: Date.parse("sept 1 2019"),
+)
+
+Apartment::Translation.create(
+  apartment_id: appart303.id,
+  locale: "fr", location: "Au pied du métro Cormontaigne",
+  category: "Appart",
   description: "Idéal cadre en déplacement (relocation) ou couple sans enfant. Quartier Vauban, situé au pied métro et commerces. Au 3ème étage d'un bel immeuble ancien, beaux volumes entièrement meublés, lumineux, excellent état. Ménage hebdomadaire. Lingerie. Tous services Wifi.
   (Bail de 1 à 12 mois).
   Bail 12 mois à 750 E/mois + provision charges (single 130€/couple 170€). Courte durée possible à négocier. Garage possible en sus."
-)
+  )
+
+
+
+Apartment::Translation.create(
+  apartment_id: appart303.id,
+  locale: "en", location: "In front of the metro station Cormontaigne",
+  category: "Apartment",
+  description: "Cosy apartment")
 
 
 appart303_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532436563/Appart%20-%20303/303_-_sejour.jpg",
@@ -401,24 +511,37 @@ appart303_array.each do |url|
 end
 
 studio = Apartment.create(
-  location: "Au pied du métro Cormontaigne",
   size: 14,
   number_of_rooms: 1,
   name: "Studio 28S",
   price: 500,
-  category: "Appart",
   bathroom: 1,
   toilet: 1,
   washing_room: true,
   washing_machine: false,
   living_room: true,
   kitchen: true,
+  availability: Date.parse("sept 1 2019"),
+)
+
+Apartment::Translation.create(
+  apartment_id: studio.id,
+  locale: "fr", location: "Au pied du métro Cormontaigne",
+  category: "Appart",
   description: "Ce petit appartement conviendra à un étudiant ou personne seule désirant un logement individuel pour quelques nuits par semaine et pour une durée courte.
 Une pièce de 10 m2 avec faible hauteur sous plafond (ne convient pas à une personne de grande taille). Une salle de bain avec douche et WC. Une kitchenette séparée.
 Très bien situé au pied du métro Cormontaigne.
 Bail court (3 mois renouvelable).
 500 € toute charges comprises (wifi et ménage inclus)"
-)
+  )
+
+
+
+Apartment::Translation.create(
+  apartment_id: studio.id,
+  locale: "en", location: "In front of the metro station Cormontaigne",
+  category: "Apartment",
+  description: "Cosy apartment")
 
 studio_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532944220/studio/sejour.jpg",
 "https://res.cloudinary.com/elsaszymczak/image/upload/v1532944221/studio/cuisine.jpg"]

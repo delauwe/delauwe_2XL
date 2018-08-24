@@ -10,6 +10,10 @@ fr:
     lille: "Lille"
     call-to-action-2: "Découvrir toutes les colocs"
 
+  card:
+    per_room: "€ par chambre + charges"
+    availability: "Prochaine disponibilité :"
+
 
 
 

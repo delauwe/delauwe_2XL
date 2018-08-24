@@ -1,5 +1,5 @@
 .card {
-  height: 400px;
+  height: 500px;
   color: black;
   margin-bottom: 30px;
   position: relative ;
@@ -8,6 +8,10 @@
   // border: solid 3px $dark-gray;
   &:hover .card-category {
     opacity: 1;
+  }
+
+  h5 {
+    color: $kaki;
   }
 }
 
@@ -31,7 +35,7 @@
 
 .card-images {
   position: relative;
-  height: 70%;
+  height: 60%;
   width: 100%;
 }
 
@@ -44,29 +48,13 @@
 }
 
 .card-content {
-  display:flex;
-  // flex-direction: column;
-  justify-content:space-between;
-  height: 30%;
-  width: 100%;
+  height: 40%;
   padding: 10px;
 }
 
-.card-content-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  h5 {
-    color: $kaki
-  }
-}
-
-.card-content-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.information {
+  display:flex;
+  justify-content:space-between;
 }
 
 .full-height {
@@ -123,6 +111,21 @@
   top: 10px;
   left: 10px;
 }
+
+.circle-full {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: black;
+  margin: 0 20px;
+  z-index: 1;
+
+}
+
+.availibility-details {
+  display: flex;
+}
+
 
 
 

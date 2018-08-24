@@ -41,6 +41,10 @@ en:
     Lille: "Lille"
     call-to-action-2: "Discover all our flats"
 
+  card:
+    per_room: "€ per room + utilities"
+    availability: "Next availability :"
+
 
 
 
