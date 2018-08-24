@@ -30,4 +30,17 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  home:
+    tagline: "Your ideal housing"
+    tagline-2: "Rooms and flats 2XL"
+    banner-call-to-action: "Discover"
+    title: "Our flats"
+    tag-sharing: "flatsharing"
+    tag-apartment: "Apartment"
+    Lux: "Luxemburg"
+    Lille: "Lille"
+    call-to-action-2: "Discover all our flats"
+
+
+
+

@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/globalize/globalize
+  revision: e37c471775d196cd4318e61954572c300c015467
+  specs:
+    globalize (5.1.0)
+      activemodel (>= 4.2, < 5.3)
+      activerecord (>= 4.2, < 5.3)
+      request_store (~> 1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -41,6 +50,10 @@ GEM
       globalid (>= 0.3.6)
     activemodel (5.2.0)
       activesupport (= 5.2.0)
+    activemodel-serializers-xml (1.0.2)
+      activemodel (> 5.x)
+      activesupport (> 5.x)
+      builder (~> 3.1)
     activerecord (5.2.0)
       activemodel (= 5.2.0)
       activesupport (= 5.2.0)
@@ -239,6 +252,8 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     redis (4.0.1)
+    request_store (1.4.1)
+      rack (>= 1.4)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
@@ -305,6 +320,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
+  activemodel-serializers-xml
   autoprefixer-rails
   bootsnap
   bootstrap-sass (~> 3.3)
@@ -314,6 +330,7 @@ DEPENDENCIES
   dotenv-rails
   figaro
   font-awesome-sass (~> 5.0.9)
+  globalize!
   jbuilder (~> 2.0)
   jquery_mobile_rails
   listen (~> 3.0.5)

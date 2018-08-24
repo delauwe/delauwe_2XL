@@ -1,16 +1,16 @@
 <div class="banner-cover" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 50%), url(https://res.cloudinary.com/elsaszymczak/image/upload/v1531924963/Alice%20D./terrasse.jpg);">
   <div id="banner-content">
-    <h1>Votre logement idéal jeunes actifs</h1>
-    <h2>Appart et Coloc 2XL</h2>
-    <%= link_to "Découvrir", apartments_path, class: "btn-border-pink btn-large btn-color-white" %>
+    <h1><%= t('home.tagline') %></h1>
+    <h2><%= t('home.tagline-2') %></h2>
+    <%= link_to t('home.banner-call-to-action'), apartments_path, class: "btn-border-pink btn-large btn-color-white" %>
   </div>
 </div>
 <div class="container">
   <div class="home-content">
-    <h2>Nos logements</h2>
+    <h2><%= t('home.title') %></h2>
     <div class="home-tag">
-      <p class="tag-kaki smaller-font-size">Coloc</p>
-      <p class="tag-gray smaller-font-size">Lille</p>
+      <p class="tag-kaki smaller-font-size"><%= t('home.flatsharing') %></p>
+      <p class="tag-gray smaller-font-size"><%= t('home.lille') %></p>
     </div>
     <div class="row margin-top">
       <% @apartments.first(3).each do |apartment| %>
