@@ -13,24 +13,22 @@
       <p class="tag-gray smaller-font-size"><%= t('home.lille') %></p>
     </div>
     <div class="row margin-top">
-      <% @apartments.first(3).each do |apartment| %>
-        <% if apartment.category == "coloc" %>
-          <%= render "shared/card", apartment: apartment %>
-        <% end %>
+      <% @flatsharings.first(3).each do |flatsharing| %>
+          <%= render "shared/card", apartment: flatsharing %>
+               <% raise %>
+
       <% end %>
       <div class="home-button">
         <%= link_to "Découvrir toutes les colocs", apartments_path, class: "btn-border-pink btn-large btn-color-black" %>
       </div>
     </div>
     <div class="home-tag">
-      <p class="tag-kaki smaller-font-size">Appartement</p>
-      <p class="tag-gray smaller-font-size">Lille</p>
+      <p class="tag-kaki smaller-font-size"><%= t('home.apartment') %></p>
+      <p class="tag-gray smaller-font-size"> <%= t('home.lille') %></p>
     </div>
     <div class="row margin-top">
-      <% @apartments.each do |apartment| %>
-        <% if apartment.category == "Appart" %>
+     <% @apartments.each do |apartment| %>
           <%= render "shared/card", apartment: apartment %>
-        <% end %>
       <% end %>
     </div>
   </div>

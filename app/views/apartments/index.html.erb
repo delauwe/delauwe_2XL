@@ -4,7 +4,7 @@
   </div>
   <div class="row margin-top">
     <% @apartments.each do |apartment| %>
-      <% if apartment.category == "coloc" %>
+      <% if apartment.category == "flatsharing" || "coloc" %>
         <%= render "shared/card", apartment: apartment %>
       <%end%>
     <% end %>
@@ -14,7 +14,7 @@
   </div>
   <div class="row margin-top">
     <% @apartments.each do |apartment| %>
-      <% if apartment.category == "Appart" %>
+      <% if apartment.category == "apartment" || "appart" %>
         <%= render "shared/card", apartment: apartment %>
       <% end %>
     <% end %>

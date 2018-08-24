@@ -1,6 +1,6 @@
 <div class="col-xs-12 col-md-4 col-lg-4">
   <%= link_to apartment_path(apartment) do %>
-    <div class="card <%= apartment.category == "coloc" ? 'dark-gray' : 'kaki' %>">
+    <div class="card <%= apartment.category == "flatsharing" || "coloc" ? 'dark-gray' : 'kaki' %>">
       <div class="card-images">
         <div id="carousel-images-<%= apartment.id %>" class="carousel slide full-height" data-ride="carousel" data-interval="false">
           <!-- Indicators -->
@@ -26,22 +26,14 @@
           </a>
         </div>
         <div class="tag-kaki card-category-tag"><%= apartment.category %></div>
-        <% if apartment.category == "coloc" %>
-          <div class="tag-pink card-price-tag"><%= apartment.price_per_room %> <span>€ </span></div>
-        <% else %>
           <div class="tag-pink card-price-tag"><%= apartment.price %> <span>€ </span></div>
-        <% end %>
       </div>
       <div class="card-content">
         <div class="information">
           <div class="information-left">
             <h5 class="bold"> <%= apartment.name %></h5>
             <p class="smaller-font-size"> <%= image_tag "pin.png", height: 15 %> <%= apartment.location %></p>
-            <% if apartment.category == "coloc" %>
-              <p class="smaller-font-size"><%= apartment.price_per_room %> <%= t('card.per_room') %> </p>
-            <% else %>
-              <p class="smaller-font-size"><%= apartment.price %> €</p>
-            <% end %>
+              <p class="smaller-font-size"><%= apartment.price %> <%= t('card.per_room') %> </p>
           </div>
           <div class="information-right">
             <div><% apartment.number_of_rooms.times do %><%= image_tag "chambre.png", height: 20 %><% end %></div>
