@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_24_094905) do
+ActiveRecord::Schema.define(version: 2018_08_29_091733) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2018_08_24_094905) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "location"
-    t.string "category"
+    t.string "nature"
     t.text "description"
     t.index ["apartment_id"], name: "index_apartment_translations_on_apartment_id"
     t.index ["locale"], name: "index_apartment_translations_on_locale"
@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 2018_08_24_094905) do
     t.boolean "washing_machine", default: true
     t.boolean "washing_room", default: false
     t.date "availability"
+    t.string "nature"
   end
 
   create_table "bookings", force: :cascade do |t|

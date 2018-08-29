@@ -33,17 +33,53 @@ en:
   home:
     tagline: "Your ideal housing"
     tagline-2: "Rooms and flats 2XL"
-    banner-call-to-action: "Discover"
+    call-to-action: "Discover"
     title: "Our flats"
     tag-sharing: "flatsharing"
     tag-apartment: "Apartment"
     Lux: "Luxemburg"
     Lille: "Lille"
-    call-to-action-2: "Discover all our flats"
+    call-to-action-2: "Discover all our flatshares"
+    flatsharing: "flatshare"
+    apartment: "apartment"
 
   card:
     per_room: "€ per room + utilities"
     availability: "Next availability :"
+
+  index:
+    title:
+      flatshare: "Our flatshares"
+      apartment: "Our apartments"
+
+  show:
+    rooms: {
+      one: "bedroom",
+      other: "bedrooms"
+    }
+    bathroom: {
+      one: 'bathroom',
+      other: 'bathrooms'
+    }
+    toilet: {
+      one: "toilet",
+      other: "toilets"
+    }
+    terrace: "terrace"
+    living_room: "living room"
+    dining-room: "dining room"
+    kitchen: "kitchen"
+    washing-room: "washing room"
+    washing-machine: "washing machine"
+    reservation: "Pre-reserve"
+    contact: "Contact us"
+
+  navbar:
+    flats: "flats"
+
+  footer:
+    terms: "Terms"
+
 
 
 

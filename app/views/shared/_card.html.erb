@@ -1,6 +1,6 @@
 <div class="col-xs-12 col-md-4 col-lg-4">
   <%= link_to apartment_path(apartment) do %>
-    <div class="card <%= apartment.category == "flatsharing" || "coloc" ? 'dark-gray' : 'kaki' %>">
+    <div class="card <%= apartment.category == "flatshare"  ? 'dark-gray' : 'kaki' %>">
       <div class="card-images">
         <div id="carousel-images-<%= apartment.id %>" class="carousel slide full-height" data-ride="carousel" data-interval="false">
           <!-- Indicators -->
@@ -25,25 +25,25 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <div class="tag-kaki card-category-tag"><%= apartment.category %></div>
+        <div class="tag-kaki card-category-tag"><%= apartment.nature %></div>
           <div class="tag-pink card-price-tag"><%= apartment.price %> <span>€ </span></div>
       </div>
       <div class="card-content">
         <div class="information">
           <div class="information-left">
             <h5 class="bold"> <%= apartment.name %></h5>
-            <p class="smaller-font-size"> <%= image_tag "pin.png", height: 15 %> <%= apartment.location %></p>
-              <p class="smaller-font-size"><%= apartment.price %> <%= t('card.per_room') %> </p>
           </div>
           <div class="information-right">
             <div><% apartment.number_of_rooms.times do %><%= image_tag "chambre.png", height: 20 %><% end %></div>
           </div>
         </div>
+          <p class="smaller-font-size"> <%= image_tag "pin.png", height: 15 %> <%= apartment.location %></p>
+          <p class="smaller-font-size"><%= apartment.price %> <%= t('card.per_room') %> </p>
         <div class="availability">
           <h5 class="bold"><%= t('card.availability') %></h5>
           <div class="availability-details">
             <div class="circle-full"></div>
-            <p><%= apartment.availability.strftime("%B %d, %Y"); %></p>
+            <p class="smaller-font-size"><%= apartment.availability.strftime("%d/%m/%Y"); %></p>
           </div>
 
             <%#= link_to "Aller plus loin", apartment_path(apartment), class: "btn-border-pink btn-color-black btn-small" %>

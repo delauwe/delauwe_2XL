@@ -1,10 +1,8 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :contact]
+  skip_before_action :authenticate_user!, only: [:home, :contact, :terms]
 
   def home
-    @best_apartments = Apartment.limit(3)
-    @flatsharings = Apartment.where(category: "flatsharing" || "coloc")
-    @apartments = Apartment.where(category: "apartment" || "appart")
-
+    @apartments = Apartment.order(availability: :asc).all
+    @available_soon = Apartment.where(category: "flatshare").order(availability: :asc).limit(3)
   end
 end

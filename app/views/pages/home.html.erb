@@ -2,7 +2,7 @@
   <div id="banner-content">
     <h1><%= t('home.tagline') %></h1>
     <h2><%= t('home.tagline-2') %></h2>
-    <%= link_to t('home.banner-call-to-action'), apartments_path, class: "btn-border-pink btn-large btn-color-white" %>
+    <%= link_to t('home.call-to-action'), apartments_path, class: "btn-border-pink btn-large btn-color-white" %>
   </div>
 </div>
 <div class="container">
@@ -13,13 +13,13 @@
       <p class="tag-gray smaller-font-size"><%= t('home.lille') %></p>
     </div>
     <div class="row margin-top">
-      <% @flatsharings.first(3).each do |flatsharing| %>
-          <%= render "shared/card", apartment: flatsharing %>
-               <% raise %>
-
+      <%  @available_soon.each do |apartment| %>
+        <% if apartment.category == "flatshare" %>
+          <%= render "shared/card", apartment: apartment %>
+        <% end %>
       <% end %>
       <div class="home-button">
-        <%= link_to "Découvrir toutes les colocs", apartments_path, class: "btn-border-pink btn-large btn-color-black" %>
+        <%= link_to t('home.call-to-action-2'), apartments_path, class: "btn-border-pink btn-large btn-color-black" %>
       </div>
     </div>
     <div class="home-tag">
@@ -28,7 +28,9 @@
     </div>
     <div class="row margin-top">
      <% @apartments.each do |apartment| %>
+        <% if apartment.category == "apartment" %>
           <%= render "shared/card", apartment: apartment %>
+        <% end %>
       <% end %>
     </div>
   </div>

@@ -3,6 +3,6 @@ class Apartment < ApplicationRecord
    has_many :rooms
    has_many :photos
 
-  translates :location, :category, :description
+  translates :location, :nature, :description
 
 end

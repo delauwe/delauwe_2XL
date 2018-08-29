@@ -2,17 +2,51 @@ fr:
   home:
     tagline: "Votre logement idéal jeunes actifs"
     tagline-2: "Appart et Coloc 2XL"
-    banner-call-to-action: "Découvrir"
+    call-to-action: "Découvrir"
     title: "Nos logements"
     tag-sharing: "Coloc"
     tag-apartment: "Appartement"
     lux: "Luxembourg"
     lille: "Lille"
     call-to-action-2: "Découvrir toutes les colocs"
+    flatsharing: "coloc"
+    apartment: "appart"
+
 
   card:
     per_room: "€ par chambre + charges"
     availability: "Prochaine disponibilité :"
+
+  index:
+    title:
+      flatshare: "Nos colocs"
+      apartment: "Nos apparts"
+
+  show:
+    rooms: "chambres"
+    bathroom: {
+      one: 'salle de bains',
+      other: 'salles de bains'
+    }
+    toilet: {
+      one: "w.c",
+      other: "w.c"
+    }
+    terrace: "terrasse"
+    living_room: "séjour"
+    dining-room: "salle à manger"
+    kitchen: "cuisine"
+    washing-room: "laverie"
+    washing-machine: "machine à laver"
+    reservation: "Pré-réserver"
+    contact: "Nous contacter"
+
+  navbar:
+    flats: "logements"
+
+  footer:
+    terms: "Mentions légales"
+
 
 
 

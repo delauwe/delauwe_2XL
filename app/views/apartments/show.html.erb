@@ -26,39 +26,55 @@
     <div class="left-part">
       <div class="details">
         <h4><%= @apartment.name %></h4></p>
-        <p class="tag-kaki smaller-font-size"><%= @apartment.category.capitalize %></p>
+        <p class="tag-kaki smaller-font-size"><%= @apartment.nature.capitalize %></p>
         <p class="smaller-font-size"><%= image_tag "pin.png", height: 15 %><%= @apartment.location %></p>
       </div>
       <div class="carasteristics smaller-font-size">
         <ul>
           <li><%= image_tag "size.png", height: 15 %> <%= @apartment.size %>m2</li>
-          <li><%= image_tag "chambre.png", height: 20 %> <%= @apartment.number_of_rooms%> chambres</li>
+          <li><%= image_tag "chambre.png", height: 20 %>
+           <% if  @apartment.number_of_rooms <= 1 %>
+              <%= @apartment.number_of_rooms  %> <%= t('show.rooms.one') %>
+            <% else %>
+              <%= @apartment.number_of_rooms  %> <%= t('show.rooms.other') %>
+            <% end %>
           <li>
             <% number_of_bathroom = @apartment.bathroom %>
-            <%= image_tag "bathroom.png", height: 15 %> <%= number_of_bathroom <= 1 ? "#{number_of_bathroom} salle de bains" : "#{number_of_bathroom} salles de bains" %>
+            <%= image_tag "bathroom.png", height: 15 %>
+            <% if number_of_bathroom <= 1 %>
+              <%= number_of_bathroom  %> <%= t('show.bathroom.one') %>
+            <% else %>
+              <%= number_of_bathroom %> <%= t('show.bathroom.other') %>
+            <% end %>
           </li>
-          <li><%= image_tag "toilet.png", height: 15 %> <%= @apartment.toilet %> w.c</li>
+          <li><%= image_tag "toilet.png", height: 15 %>
+           <% if @apartment.toilet <= 1 %>
+              <%= @apartment.toilet  %> <%= t('show.toilet.one') %>
+            <% else %>
+              <%= @apartment.toilet %> <%= t('show.toilet.other') %>
+            <% end %>
+          </li>
           <li>
             <% if @apartment.terrace? %>
-              <%= image_tag "sun.png", height: 15 %> terrasse
+              <%= image_tag "sun.png", height: 15 %> <%= t('show.terrace') %>
             <% end %>
           </li>
           <li>
             <% if @apartment.living_room? %>
-                <%= image_tag "sofa.png", height: 15 %> séjour
+                <%= image_tag "sofa.png", height: 15 %> <%= t('show.living-room') %>
             <% end %>
           </li>
           <li>
             <% if @apartment.dining_room? %>
-              <%= image_tag "table.png", height: 15 %> salle à manger
+              <%= image_tag "table.png", height: 15 %> <%= t('show.dining-room') %>
             <% end %>
           </li>
-          <li><%= image_tag "kitchen.png", height: 15 %> cuisine</li>
+          <li><%= image_tag "kitchen.png", height: 15 %> <%= t('show.kitchen') %></li>
           <li>
             <% if @apartment.washing_room? %>
-              <%= image_tag "laverie.png", height: 15 %> laverie
+              <%= image_tag "laverie.png", height: 15 %> <%= t('show.washing-room') %>
             <% else %>
-              <%= image_tag "laverie.png", height: 15 %> machine à laver
+              <%= image_tag "laverie.png", height: 15 %> <%= t('show.washing-macine') %>
             <% end %>
           </li>
         </ul>
@@ -68,14 +84,10 @@
       </div>
     </div>
     <div class="right-part">
-      <% if @apartment.category == "coloc" %>
-          <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price_per_room %> € </span> + charges</p>
-        <% else %>
-           <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price %> € </span> + charges</p>
-        <% end %>
+      <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price %> € </span> + charges</p>
       <div class="buttons">
-        <%= link_to "Pré-réserver", "https://docs.google.com/forms/d/e/1FAIpQLScFlItNbbbMVsVucvpQUKOoHCj-SLS0IYoMklJMoZiUGIT17A/viewform", class: "btn-border-pink text-black margin-right" %>
-        <%= link_to "Nous contacter", "http://m.me/2XLcoloc.chambresalouer", class: "btn-border-gray text-black" %>
+        <%= link_to t('show.reservation'), "https://docs.google.com/forms/d/e/1FAIpQLScFlItNbbbMVsVucvpQUKOoHCj-SLS0IYoMklJMoZiUGIT17A/viewform", class: "btn-border-pink text-black margin-right" %>
+        <%= link_to t('show.contact'), "http://m.me/2XLcoloc.chambresalouer", class: "btn-border-gray text-black" %>
       </div>
     </div>
   </div>

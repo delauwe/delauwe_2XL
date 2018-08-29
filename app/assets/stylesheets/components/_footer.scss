@@ -7,7 +7,6 @@
   padding: 0px 50px;
   margin-top: 100px;
   color: rgba(0,0,0,0.3);
-
 }
 .footer-links {
   opacity: 1;
@@ -15,16 +14,13 @@
   align-items: center;
 }
 .footer-links a {
-  opacity: 1;
-  color: black;
-  opacity: 0.15;
+  color: $dark-gray;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
 }
 .footer-links a:hover {
-  opacity: 1;
-  color: $pink;
+  color: grey;
 }
 .footer .fa-heart {
   color: #D23333;
@@ -33,7 +29,11 @@
 
 .footer p {
   margin: 0;
-   opacity: 1;
+  opacity: 1;
+}
+
+#terms {
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
