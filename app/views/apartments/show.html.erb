@@ -31,7 +31,7 @@
       </div>
       <div class="carasteristics smaller-font-size">
         <ul>
-          <li><%= image_tag "size.png", height: 15 %> <%= @apartment.size %>m2</li>
+          <li><%= image_tag "size.png", height: 15 %> <%= @apartment.size %> <%= t('show.sqm') %></li>
           <li><%= image_tag "chambre.png", height: 20 %>
            <% if  @apartment.number_of_rooms <= 1 %>
               <%= @apartment.number_of_rooms  %> <%= t('show.rooms.one') %>

@@ -23,6 +23,7 @@ fr:
       apartment: "Nos apparts"
 
   show:
+    sqm: "m2"
     rooms: "chambres"
     bathroom: {
       one: 'salle de bains',

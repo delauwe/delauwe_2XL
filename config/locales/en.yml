@@ -53,6 +53,7 @@ en:
       apartment: "Our apartments"
 
   show:
+    sqm: "sqm"
     rooms: {
       one: "bedroom",
       other: "bedrooms"

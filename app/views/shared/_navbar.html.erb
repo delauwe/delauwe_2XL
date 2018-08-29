@@ -12,6 +12,37 @@
       <%#= link_to "Appartements", apartments_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to t('navbar.flats'), apartments_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Contact", contact_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <div class="flag-container">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <%= image_tag "uk.png", height: 20 %> </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="dropdown-item">
+              <%= link_to "/" do %>
+                <%= image_tag "uk.png", height: 20 %> English
+              <% end %>
+            </li>
+            <li class="dropdown-item">
+              <%= link_to "/fr" do %>
+                <%= image_tag "fr.png", height: 20 %> Français
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+
+
+
        <%#= link_to destroy_user_session_path, method: :delete do %>
           <!-- <i class="fa fa-sign-out"></i>  <%#= t(".sign_out", default: "Log out") %> -->
         <%# end %>
