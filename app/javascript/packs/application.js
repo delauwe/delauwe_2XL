@@ -3,7 +3,10 @@
 //= require jquery.mobile
 
 import "bootstrap";
-import { cardCarousel } from "../components/card-carousel";
-cardCarousel();
-import { swipeCarousel } from "../components/swipe-carousel";
-swipeCarousel();
+// import { cardCarousel } from "../components/card-carousel";
+// import { swipeCarousel } from "../components/swipe-carousel";
+import { flagMenu } from "../components/flag-menu";
+
+// cardCarousel();
+// swipeCarousel();
+flagMenu();

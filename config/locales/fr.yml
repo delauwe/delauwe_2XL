@@ -15,7 +15,8 @@ fr:
 
   card:
     per_room: "€ par chambre + charges"
-    availability: "Prochaine disponibilité :"
+    available: "Disponible"
+    not-available: "Disponible le"
 
   index:
     title:

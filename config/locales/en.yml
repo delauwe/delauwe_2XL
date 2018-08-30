@@ -45,7 +45,8 @@ en:
 
   card:
     per_room: "€ per room + utilities"
-    availability: "Next availability :"
+    available: "Available"
+    not-available: "Available on the"
 
   index:
     title:
