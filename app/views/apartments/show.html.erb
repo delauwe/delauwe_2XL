@@ -6,7 +6,7 @@
       <% end %>
     </ol>
       <div class="carousel-inner full-height" role="listbox">
-        <% @apartment.photos.each_with_index do |photo, index| %>
+        <% @apartment.photos.order(id: :asc).each_with_index do |photo, index| %>
             <div class="item <%= "active" if index == 0 %> banner" style="background-image: url('<%= cl_image_path photo.url %>');"></div>
         <% end %>
       </div>
