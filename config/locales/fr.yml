@@ -4,13 +4,11 @@ fr:
     tagline-2: "Appart et Coloc 2XL"
     call-to-action: "Découvrir"
     title: "Nos logements"
-    tag-sharing: "Coloc"
-    tag-apartment: "Appartement"
     lux: "Luxembourg"
     lille: "Lille"
     call-to-action-2: "Découvrir toutes les colocs"
-    flatsharing: "coloc"
-    apartment: "appart"
+    flatsharing: "Coloc"
+    apartment: "Appart"
 
 
   card:

@@ -60,6 +60,10 @@
 
 .card-content {
   height: 40%;
+
+  p {
+    margin-bottom: 1px;
+  }
 }
 
 .card-content-top {
@@ -68,31 +72,24 @@
 }
 
 .card-content-bottom {
-  height: 30%;
+  padding: 10px;
   display: flex;
+  height: 30%;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-
-  p {
-    margin: 0;
-  }
 }
 
 .information {
   display:flex;
   justify-content:space-between;
+  margin-bottom: 10px;
+  align-items: center;
+
+  h5 {
+    margin: 0;
+  }
 
 }
-
-// .information-right {
-//   width: 30%;
-// }
-
-.information-left {
-  width: 60%;
-}
-
 
 .full-height {
   height: 100%;
@@ -157,9 +154,8 @@
 
 
 
-.availability-grey {
-  background-color: $dark-gray;
-
+.availability-red {
+  background-color: #EBACAC;
 }
 
 .availability-green {
@@ -176,21 +172,14 @@
 }
 
 .fa-arrow-right {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
   font-size: 30px;
   color: white;
   transition: all .2s ease-in-out;
 
    &:hover {
-    color: $pink;
     transform: scale(1.1);
   }
 }
-
-
-
 
 
 

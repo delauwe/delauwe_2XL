@@ -35,13 +35,11 @@ en:
     tagline-2: "Rooms and flats 2XL"
     call-to-action: "Discover"
     title: "Our flats"
-    tag-sharing: "flatsharing"
-    tag-apartment: "Apartment"
     Lux: "Luxemburg"
     Lille: "Lille"
     call-to-action-2: "Discover all our flatshares"
-    flatsharing: "flatshare"
-    apartment: "apartment"
+    flatsharing: "Flatshare"
+    apartment: "Apartment"
 
   card:
     per_room: "€ per room + utilities"

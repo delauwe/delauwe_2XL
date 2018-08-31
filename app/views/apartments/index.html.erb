@@ -13,7 +13,7 @@
     <h3><%= t('index.title.apartment') %></h3>
   </div>
   <div class="row margin-top">
-    <% @apartments.each do |apartment| %>
+    <% @apartments.order(availability: :asc).each do |apartment| %>
       <% if apartment.category == "apartment" %>
         <%= render "shared/card", apartment: apartment %>
       <% end %>
