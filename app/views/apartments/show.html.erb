@@ -91,6 +91,9 @@
       <div class="description smaller-font-size">
         <p><%= @apartment.description  %></p>
       </div>
+      <%= link_to root_path do %>
+        <i class="fa fa-arrow-left"></i>
+      <% end %>
     </div>
     <div class="right-part">
       <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price %> € </span> + <%= t('show.utilities') %></p>

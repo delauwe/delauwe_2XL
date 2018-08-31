@@ -119,6 +119,11 @@ li {
   text-align: center;
 }
 
+.fa-arrow-left {
+  margin-top: 20px;
+  font-size: 20px;
+  color: black;
+}
 /* Media Queries */
 
 @media(max-width: 768px){
@@ -158,6 +163,11 @@ li {
 
   .right-part-mobile {
     margin-top: 12.5px;
+  }
+
+  .fa-arrow-left {
+    display: none;
+
   }
 
 }

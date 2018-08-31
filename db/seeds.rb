@@ -145,7 +145,7 @@ claire = Apartment.create(
   washing_machine: false,
   kitchen: true,
   availability: Date.parse("jan 31 2019"),
-  description: " Very nice T3 fully furnished and equipped. 2 bedrooms + one in a mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a small flatshare consisting of 2 young active. Ideal location in front of the metro, bus and V'Lille stations.
+  description: " Very nice T3 fully furnished and equipped. 2 bedrooms + one in a mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a small flatshare consisting of 2 young professionals. Ideal location in front of the metro, bus and V'Lille stations.
  Short-term rental 6 months maximum renewable.
  1200 € / month all charges included - cleaning 1 hour / week or 400 € per room, all charges included.
  Possibility to rent a box in extra.
