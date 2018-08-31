@@ -21,6 +21,11 @@
   h5 {
     color: $kaki;
   }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .border-gray {
@@ -64,6 +69,14 @@
 
 .card-content-bottom {
   height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  p {
+    margin: 0;
+  }
 }
 
 .information {
@@ -142,13 +155,7 @@
 
 /* availability */
 
-.availability {
-  line-height: 50px;
-  text-align: center;
-  p {
-    margin: 0;
-  }
-}
+
 
 .availability-grey {
   background-color: $dark-gray;
@@ -173,8 +180,9 @@
   right: 20px;
   bottom: 20px;
   font-size: 30px;
-  color: $dark-gray;
+  color: white;
   transition: all .2s ease-in-out;
+
    &:hover {
     color: $pink;
     transform: scale(1.1);
