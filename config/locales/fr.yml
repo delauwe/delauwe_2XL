@@ -6,7 +6,7 @@ fr:
     title: "Nos logements"
     lux: "Luxembourg"
     lille: "Lille"
-    call-to-action-2: "Découvrir toutes les colocs"
+    call-to-action-2: "Découvrir tous nos logements"
     flatsharing: "Coloc"
     apartment: "Appart"
 
@@ -23,7 +23,10 @@ fr:
 
   show:
     sqm: "m2"
-    rooms: "chambres"
+    rooms: {
+      one: "chambre",
+      other: "chambres"
+    }
     bathroom: {
       one: 'salle de bains',
       other: 'salles de bains'
@@ -33,13 +36,14 @@ fr:
       other: "w.c"
     }
     terrace: "terrasse"
-    living_room: "séjour"
+    living-room: "séjour"
     dining-room: "salle à manger"
     kitchen: "cuisine"
     washing-room: "laverie"
     washing-machine: "machine à laver"
     reservation: "Pré-réserver"
     contact: "Nous contacter"
+    utilities: "charges"
 
   navbar:
     flats: "Logements"

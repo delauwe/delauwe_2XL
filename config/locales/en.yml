@@ -37,7 +37,7 @@ en:
     title: "Our flats"
     Lux: "Luxemburg"
     Lille: "Lille"
-    call-to-action-2: "Discover all our flatshares"
+    call-to-action-2: "Discover all our flats"
     flatsharing: "Flatshare"
     apartment: "Apartment"
 
@@ -66,13 +66,14 @@ en:
       other: "toilets"
     }
     terrace: "terrace"
-    living_room: "living room"
+    living-room: "living room"
     dining-room: "dining room"
     kitchen: "kitchen"
     washing-room: "washing room"
     washing-machine: "washing machine"
     reservation: "Pre-reserve"
     contact: "Contact us"
+    utilities: "utilities"
 
   navbar:
     flats: "Flats"

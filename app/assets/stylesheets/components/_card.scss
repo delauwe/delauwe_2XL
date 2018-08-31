@@ -33,7 +33,7 @@
 }
 
 .border-green {
-  border: solid 5px #B2F1A2;
+  border: solid 5px #B7CE63;
 }
 
 .card-images {
@@ -123,6 +123,10 @@
   text-align: center;
 }
 
+.glyphicon {
+  color: white;
+}
+
 .carousel-control {
   opacity: 1;
 }
@@ -155,11 +159,20 @@
 
 
 .availability-red {
-  background-color: #EBACAC;
+  // background-color: #EBACAC;
+  // background-color: #577590
+  background-color: #FFE5D9
 }
 
 .availability-green {
-  background-color: #B2F1A2;
+  // background-color: #B2F1A2;
+  background-color: #B7CE63
+}
+
+#available {
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .circle-full {
@@ -175,6 +188,7 @@
   font-size: 30px;
   color: white;
   transition: all .2s ease-in-out;
+  margin-right: 10px;
 
    &:hover {
     transform: scale(1.1);

@@ -136,6 +136,10 @@ li {
     margin: 10px 5px;
   }
 
+  .flexbox-show {
+    display: block;
+  }
+
    .left-part {
     width: 100%;
    }
@@ -143,7 +147,8 @@ li {
   .pink-background {
     font-size: 15px;
     // font-weight: light;
-    padding: 3px 18px;
+    height: 50px;
+    padding: 15px;
   }
 
   .price {
