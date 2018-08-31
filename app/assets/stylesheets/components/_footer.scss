@@ -7,28 +7,36 @@
   padding: 0px 50px;
   margin-top: 100px;
   color: rgba(0,0,0,0.3);
+
+  p {
+    opacity: 1;
+    margin: 0;
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.3)
+  }
+
 }
 .footer-links {
   opacity: 1;
   display: flex;
   align-items: center;
-}
-.footer-links a {
-  color: $dark-gray;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
-.footer-links a:hover {
-  color: grey;
-}
-.footer .fa-heart {
-  color: #D23333;
-   opacity: 1;
+
+  a {
+    color: $dark-gray;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+
+    &:hover {
+      color: grey;
+    }
+  }
 }
 
-.footer p {
-  margin: 0;
+.footer .fa-heart {
+  color: #D23333;
   opacity: 1;
 }
 
