@@ -242,7 +242,7 @@ francine_array.each do |url|
 end
 
 jules = Apartment.create(
-  location: "Square Maréchal Leclerc - Vauban",
+  location: "Place Maréchal Leclerc - Vauban",
   size: 140,
   number_of_rooms: 6,
   name: "Jules D.",
@@ -257,7 +257,7 @@ jules = Apartment.create(
   kitchen: true,
   availability: Date.parse("oct 31 2018"),
   description: "Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
- Lease of 12 months: 455 € / month + charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate. "
+ Lease of 12 months: 455 € / month + charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
