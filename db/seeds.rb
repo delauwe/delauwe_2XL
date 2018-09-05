@@ -54,7 +54,6 @@ Bail court : prix à négocier.")
 
 
 
-
 alice_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924962/Alice%20D./sejour.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924962/Alice%20D./sejour2.jpg",
  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924963/Alice%20D./terrasse.jpg",
@@ -187,7 +186,7 @@ claire_array.each do |url|
 end
 
 francine = Apartment.create(
-  location: "Square Maréchal Leclerc - Vauban",
+  location: "Place Maréchal Leclerc - Vauban",
   size: 136,
   number_of_rooms: 5,
   name: "Francine D.",
