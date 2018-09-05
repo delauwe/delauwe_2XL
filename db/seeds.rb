@@ -35,7 +35,7 @@ alice = Apartment.new(
   kitchen: true,
   availability: Date.parse("sept 30 2018"),
   description: "Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
-Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in English cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
+Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
 Lease of 12 months: 455 € / month per room + charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
 Short lease: price can be negotiated.
 "
@@ -241,7 +241,7 @@ francine_array.each do |url|
 end
 
 jules = Apartment.create(
-  location: "Square Maréchal Leclerc - Vauban",
+  location: "Place Maréchal Leclerc - Vauban",
   size: 140,
   number_of_rooms: 6,
   name: "Jules D.",
@@ -256,7 +256,7 @@ jules = Apartment.create(
   kitchen: true,
   availability: Date.parse("oct 31 2018"),
   description: "Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
- Lease of 12 months: 455 € / month + charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate. "
+ Lease of 12 months: 455 € / month + charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
@@ -464,7 +464,7 @@ appart303 = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("jan 31 2019"),
-  description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, nice volumes entirely furnished, bright, excellent state.
+  description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
 Lease from 1 to 12 months.
 Lease 12 months: 750 €  / month + charges: (single 130 € / couple 170 €), weekly cleaning, laundry, wifi.
 Short term possible to negotiate
@@ -477,7 +477,7 @@ Apartment::Translation.create(
   description: "Idéal cadre en déplacement (relocation) ou couple sans enfant. Quartier Vauban, situé au pied métro et commerces. Au 3ème étage d'un bel immeuble ancien, beaux volumes entièrement meublés, lumineux, excellent état. Ménage hebdomadaire. Lingerie. Tous services Wifi.
   (Bail de 1 à 12 mois).
   Bail 12 mois à 750 E/mois + provision charges (single 130€/couple 170€). Courte durée possible à négocier. Garage possible en sus."
-  )
+)
 
 
 appart303_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532436563/Appart%20-%20303/303_-_sejour.jpg",
@@ -507,7 +507,7 @@ studio = Apartment.create(
   name: "Studio 28S",
   category: "apartment",
   nature: "apartment",
-  price: 500,
+  price: 400,
   bathroom: 1,
   toilet: 1,
   washing_room: true,
@@ -516,7 +516,7 @@ studio = Apartment.create(
   kitchen: true,
   availability: Date.parse("aug 1 2018"),
   description: "This small apartment is suitable for a student or single person looking for individual accommodation for a few nights a week and for a short duration.
- A room of 10 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
+ A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
  Very well located in front of the metro station Cormontaigne.
  Short lease (3 months renewable).
  500 € all charges included (wifi and cleaning included) "
@@ -527,10 +527,10 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Au pied du métro Cormontaigne", nature: "appart",
   description: "Ce petit appartement conviendra à un étudiant ou personne seule désirant un logement individuel pour quelques nuits par semaine et pour une durée courte.
-    Une pièce de 10 m2 avec faible hauteur sous plafond (ne convient pas à une personne de grande taille). Une salle de bain avec douche et WC. Une kitchenette séparée.
+    Une pièce de 14 m2 avec faible hauteur sous plafond (ne convient pas à une personne de grande taille). Une salle de bain avec douche et WC. Une kitchenette séparée.
     Très bien situé au pied du métro Cormontaigne.
     Bail court (3 mois renouvelable).
-    500 € toute charges comprises (wifi et ménage inclus)"
+    500 € toutes charges comprises (wifi et ménage inclus)"
   )
 
 studio_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532944220/studio/sejour.jpg",
