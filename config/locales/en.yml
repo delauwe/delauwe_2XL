@@ -43,7 +43,7 @@ en:
 
   card:
     per_room: "€ per room + utilities"
-    available: "Available"
+    available: "One bedroom available"
     not-available: "Available on the"
 
   index:
@@ -71,7 +71,7 @@ en:
     kitchen: "kitchen"
     washing-room: "washing room"
     washing-machine: "washing machine"
-    reservation: "Pre-reserve"
+    reservation: "Pre-book"
     contact: "Contact us"
     utilities: "utilities"
 
@@ -83,6 +83,9 @@ en:
 
   head:
     title: "2XL - Your ideal flat as a young professional"
+
+  contact:
+    info: "If you do not have a Facebook profil, you can send us a message: +33 9 77 19 77 99  or an email at coloc@2xl.immo. We will only answer messages which fully describe your profil and your flat search. "
 
 
 

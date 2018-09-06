@@ -33,12 +33,11 @@ alice = Apartment.new(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("sept 30 2018"),
+  availability: Date.parse("oct 31 2018"),
   description: "Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
 Lease of 12 months: 455 € / month per room + charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
-Short lease: price can be negotiated.
-"
+Short lease: price can be negotiated."
   )
 alice.save!
 
@@ -359,7 +358,7 @@ odette = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("sept 30 2018"),
+  availability: Date.parse("sept 1 2018"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
 350 € / month + charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
