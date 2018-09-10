@@ -47,7 +47,7 @@
           <div class="card-content-bottom  <%= apartment.availability <= Date.today ? 'availability-green' : 'availability-red' %>">
             <div class="availability">
               <% if apartment.availability <= Date.today %>
-                <p class="smaller-font-size" id="available"> <strong> <%= t('card.available') %> </strong></p>
+                <p class="smaller-font-size" id="available">  <%= apartment.category == "flatshare" ? t('card.available.flatshare') :  t('card.available.apartment')%></p>
               <% else %>
                 <p class="smaller-font-size"><%= t('card.not-available') %> <strong><%= apartment.availability.strftime("%d/%m/%Y") %></strong> </p>
               <% end %>

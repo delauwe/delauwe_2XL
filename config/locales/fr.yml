@@ -3,6 +3,8 @@ fr:
     tagline: "Votre logement idéal jeunes actifs"
     tagline-2: "Appart et Coloc 2XL"
     call-to-action: "Découvrir"
+    contact: "Nous contacter"
+    pre-book: "Pré-réserver"
     title: "Nos logements"
     lux: "Luxembourg"
     lille: "Lille"
@@ -13,7 +15,9 @@ fr:
 
   card:
     per_room: "€ par chambre + charges"
-    available: "Une chambre disponible"
+    available:
+      flatshare: "Une chambre disponible"
+      apartment: "Disponible"
     not-available: "Disponible le"
 
   index:

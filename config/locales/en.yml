@@ -34,6 +34,8 @@ en:
     tagline: "The ideal flat for young professionals"
     tagline-2: "Rooms and flats 2XL"
     call-to-action: "Discover"
+    contact: "Contact us"
+    pre-book: "Pre-book"
     title: "Our flats"
     Lux: "Luxemburg"
     Lille: "Lille"
@@ -43,7 +45,9 @@ en:
 
   card:
     per_room: "€ per room + utilities"
-    available: "One bedroom available"
+    available:
+      flatshare: "One bedroom available"
+      apartment: "Available"
     not-available: "Available on the"
 
   index:

@@ -2,7 +2,7 @@
 .banner-cover {
   color: white;
   text-align: center;
-  height: 70vh;
+  height: calc(100vh - 70px);
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position: center;
@@ -20,6 +20,14 @@
     margin-bottom: 30px;
     margin-top: 0;
   }
+}
+
+#banner-content {
+  margin-bottom: 46px;
+}
+
+#discover {
+  margin-bottom: 10px;
 }
 
 .home-content {

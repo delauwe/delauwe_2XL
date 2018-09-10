@@ -90,7 +90,9 @@ camille = Apartment.create(
   shower_room: 1,
   living_room: true,
   availability: Date.parse("dec 31 2018"),
-  description: "In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator. 5 rooms,  83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state. Lease of 12 months: 430 € / month / room + 85 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week.Short lease: price can be negotiated."
+  description: "In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
+  5 rooms, 83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state.
+  Lease of 12 months: 430 € / month / room + 85 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
 )
 
 Apartment::Translation.create(
@@ -515,10 +517,10 @@ studio = Apartment.create(
   kitchen: true,
   availability: Date.parse("aug 1 2018"),
   description: "This small apartment is suitable for a student or single person looking for individual accommodation for a few nights a week and for a short duration.
- A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
- Very well located in front of the metro station Cormontaigne.
- Short lease (3 months renewable).
- 500 € all charges included (wifi and cleaning included) "
+   A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
+   Very well located in front of the metro station Cormontaigne.
+   Short lease (3 months renewable).
+   500 € all charges included (wifi and cleaning included)"
 )
 
 Apartment::Translation.create(

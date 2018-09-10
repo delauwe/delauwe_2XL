@@ -2,7 +2,15 @@
   <div id="banner-content">
     <h1><%= t('home.tagline') %></h1>
     <h2><%= t('home.tagline-2') %></h2>
-    <%= link_to t('home.call-to-action'), apartments_path, class: "btn-border-pink btn-large btn-color-white" %>
+    <div id="discover">
+      <%= link_to t('home.call-to-action'), apartments_path, class: "btn btn-border-pink btn-large btn-color-white btn-home" %>
+    </div>
+    <div class="banner-buttons">
+      <%= link_to t('home.pre-book'), apartments_path, class: "btn btn-border-gray btn-medium btn-color-white btn-long btn-home" %>
+      <%= link_to t('home.contact'), apartments_path, class: "btn btn-border-gray btn-medium btn-color-white btn-home" %>
+    </div>
+
+
   </div>
 </div>
 <div class="container">
@@ -19,7 +27,7 @@
         <% end %>
       <% end %>
       <div class="home-button">
-        <%= link_to t('home.call-to-action-2'), apartments_path, class: "btn-border-pink btn-large btn-color-black" %>
+        <%= link_to t('home.call-to-action-2'), apartments_path, class: "btn btn-border-pink btn-large btn-color-black" %>
       </div>
     </div>
     <div class="home-tag">

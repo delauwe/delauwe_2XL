@@ -27,12 +27,16 @@
       <div class="details">
         <h4><%= @apartment.name %></h4></p>
         <p class="tag tag-kaki smaller-font-size"><%= @apartment.nature.capitalize %></p>
-          <% if @apartment.availability <= Date.today %>
+          <% if @apartment.availability <= Date.today && @apartment.category == "flatshare" %>
             <p class="tag tag-green smaller-font-size">
-            <%= t('card.available') %>
-          </p>
+              <%= t('card.available.flatshare') %>
+            </p>
+          <% elsif @apartment.availability <= Date.today && @apartment.category == "apartment"  %>
+            <p class="tag tag-green smaller-font-size">
+              <%= t('card.available.apartment') %>
+            </p>
           <% else %>
-          <p class="tag tag-red smaller-font-size">
+            <p class="tag tag-red smaller-font-size">
               <%= t('card.not-available') %> <%= @apartment.availability.strftime("%d/%m/%Y") %>
              </p>
           <% end %>
@@ -100,16 +104,16 @@
       <div class="buttons">
         <div id="reservation">
           <% if @apartment.category == "flatshare" %>
-            <%= link_to t('show.reservation'), "https://docs.google.com/forms/d/e/1FAIpQLScFlItNbbbMVsVucvpQUKOoHCj-SLS0IYoMklJMoZiUGIT17A/viewform", class: "btn-border-pink text-black margin-right" %>
+            <%= link_to t('show.reservation'), "https://docs.google.com/forms/d/e/1FAIpQLScFlItNbbbMVsVucvpQUKOoHCj-SLS0IYoMklJMoZiUGIT17A/viewform", class: "btn btn-border-pink text-black margin-right" %>
           <% else %>
-            <%= link_to t('show.reservation'), "https://goo.gl/forms/KmEczmhDktRC48V73", class: "btn-border-pink text-black margin-right" %>
+            <%= link_to t('show.reservation'), "https://goo.gl/forms/KmEczmhDktRC48V73", class: "btn btn-border-pink text-black margin-right" %>
           <% end %>
         </div>
         <div id="contact">
           <% if @apartment.category == "flatshare" %>
-            <%= link_to t('show.contact'), "http://m.me/2XLcoloc.chambresalouer", class: "btn-border-gray text-black" %>
+            <%= link_to t('show.contact'), "http://m.me/2XLcoloc.chambresalouer", class: "btn btn-border-gray text-black" %>
           <% else %>
-            <%= link_to t('show.contact'), "http://m.me/2xl.appartement", class: "btn-border-gray text-black" %>
+            <%= link_to t('show.contact'), "http://m.me/2xl.appartement", class: "btn btn-border-gray text-black" %>
           <% end %>
         </div>
       </div>
