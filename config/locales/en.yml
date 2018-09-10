@@ -43,6 +43,12 @@ en:
     flatsharing: "Flatshare"
     apartment: "Apartment"
 
+  swal:
+    title: "What are you looking for?"
+    options:
+      flatshare: Flatshare
+      apartment: Apartment
+
   card:
     per_room: "€ per room + utilities"
     available:

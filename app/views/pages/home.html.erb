@@ -6,11 +6,9 @@
       <%= link_to t('home.call-to-action'), apartments_path, class: "btn btn-border-pink btn-large btn-color-white btn-home" %>
     </div>
     <div class="banner-buttons">
-      <%= link_to t('home.pre-book'), apartments_path, class: "btn btn-border-gray btn-medium btn-color-white btn-long btn-home" %>
-      <%= link_to t('home.contact'), apartments_path, class: "btn btn-border-gray btn-medium btn-color-white btn-home" %>
+      <p class="btn btn-border-gray btn-medium btn-color-white btn-long btn-home sweet-alert-reservation"><%= t('home.pre-book') %></p>
+      <p class="btn btn-border-gray btn-medium btn-color-white btn-home sweet-alert-contact"><%= t('home.contact') %></p>
     </div>
-
-
   </div>
 </div>
 <div class="container">
@@ -43,3 +41,11 @@
     </div>
   </div>
 </div>
+
+<script>
+  let i18n = {
+    title: '<%= t('swal.title') %>',
+    option1: '<%= t('swal.options.flatshare') %>',
+    option2: '<%= t('swal.options.apartment') %>'
+  }
+</script>

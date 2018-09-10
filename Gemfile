@@ -12,6 +12,8 @@ gem 'pundit'
 gem 'figaro'
 gem 'jquery_mobile_rails'
 
+
+
 gem 'activeadmin'
 
 gem 'autoprefixer-rails'

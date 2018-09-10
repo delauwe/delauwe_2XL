@@ -12,6 +12,11 @@ fr:
     flatsharing: "Coloc"
     apartment: "Appart"
 
+  swal:
+    title: "Que recherchez-vous ? "
+    options:
+      flatshare: Coloc
+      apartment: Appartement
 
   card:
     per_room: "€ par chambre + charges"
