@@ -6,13 +6,15 @@
           <!-- Indicators -->
           <ol class="carousel-indicators carousel-indicators-better">
             <% apartment.photos.each_with_index do |_photo, index| %>
-            <li data-target="#carousel-images-<%= apartment.id %>" data-slide-to= "<%= index %>" class="<%= 'active' if index == 0 %>" ></li>
+              <li data-target="#carousel-images-<%= apartment.id %>" data-slide-to= "<%= index %>" class="<%= 'active' if index == 0 %>" ></li>
             <% end %>
+          </ol>
           </ol>
           <!-- Wrapper for slides -->
           <div class="carousel-inner full-height" role="listbox">
             <% apartment.photos.order(id: :asc).each_with_index do |photo, index| %>
-                <div class="item <%= "active" if index == 0 %> card-image" style="background-image: url('<%= cl_image_path photo.url %>');"></div>
+             <div class="item card-image <%= 'active' if index == 0 %>" style="background-image: url('<%= cl_image_path photo.url %>');">
+             </div>
             <% end %>
           </div>
           <!-- Controls -->
@@ -28,36 +30,34 @@
         <div class="tag tag-kaki card-category-tag"><%= apartment.nature %></div>
         <div class="tag tag-pink card-price-tag"><%= apartment.price %> <span>€ </span></div>
       </div>
-      <%#= link_to apartment_path(apartment) do %>
-        <div class="card-content">
-          <div class="card-content-top no-border-top no-border-bottom <%= apartment.availability <= Date.today ? 'border-green' : 'border-gray' %>">
-            <div class="information">
-              <div class="information-left">
-                <h5 class="bold"> <%= apartment.name %></h5>
-              </div>
-              <div class="information-right">
-                <div>
-                  <% apartment.number_of_rooms.times do %><%= image_tag "chambre.png", height: 20 %><% end %>
-                </div>
+      <div class="card-content">
+        <div class="card-content-top no-border-top no-border-bottom <%= apartment.availability <= Date.today ? 'border-green' : 'border-gray' %>">
+          <div class="information">
+            <div class="information-left">
+              <h5 class="bold"> <%= apartment.name %></h5>
+            </div>
+            <div class="information-right">
+              <div>
+                <% apartment.number_of_rooms.times do %><%= image_tag "chambre.png", height: 20 %><% end %>
               </div>
             </div>
-            <p class="smaller-font-size"> <%= image_tag "pin.png", height: 15 %> <%= apartment.location %></p>
-            <p class="smaller-font-size"><%= apartment.price %> <%= t('card.per_room') %> </p>
           </div>
-          <div class="card-content-bottom  <%= apartment.availability <= Date.today ? 'availability-green' : 'availability-red' %>">
-            <div class="availability">
-              <% if apartment.availability <= Date.today %>
-                <p class="smaller-font-size" id="available">  <%= apartment.category == "flatshare" ? t('card.available.flatshare') :  t('card.available.apartment')%></p>
-              <% else %>
-                <p class="smaller-font-size"><%= t('card.not-available') %> <strong><%= apartment.availability.strftime("%d/%m/%Y") %></strong> </p>
-              <% end %>
-            </div>
-              <%= link_to apartment_path(apartment) do %>
-                <i class="fa fa-arrow-right"></i>
-              <% end %>
-          </div>
+          <p class="smaller-font-size"> <%= image_tag "pin.png", height: 15 %> <%= apartment.location %></p>
+          <p class="smaller-font-size"><%= apartment.price %> <%= t('card.per_room') %> </p>
         </div>
-      <%# end %>
+        <div class="card-content-bottom  <%= apartment.availability <= Date.today ? 'availability-green' : 'availability-red' %>">
+          <div class="availability">
+            <% if apartment.availability <= Date.today %>
+              <p class="smaller-font-size" id="available">  <%= apartment.category == "flatshare" ? t('card.available.flatshare') :  t('card.available.apartment')%></p>
+            <% else %>
+              <p class="smaller-font-size"><%= t('card.not-available') %> <strong><%= apartment.availability.strftime("%d/%m/%Y") %></strong> </p>
+            <% end %>
+          </div>
+            <%= link_to apartment_path(apartment) do %>
+              <i class="fa fa-arrow-right"></i>
+            <% end %>
+        </div>
+      </div>
     </div>
   <% end %>
 </div>
