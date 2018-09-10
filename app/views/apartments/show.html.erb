@@ -37,7 +37,7 @@
             </p>
           <% else %>
             <p class="tag tag-red smaller-font-size">
-              <%= t('card.not-available') %> <%= @apartment.availability.strftime("%d/%m/%Y") %>
+              <%= t('card.not-available') %> <strong><%= @apartment.availability.strftime("%d/%m/%Y") %></strong>
              </p>
           <% end %>
         <p class="smaller-font-size"><%= image_tag "pin.png", height: 15 %><%= @apartment.location %></p>
