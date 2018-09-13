@@ -36,12 +36,12 @@ en:
     call-to-action: "Discover"
     contact: "Contact us"
     pre-book: "Pre-book"
-    title: "Our flats"
+    available-now: "Available now"
+    flatshares: "Our flatshares"
+    apartments: "Our apartments"
     Lux: "Luxemburg"
     Lille: "Lille"
-    call-to-action-2: "Discover all our flats"
-    flatsharing: "Flatshare"
-    apartment: "Apartment"
+    call-to-action-2: "Discover all our flatshares"
 
   swal:
     title: "What are you looking for?"
@@ -86,7 +86,8 @@ en:
     utilities: "utilities"
 
   navbar:
-    flats: "Flats"
+    flatshares: "Flatshares"
+    apartments: "Apartments"
 
   footer:
     terms: "Terms"

@@ -13,11 +13,17 @@
 </div>
 <div class="container">
   <div class="home-content">
-    <h2><%= t('home.title') %></h2>
-    <div class="home-tag">
-      <p class="tag tag-kaki smaller-font-size"><%= t('home.flatsharing') %></p>
-      <p class="tag tag-gray smaller-font-size"><%= t('home.lille') %></p>
+    <div id="avaible-now">
+      <h2><%= t('home.available-now') %></h2>
+      <div class="row margin-top">
+        <% @apartments.each do |apartment| %>
+          <% if apartment.availability <= Date.today %>
+            <%= render "shared/card", apartment: apartment %>
+          <% end %>
+        <% end %>
+      </div>
     </div>
+    <h2><%= t('home.flatshares') %></h2>
     <div class="row margin-top">
       <%  @available_soon.each do |apartment| %>
         <% if apartment.category == "flatshare" %>
@@ -25,18 +31,15 @@
         <% end %>
       <% end %>
       <div class="home-button">
-        <%= link_to t('home.call-to-action-2'), apartments_path, class: "btn btn-border-pink btn-large btn-color-black" %>
+        <%= link_to t('home.call-to-action-2'), flatshares_path, class: "btn btn-border-pink btn-large btn-color-black" %>
       </div>
     </div>
-    <div class="home-tag">
-      <p class="tag tag-kaki smaller-font-size"><%= t('home.apartment') %></p>
-      <p class="tag tag-gray smaller-font-size"> <%= t('home.lille') %></p>
-    </div>
+    <h2><%= t('home.apartments') %></h2>
     <div class="row margin-top">
-     <% @apartments.each do |apartment| %>
-        <% if apartment.category == "apartment" %>
-          <%= render "shared/card", apartment: apartment %>
-        <% end %>
+     <% @apparts.each do |appart| %>
+        <%# if apartment.category == "apartment" %>
+          <%= render "shared/card", apartment: appart %>
+        <%# end %>
       <% end %>
     </div>
   </div>

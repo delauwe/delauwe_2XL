@@ -5,12 +5,13 @@ fr:
     call-to-action: "Découvrir"
     contact: "Nous contacter"
     pre-book: "Pré-réserver"
-    title: "Nos logements"
+    available-now: "Disponible immédiatement"
+    flatshares: "Nos colocs"
+    apartments: "Nos apparts"
     lux: "Luxembourg"
     lille: "Lille"
-    call-to-action-2: "Découvrir tous nos logements"
-    flatsharing: "Coloc"
-    apartment: "Appart"
+    call-to-action-2: "Découvrir toutes nos colocs"
+
 
   swal:
     title: "Que recherchez-vous ? "
@@ -55,7 +56,8 @@ fr:
     utilities: "charges"
 
   navbar:
-    flats: "Logements"
+    flatshares: "Colocs"
+    apartments: "Appartements"
 
   footer:
     terms: "Mentions légales"

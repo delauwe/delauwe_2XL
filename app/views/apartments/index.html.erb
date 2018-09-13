@@ -1,22 +1,30 @@
 <div class="container">
+  <div id="avaible-now">
+    <div class="title">
+      <h3><%= t('home.available-now') %></h3>
+    </div>
+    <div class="row margin-top">
+      <% @apartments.each do |apartment| %>
+        <% if apartment.availability <= Date.today %>
+          <%= render "shared/card", apartment: apartment %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
   <div class="title">
     <h3><%= t('index.title.flatshare') %></h3>
   </div>
   <div class="row margin-top">
-    <% @apartments.order(availability: :asc).each do |apartment| %>
-      <% if apartment.category == "flatshare" %>
+    <% @flatshares.order(availability: :asc).each do |apartment| %>
         <%= render "shared/card", apartment: apartment %>
-      <%end%>
     <% end %>
   </div>
   <div class="title">
     <h3><%= t('index.title.apartment') %></h3>
   </div>
   <div class="row margin-top">
-    <% @apartments.order(availability: :asc).each do |apartment| %>
-      <% if apartment.category == "apartment" %>
+    <% @apparts.order(availability: :asc).each do |apartment| %>
         <%= render "shared/card", apartment: apartment %>
-      <% end %>
     <% end %>
   </div>
 </div>

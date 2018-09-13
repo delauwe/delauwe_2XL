@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
     get 'contact', to: 'pages#contact'
     get 'terms', to: 'pages#terms'
+    get 'flatshares', to: 'pages#flatshares'
+    get 'apparts', to: 'pages#apparts'
 
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
