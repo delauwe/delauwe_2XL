@@ -2,7 +2,7 @@
   <div id="carousel-images-<%= @apartment.id %>" class="carousel slide full-height" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators carousel-indicators-better">
       <% @apartment.photos.each_with_index do |_photo, index| %>
-      <li data-target="#carousel-images-<%= @apartment.id %>" data-slide-to= "<%= index %>" class="<%= 'active' if index == 0 %>" ></li>
+        <li data-target="#carousel-images-<%= @apartment.id %>" data-slide-to= "<%= index %>" class="<%= 'active' if index == 0 %>" ></li>
       <% end %>
     </ol>
     <div class="carousel-inner full-height" role="listbox">
@@ -22,6 +22,10 @@
   </div>
 </div>
 <div class="container">
+  <ol class="breadcrumb">
+    <%= render_breadcrumbs :tag => :li, :separator => "" %>
+  </ol>
+
   <div class="flexbox-show">
     <div class="left-part">
       <div class="details">
