@@ -10,7 +10,15 @@
     <%= link_to t('navbar.flatshares'), flatshares_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to t('navbar.apartments'), apparts_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to "Contact", contact_path, class: "navbar-wagon-item navbar-wagon-link" %>
-     <div id="flag-container">
+    <div class="opinion">
+      <%= link_to "https://docs.google.com/forms/d/e/1FAIpQLScFlItNbbbMVsVucvpQUKOoHCj-SLS0IYoMklJMoZiUGIT17A/viewform", :class => "opinion-item navbar-wagon-link like" do  %>
+        <i class="fa fa-thumbs-up"></i>
+      <% end %>
+      <%= link_to "https://docs.google.com/forms/d/e/1FAIpQLScFlItNbbbMVsVucvpQUKOoHCj-SLS0IYoMklJMoZiUGIT17A/viewform", :class => "opinion-item navbar-wagon-link"  do  %>
+        <i class="fa fa-thumbs-down"></i>
+      <% end %>
+    </div>
+    <div id="flag-container">
       <div class="dropdown">
         <div class="dropdown-toggle flag-menu" type="button" id="languageMenuToggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <% if  request.url.include?('fr') %>
