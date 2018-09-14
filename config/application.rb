@@ -17,6 +17,7 @@ module Delauwe2xl
     config.load_defaults 5.2
 
     config.exceptions_app = self.routes
+    config.middleware.use Rack::Deflater
 
 
     # Settings in config/environments/* take precedence over those specified here.
@@ -26,10 +27,3 @@ module Delauwe2xl
   end
 end
 
-module SeoRubyOnRails
-  class Application < Rails::Application
-    # Deflater
-    # See also : https://robots.thoughtbot.com/content-compression-with-rack-deflater
-    config.middleware.use Rack::Deflater
-  end
-end
