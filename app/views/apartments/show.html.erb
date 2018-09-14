@@ -25,26 +25,25 @@
   <ol class="breadcrumb">
     <%= render_breadcrumbs :tag => :li, :separator => "" %>
   </ol>
-
   <div class="flexbox-show">
     <div class="left-part">
       <div class="details">
-        <h4><%= @apartment.name %></h4></p>
-        <p class="tag tag-kaki smaller-font-size"><%= @apartment.nature.capitalize %></p>
+        <h4><%= @apartment.name %></h4>
+        <h1 class="tag tag-kaki smaller-font-size"><%= @apartment.nature.capitalize %></h1>
           <% if @apartment.availability <= Date.today && @apartment.category == "flatshare" %>
-            <p class="tag tag-green smaller-font-size">
+            <h2 class="tag tag-green smaller-font-size">
               <%= t('card.available.flatshare') %>
-            </p>
+            </h2>
           <% elsif @apartment.availability <= Date.today && @apartment.category == "apartment"  %>
-            <p class="tag tag-green smaller-font-size">
+            <h2 class="tag tag-green smaller-font-size">
               <%= t('card.available.apartment') %>
-            </p>
+            </h2>
           <% else %>
-            <p class="tag tag-red smaller-font-size">
+            <h2 class="tag tag-red smaller-font-size">
               <%= t('card.not-available') %> <strong><%= @apartment.availability.strftime("%d/%m/%Y") %></strong>
-             </p>
+             </h2>
           <% end %>
-        <p class="smaller-font-size"><%= image_tag "pin.png", height: 15 %><%= @apartment.location %></p>
+        <h3 class="smaller-font-size"><%= image_tag "pin.png", height: 15 %><%= @apartment.location %></h3>
       </div>
       <div class="carasteristics smaller-font-size">
         <ul>

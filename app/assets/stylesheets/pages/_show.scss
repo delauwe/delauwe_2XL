@@ -97,10 +97,24 @@ li {
   margin-top: 20px;
 }
 
-.details h4 {
-  font-weight: bolder;
-}
+.details {
 
+  h4 {
+    font-weight: bolder;
+  }
+
+  h1, h2 {
+    font-family: "roboto";
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: "roboto";
+    font-weight: 400;
+
+  }
+}
 .buttons {
   display: flex;
   justify-content: space-between;
