@@ -17,9 +17,7 @@
     <div class="row margin-top">
       <%  @available_soon.each do |apartment| %>
         <% cache apartment do %>
-          <% if apartment.category == "flatshare" %>
-            <%= render "shared/card", apartment: apartment %>
-          <% end %>
+          <%= render "shared/card", apartment: apartment %>
         <% end %>
       <% end %>
       <div class="home-button">
@@ -28,7 +26,7 @@
     </div>
     <h2><%= t('home.apartments') %></h2>
     <div class="row margin-top">
-     <% @apparts.each do |appart| %>
+      <% @apparts.each do |appart| %>
         <% cache appart do %>
           <%= render "shared/card", apartment: appart %>
         <% end %>
