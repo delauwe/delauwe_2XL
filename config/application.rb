@@ -25,3 +25,11 @@ module Delauwe2xl
     # the framework and any gems in your application.
   end
 end
+
+module SeoRubyOnRails
+  class Application < Rails::Application
+    # Deflater
+    # See also : https://robots.thoughtbot.com/content-compression-with-rack-deflater
+    config.middleware.use Rack::Deflater
+  end
+end
