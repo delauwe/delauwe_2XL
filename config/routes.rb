@@ -14,8 +14,15 @@ Rails.application.routes.draw do
     get 'flatshares', to: 'pages#flatshares'
     get 'apparts', to: 'pages#apparts'
     get '/sitemap.xml' => 'sitemaps#index', defaults: { format: 'xml' }
-    get "/robots.:format", to: "pages#robots"
+    get "/robots.txt", to: "pages#robots"
 
+
+    # not to duplicate content
+    constraints(host: /^(?!www\.)/i) do
+      match '(*any)' => redirect { |params, request|
+        URI.parse(request.url).tap { |uri| uri.host = "www.#{uri.host}" }.to_s
+      }, :via => [:get, :post]
+    end
 
 
   end
