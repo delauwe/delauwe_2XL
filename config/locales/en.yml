@@ -98,7 +98,9 @@ en:
   contact:
     info: "If you do not have a Facebook profil, you can send us a message: +33 9 77 19 77 99  or an email at coloc@2xl.immo. We will only answer messages which fully describe your profil and your flat search. "
 
-
+  breadcrumb:
+    home: "Home"
+    flats: "Flats"
 
 
 
