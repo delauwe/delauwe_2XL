@@ -14,12 +14,12 @@
     <h2><%= t('home.flatshares') %></h2>
     <div class="row margin-top">
       <%  @available_soon.each do |apartment| %>
-        <%= render "shared/card", apartment: apartment %>
+          <%= render "shared/card", apartment: apartment %>
       <% end %>
-      <div class="home-button">
+    </div>
+    <div class="home-button">
         <%= link_to t('home.call-to-action-2'), flatshares_path, class: "btn btn-border-pink btn-large btn-color-black" %>
       </div>
-    </div>
     <h2><%= t('home.apartments') %></h2>
     <div class="row margin-top">
       <% @apparts.each do |appart| %>

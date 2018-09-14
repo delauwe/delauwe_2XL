@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-md-4 col-lg-4">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
   <%= link_to apartment_path(apartment) do %>
     <div class="card ">
       <div class="card-images no-border-bottom <%= apartment.availability <= Date.today ? 'border-green' : 'border-gray' %>">
@@ -8,7 +8,6 @@
             <% apartment.photos.each_with_index do |_photo, index| %>
               <li data-target="#carousel-images-<%= apartment.id %>" data-slide-to= "<%= index %>" class="<%= 'active' if index == 0 %>" ></li>
             <% end %>
-          </ol>
           </ol>
           <!-- Wrapper for slides -->
           <div class="carousel-inner full-height" role="listbox">
