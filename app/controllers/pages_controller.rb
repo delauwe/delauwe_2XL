@@ -14,4 +14,9 @@ class PagesController < ApplicationController
   def apparts
     @apparts = Apartment.where(category: "apartment").order(availability: :asc).all
   end
+
+  def robots
+    # Don't forget to delete /public/robots.txt
+    respond_to :text
+  end
 end

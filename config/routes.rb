@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sitemaps/index'
+  get 'sitemaps/init_sitemap'
   ActiveAdmin.routes(self)
   devise_for :users,
     controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
@@ -11,6 +13,9 @@ Rails.application.routes.draw do
     get 'terms', to: 'pages#terms'
     get 'flatshares', to: 'pages#flatshares'
     get 'apparts', to: 'pages#apparts'
+    get '/sitemap.xml' => 'sitemaps#index', defaults: { format: 'xml' }
+    get "/robots.:format", to: "pages#robots"
+
 
 
   end
