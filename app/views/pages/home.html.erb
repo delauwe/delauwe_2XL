@@ -1,24 +1,14 @@
-<div class="banner-cover" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 50%), url(https://res.cloudinary.com/elsaszymczak/image/upload/v1531924963/Alice%20D./terrasse.jpg);">
-  <div id="banner-content">
-    <h1><%= t('home.tagline') %></h1>
-    <h2><%= t('home.tagline-2') %></h2>
-    <div id="discover">
-      <%= link_to t('home.call-to-action'), apartments_path, class: "btn btn-border-pink btn-large btn-color-white btn-home" %>
-    </div>
-    <div class="banner-buttons">
-      <p class="btn btn-border-gray btn-medium btn-color-white btn-long btn-home sweet-alert-reservation"><%= t('home.pre-book') %></p>
-      <p class="btn btn-border-gray btn-medium btn-color-white btn-home sweet-alert-contact"><%= t('home.contact') %></p>
-    </div>
-  </div>
-</div>
+<%= render "shared/banner" %>
 <div class="container">
   <div class="home-content">
     <div id="avaible-now">
       <h2><%= t('home.available-now') %></h2>
       <div class="row margin-top">
         <% @apartments.each do |apartment| %>
-          <% if apartment.availability <= Date.today %>
-            <%= render "shared/card", apartment: apartment %>
+          <% cache apartment do %>
+            <% if apartment.availability <= Date.today %>
+              <%= render "shared/card", apartment: apartment %>
+            <% end %>
           <% end %>
         <% end %>
       </div>
@@ -26,8 +16,10 @@
     <h2><%= t('home.flatshares') %></h2>
     <div class="row margin-top">
       <%  @available_soon.each do |apartment| %>
-        <% if apartment.category == "flatshare" %>
-          <%= render "shared/card", apartment: apartment %>
+        <% cache apartment do %>
+          <% if apartment.category == "flatshare" %>
+            <%= render "shared/card", apartment: apartment %>
+          <% end %>
         <% end %>
       <% end %>
       <div class="home-button">
@@ -37,9 +29,9 @@
     <h2><%= t('home.apartments') %></h2>
     <div class="row margin-top">
      <% @apparts.each do |appart| %>
-        <%# if apartment.category == "apartment" %>
+        <% cache appart do %>
           <%= render "shared/card", apartment: appart %>
-        <%# end %>
+        <% end %>
       <% end %>
     </div>
   </div>
