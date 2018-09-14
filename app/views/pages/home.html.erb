@@ -5,10 +5,8 @@
       <h2><%= t('home.available-now') %></h2>
       <div class="row margin-top">
         <% @apartments.each do |apartment| %>
-          <% cache apartment do %>
-            <% if apartment.availability <= Date.today %>
-              <%= render "shared/card", apartment: apartment %>
-            <% end %>
+          <% if apartment.availability <= Date.today %>
+            <%= render "shared/card", apartment: apartment %>
           <% end %>
         <% end %>
       </div>
@@ -16,9 +14,7 @@
     <h2><%= t('home.flatshares') %></h2>
     <div class="row margin-top">
       <%  @available_soon.each do |apartment| %>
-        <% cache apartment do %>
-          <%= render "shared/card", apartment: apartment %>
-        <% end %>
+        <%= render "shared/card", apartment: apartment %>
       <% end %>
       <div class="home-button">
         <%= link_to t('home.call-to-action-2'), flatshares_path, class: "btn btn-border-pink btn-large btn-color-black" %>
@@ -27,9 +23,7 @@
     <h2><%= t('home.apartments') %></h2>
     <div class="row margin-top">
       <% @apparts.each do |appart| %>
-        <% cache appart do %>
-          <%= render "shared/card", apartment: appart %>
-        <% end %>
+        <%= render "shared/card", apartment: appart %>
       <% end %>
     </div>
   </div>

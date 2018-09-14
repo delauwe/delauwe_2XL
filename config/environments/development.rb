@@ -62,7 +62,6 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  config.action_controller.page_cache_directory = "#{Rails.root}/public/cached_pages"
 
 
 end
