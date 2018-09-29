@@ -22,7 +22,7 @@ alice = Apartment.new(
   size: 130,
   number_of_rooms: 5,
   name: "Alice D.",
-  price: 455,
+  price: 465,
   category: "flatshare",
   nature: "flatshare",
   bathroom: 3,
@@ -33,10 +33,10 @@ alice = Apartment.new(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("oct 31 2018"),
+  availability: Date.parse("sept 28 2018"),
   description: "Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
-Lease of 12 months: 455 € / month per room + charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
+Lease of 12 months: 465 € / month per room + 110 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
 Short lease: price can be negotiated."
   )
 alice.save!
@@ -48,7 +48,7 @@ Apartment::Translation.create(
   location: "Au pied du métro Cormontaigne",
   description: "Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
 En rez-de-chaussée : grand séjour sur terrasse et grande cuisine ouverte. 4 grandes chambres dont 2 en cave anglaise + 1 chambre plus petite à l'étage, buanderie. 2 salles de bains, 1 salle d'eau et 3 WCs. Laverie.
-Bail de 12 mois : 455 €/mois par chambre + charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
+Bail de 12 mois : 465 €/mois par chambre + 110 € de charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
 Bail court : prix à négocier.")
 
 
@@ -360,7 +360,7 @@ odette = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("sept 1 2018"),
+  availability: Date.parse("jan 31 2018"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
 350 € / month + charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
@@ -515,7 +515,7 @@ studio = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("aug 1 2018"),
+  availability: Date.parse("jan 31 2018"),
   description: "This small apartment is suitable for a student or single person looking for individual accommodation for a few nights a week and for a short duration.
    A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
    Very well located in front of the metro station Cormontaigne.
