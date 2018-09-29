@@ -3,6 +3,7 @@
   <div class="home-content">
     <div id="avaible-now">
       <h2><%= t('home.available-now') %></h2>
+
       <div class="row margin-top">
         <% @apartments.each do |apartment| %>
           <% if apartment.availability <= Date.today %>
