@@ -20,16 +20,5 @@ class PagesController < ApplicationController
     respond_to :text
   end
 
-  def available?
-    available = false
-    @apartments.each do |apartment|
-      if apartment.availability <= Date.today
-        available == true
-      else
-        available == false
-      end
-    end
-    return available
-  end
 
 end

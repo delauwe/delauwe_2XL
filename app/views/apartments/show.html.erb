@@ -12,7 +12,7 @@
     <!-- Wrapper for carousel items -->
 
     <div class="carousel-inner full-height" role="listbox">
-      <div class="item active banner" style="background-image: url('<%= cl_image_path @apartment.photos[0].url %>');">
+      <div class="item active banner" style="background-image: url('<%= cl_image_path @apartment.photos_by_type[0].url %>');">
       </div>
 
       <% for i in 1..@apartment.photos.length %>
