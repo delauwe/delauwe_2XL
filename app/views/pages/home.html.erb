@@ -1,18 +1,18 @@
+
 <%= render "shared/banner" %>
 <div class="container">
   <div class="home-content">
-    <div id="avaible-now">
-      <h2><%= t('home.available-now') %></h2>
-
-      <div class="row margin-top">
-        <% @apartments.each do |apartment| %>
-          <% if apartment.availability <= Date.today %>
-            <%= render "shared/card", apartment: apartment %>
-          <% end %>
-        <% end %>
-      </div>
-    </div>
-    <h2><%= t('home.flatshares') %></h2>
+<!--     <div id="avaible-now">
+ --><!--       <h2><%#= if available? ? t('home.available-now') : "No availability" %></h2>
+ -->  <!-- <div class="row margin-top">
+        <%# @apartments.each do |apartment| %>
+          <%# if apartment.availability <= Date.today %>
+            <%#= render "shared/card", apartment: apartment %>
+          <%# end %>
+        <%# end %>
+      </div> -->
+<!--     </div>
+ -->    <h2><%= t('home.flatshares') %></h2>
     <div class="row margin-top">
       <%  @available_soon.each do |apartment| %>
           <%= render "shared/card", apartment: apartment %>
@@ -37,3 +37,9 @@
     option2: '<%= t('swal.options.apartment') %>'
   }
 </script>
+
+
+<!-- I want to check if there are any free flats -->
+
+<!-- if there are print them  -->
+<!-- if not do not put anything -->
