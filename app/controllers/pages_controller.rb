@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def home
     @apartments = Apartment.order(availability: :asc).all
     @available_soon = Apartment.where(category: "flatshare").order(availability: :asc).limit(3)
-    @apparts = Apartment.where(category: "apartment").order(availability: :asc)
+    @apparts = Apartment.where(category: "apartment").order( availability: :asc)
   end
 
   def flatshares

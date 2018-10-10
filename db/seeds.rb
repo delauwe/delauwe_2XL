@@ -538,7 +538,7 @@ studio_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v153294422
 "https://res.cloudinary.com/elsaszymczak/image/upload/v1532944221/studio/cuisine.jpg"]
 
 studio_array.each do |url|
-  appart303.remote_photo_url = url
+  studio.remote_photo_url = url
 end
 
 studio_array.each do |url|
@@ -546,3 +546,69 @@ studio_array.each do |url|
   photo.apartment = studio
   photo.save!
 end
+
+rollin = Apartment.create(
+  location: "Luxembourg, 10 minutes walking from the tram station Etoile",
+  size: 107,
+  number_of_rooms: 4,
+  name: "Rollin D.",
+  category: "flatshare",
+  nature: "flatshare",
+  price: 750,
+  bathroom: 2,
+  toilet: 2,
+  terrace: true,
+  washing_room: true,
+  washing_machine: true,
+  living_room: true,
+  kitchen: true,
+  availability: Date.parse("oct 1 2018"),
+  description: "New in Luxembourg, available November 5th, 2018.\n
+    In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
+    Located rue du Rollingergrund at the Val Fleurie bus stop, located halfway from the Grand Ducal Palace and the Bambëch Forest. By tram, 20 minutes from Auchan shopping center and Kinepolis cinemas.\n
+    \n
+    In the flat, you will share the living room-kitchen, 2 bathrooms, 2 toilets, the laundry room with washing machines.\n
+    In fine weather, you will enjoy the large terrace all around the apartment.\n
+    Possibility of parking a vehicle or a bike in the garage (extra).\n
+    \n
+    The charges include: cold and hot water, electricity, heating, wifi, charge of the building and cleaning for 1 to 2 hours per week.\n
+    \n
+    The price is 750€ + 100€ charges or 850€ all charges included."
+)
+
+Apartment::Translation.create(
+  apartment_id: rollin.id,
+  locale: "fr",
+  location: "Luxembourg, 10 minutes à pied de la station de tram étoile", nature: "coloc",
+  description: "Nouveau à Luxembourg, en cours d'aménagement. Disponible le 5 novembre 2018.\n
+    Dans un bel appartement récent de 107m2, au RDC d'une petite copropriété, à 10 minutes de la station de Tram Etoile, nous proposons 4 chambres à louer en contrat individuel. Il s'agit d'une colocation internationale de jeunes actifs.\n
+    Situé rue du Rollingergrund au niveau de l'arrêt de bus Val Fleurie vous êtes situé à mi distance du Palais Grand-ducale et de la forêt de Bambëch. En Tram, à 20 minutes du centre commercial Auchan et des cinémas Kinepolis.\n
+
+    Dans la coloc, vous partagerez le séjour-cuisine, 2 salles de bain, 2 wc, la buanderie avec les machines à laver.\n
+    Au beaux jours, vous apprécierez la grande terrasse tout autour de l'appartement.\n
+    Possibilité de stationner un véhicule ou un vélo au garage (en sus).\n
+    \n
+    Les charges comprennent : eau froide et chaude, électricité, chauffage, wifi, charges de l'immeuble et le ménage à raison de 1 à 2 heures par semaine.\n
+    \n
+    Le prix est de 750 euro + 100 euro de charges soit 850 euro toutes charges comprises."
+)
+
+rollin_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1539179980/Rollin%20D./exterieur.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1539179959/Rollin%20D./Coloc_Rollin_D_-_Fac%CC%A7ade.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1539180089/Rollin%20D./Coloc_Rollin_D_b.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1539180065/Rollin%20D./Inauguration.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1539179963/Rollin%20D./Coloc_Rollin_D_-_Plan.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1539179832/Rollin%20D./Coloc_Rollin_D_Re%CC%81seau_Bus_Tram_Zoom.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1539179826/Rollin%20D./Coloc_Rollin_D_Re%CC%81seau_Bus_Tram.jpg"
+]
+
+rollin_array.each do |url|
+  rollin.remote_photo_url = url
+end
+
+rollin_array.each do |url|
+  photo = Photo.new(url: url)
+  photo.apartment = rollin
+  photo.save!
+end
+
