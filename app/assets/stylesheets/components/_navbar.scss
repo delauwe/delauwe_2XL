@@ -149,13 +149,32 @@
 .opinion {
   box-shadow: 0 0px 2px #d8d8d8;
   margin-left: 20px;
-   margin-right: 20px;
+  margin-right: 20px;
   padding: 3px 10px;
   border-radius: 3px;
 }
 
 .like {
   padding-right: 22px;
+}
+
+
+@media(max-width: 768px){
+  .opinion {
+    box-shadow: none;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+    padding-bottom: 10px
+  }
+  .like {
+    padding-right: 34px;
+    padding-left: 15px
+  }
+
+  .opinion-item {
+    padding-bottom: 10px
+  }
 }
 
 

@@ -73,3 +73,10 @@
 .swal-button:focus {
     box-shadow: none;
 }
+
+@media(max-width: 768px) {
+  .banner-cover{
+    height: 100vh;
+
+  }
+}
