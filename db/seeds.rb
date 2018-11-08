@@ -593,13 +593,28 @@ Apartment::Translation.create(
     Le prix est de 750 euro + 100 euro de charges soit 850 euro toutes charges comprises."
 )
 
-rollin_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1539179980/Rollin%20D./exterieur.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1539179959/Rollin%20D./Coloc_Rollin_D_-_Fac%CC%A7ade.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1539180089/Rollin%20D./Coloc_Rollin_D_b.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1539180065/Rollin%20D./Inauguration.jpg",
+rollin_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1541647628/Rollin%20D./living_room_2.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647618/Rollin%20D./living_room_3.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647616/Rollin%20D./living_room.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./terrace.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./building.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./kitchen_2.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./kitchen_1.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647617/Rollin%20D./room_1.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./romm_1_1.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647618/Rollin%20D./room_2.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647616/Rollin%20D./room_2_1.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647616/Rollin%20D./room_2_2.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647617/Rollin%20D./room_3.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647616/Rollin%20D./room_3_1.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./room_4.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./room_4_1.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./bathroom.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./bathroom_2.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./corridor.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1539179963/Rollin%20D./Coloc_Rollin_D_-_Plan.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1539179832/Rollin%20D./Coloc_Rollin_D_Re%CC%81seau_Bus_Tram_Zoom.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1539179826/Rollin%20D./Coloc_Rollin_D_Re%CC%81seau_Bus_Tram.jpg"
+
 ]
 
 rollin_array.each do |url|
