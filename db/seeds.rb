@@ -33,7 +33,7 @@ alice = Apartment.new(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("oct 31 2018"),
+  availability: Date.parse("dec 31 2018"),
   description: "Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
 Lease of 12 months: 465 € / month per room + 110 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
@@ -597,23 +597,18 @@ rollin_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v154164762
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647618/Rollin%20D./living_room_3.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647616/Rollin%20D./living_room.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./terrace.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./building.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./kitchen_2.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./kitchen_1.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647617/Rollin%20D./room_1.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./romm_1_1.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647618/Rollin%20D./room_2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647616/Rollin%20D./room_2_1.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647616/Rollin%20D./room_2_2.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647617/Rollin%20D./room_3.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647616/Rollin%20D./room_3_1.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./room_4.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./room_4_1.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./bathroom.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./bathroom_2.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./corridor.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1539179963/Rollin%20D./Coloc_Rollin_D_-_Plan.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1539179826/Rollin%20D./Coloc_Rollin_D_Re%CC%81seau_Bus_Tram.jpg"
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541730650/Rollin%20D./Coloc_Rollin_D_Re%CC%81seau_Bus_Tram_1.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541730552/Rollin%20D./Coloc_Rollin_D_Re%CC%81seau_Bus_Tram_Zoom_1.jpg"
 
 ]
 
