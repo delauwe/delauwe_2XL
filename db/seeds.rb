@@ -33,7 +33,7 @@ alice = Apartment.new(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("dec 31 2018"),
+  availability: Date.parse("jan 31 2019"),
   description: "Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
 Lease of 12 months: 465 € / month per room + 110 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
@@ -89,7 +89,7 @@ camille = Apartment.create(
   toilet: 1,
   shower_room: 1,
   living_room: true,
-  availability: Date.parse("dec 31 2018"),
+  availability: Date.parse("jul 31 2019"),
   description: "In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
   5 rooms, 83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state.
   Lease of 12 months: 2160€/ month + 400 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
@@ -144,7 +144,7 @@ claire = Apartment.create(
   washing_room: true,
   washing_machine: false,
   kitchen: true,
-  availability: Date.parse("jan 31 2019"),
+  availability: Date.parse("dec 31 2018"),
   description: " Very nice T3 fully furnished and equipped. 2 bedrooms + one in a mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a small flatshare consisting of 2 young professionals. Ideal location in front of the metro, bus and V'Lille stations.
  Short-term rental 6 months maximum renewable.
  1300€/ month + 400€  charges - cleaning 1 hour / week or 400 € per room, all charges included.
@@ -199,7 +199,7 @@ francine = Apartment.create(
   toilet: 1,
   washing_machine: true,
   kitchen: true,
-  availability: Date.parse("jan 31 2019"),
+  availability: Date.parse("jul 31 2019"),
   description: "In the Vauban neighbourhood, square Maréchal Leclerc. 5 rooms in shared flat with 5 young flatmates, spacious apartment.Great apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, new bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra. 2700€/ month + 500 charges. (Short lease possible price on request)
 "
@@ -305,7 +305,7 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("dec 31 2018"),
+  availability: Date.parse("apr 30 2019"),
   description: "In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, separate toilet, shower room.
@@ -360,7 +360,7 @@ odette = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("nov 30 2018"),
+  availability: Date.parse("feb 28 2019"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
 450€/ month + 100€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
@@ -410,7 +410,7 @@ appart302 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("dec 31 2018"),
+  availability: Date.parse("jun 30 2019"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 760€/ month +  140€ charges: weekly cleaning, wifi.
 Lease of 1 to 12 months.  
@@ -464,7 +464,7 @@ appart303 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jan 31 2019"),
+  availability: Date.parse("jul 31 2019"),
   description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
     Lease from 1 to 12 months.
     Lease 12 months: 760 €/ month + 140 charges: (single 130 € / couple 170 €), weekly cleaning, laundry, wifi.
@@ -562,7 +562,7 @@ rollin = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("oct 1 2018"),
+  availability: Date.parse("feb 28 2019"),
   description: "New in Luxembourg, available November 5th, 2018.\n
     In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located halfway from the Grand Ducal Palace and the Bambëch Forest. By tram, 20 minutes from Auchan shopping center and Kinepolis cinemas.\n
