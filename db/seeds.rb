@@ -144,7 +144,7 @@ claire = Apartment.create(
   washing_room: true,
   washing_machine: false,
   kitchen: true,
-  availability: Date.parse("nov 30 2018"),
+  availability: Date.parse("jun 30 2019"),
   description: " Very nice T3 fully furnished and equipped. 2 bedrooms + one in a mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a small flatshare consisting of 2 young professionals. Ideal location in front of the metro, bus and V'Lille stations.
  Short-term rental 6 months maximum renewable.
  1300€/ month + 400€  charges - cleaning 1 hour / week or 400 € per room, all charges included.
@@ -352,7 +352,7 @@ odette = Apartment.create(
   name: "Odette D.",
   category: "flatshare",
   nature: "flatshare",
-  price: 450,
+  price: 325,
   bathroom: 1,
   shower_room: 1,
   toilet: 1,
@@ -360,9 +360,9 @@ odette = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("feb 28 2019"),
+  availability: Date.parse("jan 01 2019"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
-450€/ month + 100€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
+325€/ month + 100€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
 
 Apartment::Translation.create(
@@ -370,7 +370,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Jean-Baptiste Lebas - Roubaix", nature: "coloc",
   description: "Bel appartement de 83 m2 excellent état, au 5ème , 4 belles chambres meublées avec grands placards, bureau, literie, 1 salles de douche, 1 salle d’eau, 1 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine.
-  450€/ mois + 100€ de charges (wifi, copropriété, électricité, 1h de ménage par semaine). Frais de dossier pour bail court (inférieur à 12 mois)"
+  325€/ mois + 100€ de charges (wifi, copropriété, électricité, 1h de ménage par semaine). Frais de dossier pour bail court (inférieur à 12 mois)"
   )
 
 odette_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./sejour.jpg",
@@ -573,7 +573,7 @@ rollin = Apartment.create(
     \n
     The charges include: cold and hot water, electricity, heating, wifi, charge of the building and cleaning for 1 to 2 hours per week.\n
     \n
-    The price is 750€ + 100€ charges or 850€ all charges included."
+    The price is 750€ + 140€ charges or 890€ all charges included."
 )
 
 Apartment::Translation.create(
@@ -590,7 +590,7 @@ Apartment::Translation.create(
     \n
     Les charges comprennent : eau froide et chaude, électricité, chauffage, wifi, charges de l'immeuble et le ménage à raison de 1 à 2 heures par semaine.\n
     \n
-    Le prix est de 750 euro + 100 euro de charges soit 850 euro toutes charges comprises."
+    Le prix est de 750 euro + 140 euro de charges soit 890 euro toutes charges comprises."
 )
 
 rollin_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1541647628/Rollin%20D./living_room_2.jpg",
