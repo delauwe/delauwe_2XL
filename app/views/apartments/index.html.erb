@@ -1,20 +1,37 @@
 <div class="container">
+  <ol class="breadcrumb">
+    <%= render_breadcrumbs :tag => :li, :separator => "" %>
+  </ol>
+  <div id="avaible-now">
+    <div class="title">
+      <h3><%= t('home.available-now') %></h3>
+    </div>
+    <div class="row margin-top">
+      <% @apartments.each do |apartment| %>
+        <% cache apartment do %>
+          <% if apartment.availability <= Date.today %>
+            <%= render "shared/card", apartment: apartment %>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
   <div class="title">
-    <h3><%= t('index.title.flatshare') %></h3>
+    <h1><%= t('index.title.flatshare') %></h1>
   </div>
   <div class="row margin-top">
-    <% @apartments.order(availability: :asc).each do |apartment| %>
-      <% if apartment.category == "flatshare" %>
+    <% @flatshares.order(availability: :asc).each do |apartment| %>
+      <% cache apartment do %>
         <%= render "shared/card", apartment: apartment %>
-      <%end%>
+      <% end %>
     <% end %>
   </div>
   <div class="title">
-    <h3><%= t('index.title.apartment') %></h3>
+    <h2><%= t('index.title.apartment') %></h2>
   </div>
   <div class="row margin-top">
-    <% @apartments.order(availability: :asc).each do |apartment| %>
-      <% if apartment.category == "apartment" %>
+    <% @apparts.order(availability: :asc).each do |apartment| %>
+      <% cache apartment do %>
         <%= render "shared/card", apartment: apartment %>
       <% end %>
     <% end %>

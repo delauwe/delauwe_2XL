@@ -1,37 +1,47 @@
-<div class="banner-cover" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 50%), url(https://res.cloudinary.com/elsaszymczak/image/upload/v1531924963/Alice%20D./terrasse.jpg);">
-  <div id="banner-content">
-    <h1><%= t('home.tagline') %></h1>
-    <h2><%= t('home.tagline-2') %></h2>
-    <%= link_to t('home.call-to-action'), apartments_path, class: "btn-border-pink btn-large btn-color-white" %>
-  </div>
-</div>
+
+<%= render "shared/banner" %>
 <div class="container">
   <div class="home-content">
-    <h2><%= t('home.title') %></h2>
-    <div class="home-tag">
-      <p class="tag tag-kaki smaller-font-size"><%= t('home.flatsharing') %></p>
-      <p class="tag tag-gray smaller-font-size"><%= t('home.lille') %></p>
-    </div>
+    <div id="avaible-now">
+      <% if Apartment.any_available? %>
+        <h2><%=  t('home.available-now') %></h2>
+      <% end %>
+      <div class="row margin-top">
+        <% @apartments.each do |apartment| %>
+          <% if apartment.availability <= Date.today %>
+            <%= render "shared/card", apartment: apartment %>
+          <% end %>
+        <% end %>
+      </div>
+ </div>
+ <h2><%= t('home.flatshares') %></h2>
     <div class="row margin-top">
       <%  @available_soon.each do |apartment| %>
-        <% if apartment.category == "flatshare" %>
           <%= render "shared/card", apartment: apartment %>
-        <% end %>
       <% end %>
-      <div class="home-button">
-        <%= link_to t('home.call-to-action-2'), apartments_path, class: "btn-border-pink btn-large btn-color-black" %>
+    </div>
+    <div class="home-button">
+        <%= link_to t('home.call-to-action-2'), flatshares_path, class: "btn btn-border-pink btn-large btn-color-black" %>
       </div>
-    </div>
-    <div class="home-tag">
-      <p class="tag tag-kaki smaller-font-size"><%= t('home.apartment') %></p>
-      <p class="tag tag-gray smaller-font-size"> <%= t('home.lille') %></p>
-    </div>
+    <h2><%= t('home.apartments') %></h2>
     <div class="row margin-top">
-     <% @apartments.each do |apartment| %>
-        <% if apartment.category == "apartment" %>
-          <%= render "shared/card", apartment: apartment %>
-        <% end %>
+      <% @apparts.each do |appart| %>
+        <%= render "shared/card", apartment: appart %>
       <% end %>
     </div>
   </div>
 </div>
+
+<script>
+  let i18n = {
+    title: '<%= t('swal.title') %>',
+    option1: '<%= t('swal.options.flatshare') %>',
+    option2: '<%= t('swal.options.apartment') %>'
+  }
+</script>
+
+
+<!-- I want to check if there are any free flats -->
+
+<!-- if there are print them  -->
+<!-- if not do not put anything -->

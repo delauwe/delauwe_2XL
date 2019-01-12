@@ -2,12 +2,26 @@ class ApartmentsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :set_apartment, only: [:show, :edit, :update, :destroy]
 
+  add_breadcrumb I18n.t("breadcrumb.home"), :root_path
+  add_breadcrumb I18n.t("breadcrumb.flats"), :apartments_path
+
+
+  # add_breadcrumb "flatshares", :flatshares_path
+  # add_breadcrumb "apparts", :apparts_path
+  # add_breadcrumb "flatshares", :flatshares_path
+
 
   def index
     @apartments = policy_scope(Apartment)
+    @flatshares = Apartment.where(category: "flatshare").order(availability: :asc).all
+    @apparts = Apartment.where(category: "apartment").order(availability: :asc).all
+
+
   end
 
   def show
+    add_breadcrumb @apartment.name, apartment_path(@apartment)
+
   end
 
   def new

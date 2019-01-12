@@ -3,17 +3,27 @@ fr:
     tagline: "Votre logement idéal jeunes actifs"
     tagline-2: "Appart et Coloc 2XL"
     call-to-action: "Découvrir"
-    title: "Nos logements"
+    contact: "Nous contacter"
+    pre-book: "Pré-réserver"
+    available-now: "Disponible immédiatement"
+    flatshares: "Nos colocs"
+    apartments: "Nos apparts"
     lux: "Luxembourg"
     lille: "Lille"
-    call-to-action-2: "Découvrir tous nos logements"
-    flatsharing: "Coloc"
-    apartment: "Appart"
+    call-to-action-2: "Découvrir toutes nos colocs"
 
+
+  swal:
+    title: "Que recherchez-vous ? "
+    options:
+      flatshare: Coloc
+      apartment: Appartement
 
   card:
     per_room: "€ par chambre + charges"
-    available: "Disponible"
+    available:
+      flatshare: "Une chambre disponible"
+      apartment: "Disponible"
     not-available: "Disponible le"
 
   index:
@@ -46,7 +56,8 @@ fr:
     utilities: "charges"
 
   navbar:
-    flats: "Logements"
+    flatshares: "Colocs"
+    apartments: "Appartements"
 
   footer:
     terms: "Mentions légales"
@@ -54,6 +65,12 @@ fr:
   head:
     title: "2XL - Votre logement idéal jeunes actifs"
 
+  contact:
+    info: "Si vous n'avez pas de profil Facebook veuillez nous laisser un message au +33 9 77 19 77 99 ou un email à coloc@2xl.immo. Nous ne répondons qu’aux messages présentant votre profil et votre recherche de façons détaillées."
+
+  breadcrumb:
+    home: "Accueil"
+    flats: "Logements"
 
 
 

@@ -1,0 +1,13 @@
+<div class="container">
+  <ol class="breadcrumb">
+    <%= render_breadcrumbs :tag => :li, :separator => "" %>
+  </ol>
+  <div class="title">
+    <h1><%= t('index.title.flatshare') %></h1>
+  </div>
+  <div class="row margin-top">
+    <% @flatshares.each do |apartment| %>
+        <%= render "shared/card", apartment: apartment %>
+    <% end %>
+  </div>
+</div>

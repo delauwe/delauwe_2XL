@@ -1,5 +1,4 @@
-.btn-border-pink {
-  border: 3px solid $pink;
+.btn {
   padding: 10px 16px;
   line-height: 1.3333333;
   border-radius: 5px;
@@ -12,33 +11,32 @@
   font-family: "EB Garamond";
   font-weight: 500;
 
+
+
   &:hover {
     text-decoration: none;
     color: white;
+  }
+}
+
+.btn-home {
+    box-shadow: 3px 3px 16px 1px #3C3C3C;
+}
+
+.btn-border-pink {
+  border: 3px solid $pink;
+
+ &:hover {
     background-color: $pink;
   }
 }
 
 
 .btn-border-gray {
-  border: 3px solid #C4C4C4;
-  padding: 10px 16px;
-  line-height: 1.3333333;
-  border-radius: 5px;
-  color: white;
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  font-family: "EB Garamond";
-  font-weight: 500;
+  border: 3px solid $dark-gray;
 
   &:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #C4C4C4;
+    background-color: $dark-gray;
   }
 }
 
@@ -54,6 +52,14 @@
   font-size: 10px;
 }
 
+.btn-medium {
+  font-size: 15px;
+}
+
 .btn-color-black {
   color: black;
+}
+
+.btn-long {
+  padding: 10px 26px;
 }

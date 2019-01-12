@@ -11,6 +11,12 @@ gem 'redis'
 gem 'pundit'
 gem 'figaro'
 gem 'jquery_mobile_rails'
+gem "breadcrumbs_on_rails"
+gem "actionpack-page_caching"
+
+
+
+
 
 gem 'activeadmin'
 

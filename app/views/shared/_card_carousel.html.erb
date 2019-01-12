@@ -1,0 +1,26 @@
+
+<div id="carousel-images-<%= apartment.id %>" class="carousel slide full-height" data-ride="carousel" data-interval="false">
+  <!-- Indicators -->
+  <ol class="carousel-indicators carousel-indicators-better">
+    <% apartment.photos_by_type.each_with_index do |_photo, index| %>
+      <li data-target="#carousel-images-<%= apartment.id %>" data-slide-to= "<%= index %>" class="<%= 'active' if index == 0 %>" ></li>
+    <% end %>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner full-height" role="listbox">
+    <% apartment.photos_by_type.each_with_index do |photo, index| %>
+     <div class="item card-image <%= 'active' if index == 0 %>" style="background-image: url('<%= cl_image_path photo.url %>');">
+     </div>
+    <% end %>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-images-<%= apartment.id %>" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-images-<%= apartment.id %>" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+

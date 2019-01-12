@@ -1,42 +1,30 @@
 <div class="wrapper">
-  <div id="carousel-images-<%= @apartment.id %>" class="carousel slide full-height" data-ride="carousel" data-interval="false">
-    <ol class="carousel-indicators carousel-indicators-better">
-      <% @apartment.photos.each_with_index do |_photo, index| %>
-      <li data-target="#carousel-images-<%= @apartment.id %>" data-slide-to= "<%= index %>" class="<%= 'active' if index == 0 %>" ></li>
-      <% end %>
-    </ol>
-      <div class="carousel-inner full-height" role="listbox">
-        <% @apartment.photos.order(id: :asc).each_with_index do |photo, index| %>
-            <div class="item <%= "active" if index == 0 %> banner" style="background-image: url('<%= cl_image_path photo.url %>');"></div>
-        <% end %>
-      </div>
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-images-<%= @apartment.id %>" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-images-<%= @apartment.id %>" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-  </div>
+  <%= render "shared/show_carousel", apartment: @apartment %>
 </div>
+
 <div class="container">
+  <ol class="breadcrumb">
+    <%= render_breadcrumbs :tag => :li, :separator => "" %>
+  </ol>
   <div class="flexbox-show">
     <div class="left-part">
       <div class="details">
-        <h4><%= @apartment.name %></h4></p>
-        <p class="tag tag-kaki smaller-font-size"><%= @apartment.nature.capitalize %></p>
-          <% if @apartment.availability <= Date.today %>
-            <p class="tag tag-green smaller-font-size">
-            <%= t('card.available') %>
-          </p>
+        <h4><%= @apartment.name %></h4>
+        <h1 class="tag tag-kaki smaller-font-size"><%= @apartment.nature.capitalize %></h1>
+          <% if @apartment.availability <= Date.today && @apartment.category == "flatshare" %>
+            <h2 class="tag tag-green smaller-font-size">
+              <%= t('card.available.flatshare') %>
+            </h2>
+          <% elsif @apartment.availability <= Date.today && @apartment.category == "apartment"  %>
+            <h2 class="tag tag-green smaller-font-size">
+              <%= t('card.available.apartment') %>
+            </h2>
           <% else %>
-          <p class="tag tag-red smaller-font-size">
-              <%= t('card.not-available') %> <%= @apartment.availability.strftime("%d/%m/%Y") %>
-             </p>
+            <h2 class="tag tag-red smaller-font-size">
+              <%= t('card.not-available') %> <strong><%= @apartment.availability.strftime("%d/%m/%Y") %></strong>
+             </h2>
           <% end %>
-        <p class="smaller-font-size"><%= image_tag "pin.png", height: 15 %><%= @apartment.location %></p>
+        <h3 class="smaller-font-size"><%= image_tag "pin.png", height: 15 %><%= @apartment.location %></h3>
       </div>
       <div class="carasteristics smaller-font-size">
         <ul>
@@ -91,15 +79,27 @@
       <div class="description smaller-font-size">
         <p><%= @apartment.description  %></p>
       </div>
-      <%= link_to root_path do %>
+      <%= link_to apartments_path do %>
         <i class="fa fa-arrow-left"></i>
       <% end %>
     </div>
     <div class="right-part">
       <p class="pink-background smaller-font-size center"> <span class="price"><%= @apartment.price %> € </span> + <%= t('show.utilities') %></p>
       <div class="buttons">
-        <%= link_to t('show.reservation'), "https://docs.google.com/forms/d/e/1FAIpQLScFlItNbbbMVsVucvpQUKOoHCj-SLS0IYoMklJMoZiUGIT17A/viewform", class: "btn-border-pink text-black margin-right" %>
-        <%= link_to t('show.contact'), "http://m.me/2XLcoloc.chambresalouer", class: "btn-border-gray text-black" %>
+        <div id="reservation">
+          <% if @apartment.category == "flatshare" %>
+            <%= link_to t('show.reservation'), "https://docs.google.com/forms/d/e/1FAIpQLScFlItNbbbMVsVucvpQUKOoHCj-SLS0IYoMklJMoZiUGIT17A/viewform", class: "btn btn-border-pink text-black margin-right" %>
+          <% else %>
+            <%= link_to t('show.reservation'), "https://goo.gl/forms/KmEczmhDktRC48V73", class: "btn btn-border-pink text-black margin-right" %>
+          <% end %>
+        </div>
+        <div id="contact">
+          <% if @apartment.category == "flatshare" %>
+            <%= link_to t('show.contact'), "http://m.me/2XLcoloc.chambresalouer", class: "btn btn-border-gray text-black" %>
+          <% else %>
+            <%= link_to t('show.contact'), "http://m.me/2xl.appartement", class: "btn btn-border-gray text-black" %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

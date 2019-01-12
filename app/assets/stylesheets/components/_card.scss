@@ -33,7 +33,7 @@
 }
 
 .border-green {
-  border: solid 5px #B7CE63;
+  border: solid 5px $green;
 }
 
 .card-images {
@@ -136,8 +136,8 @@
 
 
   h3 {
-    text-align: center;
-    font-size: 50px;
+    // text-align: center;
+    font-size: 40px;
     font-weight: bold;
   }
 }
@@ -161,18 +161,20 @@
 .availability-red {
   // background-color: #EBACAC;
   // background-color: #577590
-  background-color: #FFE5D9
+  // background-color: #FFE5D9;
+  background-color: $dark-gray;
 }
 
 .availability-green {
   // background-color: #B2F1A2;
-  background-color: #B7CE63
+  background-color: $green;
 }
 
 #available {
-  color: white;
-  font-size: 20px;
+  color: black;
+  font-size: 15px;
   padding-left: 10px;
+  font-weight: bold;
 }
 
 .circle-full {

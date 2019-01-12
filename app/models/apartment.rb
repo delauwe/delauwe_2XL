@@ -5,4 +5,13 @@ class Apartment < ApplicationRecord
 
   translates :location, :nature, :description
 
+  def photos_by_type
+    self.photos.order(id: :asc)
+  end
+
+   def self.any_available?
+    self.find do |apartment|
+      apartment.availability <= Date.today
+    end
+  end
 end

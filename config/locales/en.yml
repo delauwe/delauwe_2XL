@@ -34,16 +34,26 @@ en:
     tagline: "The ideal flat for young professionals"
     tagline-2: "Rooms and flats 2XL"
     call-to-action: "Discover"
-    title: "Our flats"
+    contact: "Contact us"
+    pre-book: "Pre-book"
+    available-now: "Available now"
+    flatshares: "Our flatshares"
+    apartments: "Our apartments"
     Lux: "Luxemburg"
     Lille: "Lille"
-    call-to-action-2: "Discover all our flats"
-    flatsharing: "Flatshare"
-    apartment: "Apartment"
+    call-to-action-2: "Discover all our flatshares"
+
+  swal:
+    title: "What are you looking for?"
+    options:
+      flatshare: Flatshare
+      apartment: Apartment
 
   card:
     per_room: "€ per room + utilities"
-    available: "Available"
+    available:
+      flatshare: "One bedroom available"
+      apartment: "Available"
     not-available: "Available on the"
 
   index:
@@ -71,12 +81,13 @@ en:
     kitchen: "kitchen"
     washing-room: "washing room"
     washing-machine: "washing machine"
-    reservation: "Pre-reserve"
+    reservation: "Pre-book"
     contact: "Contact us"
     utilities: "utilities"
 
   navbar:
-    flats: "Flats"
+    flatshares: "Flatshares"
+    apartments: "Apartments"
 
   footer:
     terms: "Terms"
@@ -84,7 +95,12 @@ en:
   head:
     title: "2XL - Your ideal flat as a young professional"
 
+  contact:
+    info: "If you do not have a Facebook profil, you can send us a message: +33 9 77 19 77 99  or an email at coloc@2xl.immo. We will only answer messages which fully describe your profil and your flat search. "
 
+  breadcrumb:
+    home: "Home"
+    flats: "Flats"
 
 
 

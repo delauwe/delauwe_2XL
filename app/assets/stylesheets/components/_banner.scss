@@ -1,0 +1,82 @@
+.banner-cover {
+  color: white;
+  text-align: center;
+  height: 60vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  }
+  h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+}
+
+#banner-content {
+  margin-bottom: 46px;
+}
+
+#discover {
+  margin-bottom: 10px;
+}
+
+// modal //
+
+.swal-modal {
+  font-family: 'EB Garamond';
+}
+
+.swal-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.swal-footer {
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.swal-button {
+  background-color: white;
+  color: black;
+  padding: 10px 16px;
+  line-height: 1.3333333;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight: 500;
+  border: 3px solid $dark-gray;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+    background-color: $dark-gray;
+
+  }
+}
+
+.swal-button:focus {
+    box-shadow: none;
+}
+
+@media(max-width: 768px) {
+  .banner-cover{
+    height: 100vh;
+
+  }
+}
