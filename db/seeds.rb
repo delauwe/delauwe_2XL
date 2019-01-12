@@ -17,7 +17,7 @@ puts "No more apartments"
 
 puts "Creating apartments"
 
-alice = Apartment.new(
+alice = Apartment.create!(
   location: "In front of the metro station Cormontaigne",
   size: 130,
   number_of_rooms: 5,
@@ -40,7 +40,7 @@ Lease of 12 months: 455 € / month per room + charges: Wifi (fiber optic), co-o
 Short lease: price can be negotiated.
 "
   )
-alice.save!
+# alice.save!
 
 Apartment::Translation.create(
   apartment_id: alice.id,
