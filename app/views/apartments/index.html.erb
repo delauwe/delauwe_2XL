@@ -20,7 +20,7 @@
     <h1><%= t('index.title.flatshare') %></h1>
   </div>
   <div class="row margin-top">
-    <% @flatshares.order(availability: :asc).each do |apartment| %>
+    <% @flatshares.each do |apartment| %>
       <% cache apartment do %>
         <%= render "shared/card", apartment: apartment %>
       <% end %>
@@ -30,7 +30,7 @@
     <h2><%= t('index.title.apartment') %></h2>
   </div>
   <div class="row margin-top">
-    <% @apparts.order(availability: :asc).each do |apartment| %>
+    <% @apparts.each do |apartment| %>
       <% cache apartment do %>
         <%= render "shared/card", apartment: apartment %>
       <% end %>
