@@ -15,8 +15,6 @@ class ApartmentsController < ApplicationController
     @apartments = policy_scope(Apartment)
     @flatshares = Apartment.where(category: "flatshare").order(availability: :asc).all
     @apparts = Apartment.where(category: "apartment").order(availability: :asc).all
-
-
   end
 
   def show

@@ -8,10 +8,8 @@
     </div>
     <div class="row margin-top">
       <% @apartments.each do |apartment| %>
-        <% cache apartment do %>
-          <% if apartment.availability <= Date.today %>
-            <%= render "shared/card", apartment: apartment %>
-          <% end %>
+        <% if apartment.availability <= Date.today %>
+          <%= render "shared/card", apartment: apartment %>
         <% end %>
       <% end %>
     </div>
@@ -21,9 +19,7 @@
   </div>
   <div class="row margin-top">
     <% @flatshares.each do |apartment| %>
-      <% cache apartment do %>
-        <%= render "shared/card", apartment: apartment %>
-      <% end %>
+      <%= render "shared/card", apartment: apartment %>
     <% end %>
   </div>
   <div class="title">
