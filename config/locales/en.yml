@@ -51,6 +51,7 @@ en:
 
   card:
     per_room: "€ per room + utilities"
+    per_apartment: "€ for the apartment + utilities"
     available:
       flatshare: "One bedroom available"
       apartment: "Available"
