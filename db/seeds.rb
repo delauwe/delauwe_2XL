@@ -83,16 +83,16 @@ camille = Apartment.create(
   name: "Camille D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 2160,
+  price: 1740,
   bathroom: 1,
   terrace: true,
   toilet: 1,
   shower_room: 1,
   living_room: true,
-  availability: Date.parse("jun 30 2019"),
+  availability: Date.parse("jul 31 2019"),
   description: "In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
   5 rooms, 83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state.
-  Lease of 12 months: 2160€/ month + 400 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
+  Lease of 12 months: 1740€/ month + 400 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
 )
 
 Apartment::Translation.create(
@@ -101,7 +101,7 @@ Apartment::Translation.create(
   location: "Au pied du métro Port de Lille",
   nature: "appart",
   description: "Quartier Vauban. Dans résidence calme, au 5e et dernier étage, ascenseur. 5 pièces 83 m², entièrement équipé et meublé, excellent état : séjour, cuisine américaine avec lave-vaisselle, terrasse exposée sud-ouest, salle de douche, wc séparés, lave et sèche-linge, 4 chambres toutes avec nombreux placards, literie bon état, bureaux.
-  Bail de 12 mois : 2160€/mois + 400 charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
+  Bail de 12 mois : 1740€/mois + 400 charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
   Bail court : prix à négocier.")
 
 
@@ -193,7 +193,7 @@ francine = Apartment.create(
   name: "Francine D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 2700,
+  price: 1900,
   living_room: true,
   bathroom: 2,
   toilet: 1,
@@ -201,7 +201,7 @@ francine = Apartment.create(
   kitchen: true,
   availability: Date.parse("jul 31 2019"),
   description: "In the Vauban neighbourhood, square Maréchal Leclerc. 5 rooms in shared flat with 5 young flatmates, spacious apartment.Great apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, new bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
-Possibility to rent parking or box in extra. 2700€/ month + 500 charges. (Short lease possible price on request)
+Possibility to rent parking or box in extra. 1900€/ month + 500 charges. (Short lease possible price on request)
 "
 )
 
@@ -214,7 +214,7 @@ Apartment::Translation.create(
   Grand appartement excellent état au rez-de-chaussée (double accès), dans un immeuble de standing (entrée sécurisée), entièrement meublé et équipé, 5 belles chambres très spacieuses, toutes avec placards, bureau, literie neuve, cuisine très bien équipée (frigo américain, lave-vaisselle), 2 salles de bains, 2 wc. Lave-linge, sèche-linge.
   Les charges comprennent wifi, électricité, charges de copropriété, 2 h ménage par semaine.
   Parking ou box en sus.
-  2700€/ mois + 500 de charges. (Bail court possible prix sur demande)"
+  1900€/ mois + 500 de charges. (Bail court possible prix sur demande)"
 )
 
 francine_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924486/Francine%20D./sejour.jpg",
@@ -297,7 +297,7 @@ lucie = Apartment.create(
   name: "Lucie D. - Lille",
   category: "flatshare",
   nature: "flatshare",
-  price: 430,
+  price: 450,
   bathroom: 1,
   shower_room: 1,
   toilet: 2,
@@ -309,7 +309,7 @@ lucie = Apartment.create(
   description: "In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, separate toilet, shower room.
-Lease of 12 months: 430 € / month + charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week).
+Lease of 12 months: 450 € / month + 110 € charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week).
 Short lease: price to negotiate."
 )
 
@@ -320,7 +320,7 @@ Apartment::Translation.create(
   description: "Quartier Vauban.colocation 4 jeunes actif.s.ves, très calmes, non fumeurs.
     Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
     Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, wc séparés, salle de douche.
-    Bail de 12 mois : 430  €/mois + charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
+    Bail de 12 mois : 450  €/mois + 110 € charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
 
 
 lucie_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924713/Lucie.D/sejour.jpg",
@@ -352,7 +352,7 @@ odette = Apartment.create(
   name: "Odette D. - Roubaix",
   category: "flatshare",
   nature: "flatshare",
-  price: 325,
+  price: 349,
   bathroom: 1,
   shower_room: 1,
   toilet: 1,
@@ -362,7 +362,7 @@ odette = Apartment.create(
   kitchen: true,
   availability: Date.parse("jan 01 2019"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
-325€/ month + 100€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
+349€/ month + 95€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
 
 Apartment::Translation.create(
@@ -370,7 +370,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Jean-Baptiste Lebas - Roubaix", nature: "coloc",
   description: "Bel appartement de 83 m2 excellent état, au 5ème , 4 belles chambres meublées avec grands placards, bureau, literie, 1 salles de douche, 1 salle d’eau, 1 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine.
-  325€/ mois + 100€ de charges (wifi, copropriété, électricité, 1h de ménage par semaine). Frais de dossier pour bail court (inférieur à 12 mois)"
+  349€/ mois + 95€ de charges (wifi, copropriété, électricité, 1h de ménage par semaine). Frais de dossier pour bail court (inférieur à 12 mois)"
   )
 
 odette_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./sejour.jpg",
