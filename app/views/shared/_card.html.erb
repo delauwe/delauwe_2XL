@@ -20,7 +20,7 @@
             </div>
           </div>
           <p class="smaller-font-size"> <%= image_tag "pin.png", height: 15 %> <%= apartment.location %></p>
-          <p class="smaller-font-size"><%= apartment.price %> <%= t('card.per_room') %> </p>
+          <p class="smaller-font-size"><%= apartment.price %> <%= apartment.category == "flatshare" ? t('card.per_room') : t('card.per_apartment') %> </p>
         </div>
         <div class="card-content-bottom  <%= apartment.availability <= Date.today ? 'availability-green' : 'availability-red' %>">
           <div class="availability">

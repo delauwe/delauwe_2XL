@@ -21,6 +21,7 @@ fr:
 
   card:
     per_room: "€ par chambre + charges"
+    per_apartment: "€ pour l'appartement + charges"
     available:
       flatshare: "Une chambre disponible"
       apartment: "Disponible"
