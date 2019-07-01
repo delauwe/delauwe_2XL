@@ -33,7 +33,7 @@ alice = Apartment.create!(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jun 30 2019"),
+  availability: Date.parse("jul 31 2019"),
   description: "Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
 Lease of 12 months: 465 € / month per room + 110 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
@@ -83,16 +83,16 @@ camille = Apartment.create(
   name: "Camille D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 1740,
+  price: 1600,
   bathroom: 1,
   terrace: true,
   toilet: 1,
   shower_room: 1,
   living_room: true,
-  availability: Date.parse("jul 31 2019"),
-  description: "In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
+  availability: Date.parse("sep 01 2019"),
+  description: "****Booking starts on 31st July 2019 - Send your file for pre-selection at coloc@2xl.immo **** In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
   5 rooms, 83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state.
-  Lease of 12 months: 1740€/ month + 400 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
+  Lease of 12 months: 1600€/ month + 400 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
 )
 
 Apartment::Translation.create(
@@ -100,8 +100,8 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Au pied du métro Port de Lille",
   nature: "appart",
-  description: "Quartier Vauban. Dans résidence calme, au 5e et dernier étage, ascenseur. 5 pièces 83 m², entièrement équipé et meublé, excellent état : séjour, cuisine américaine avec lave-vaisselle, terrasse exposée sud-ouest, salle de douche, wc séparés, lave et sèche-linge, 4 chambres toutes avec nombreux placards, literie bon état, bureaux.
-  Bail de 12 mois : 1740€/mois + 400 charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
+  description: "**** Les réservations débuteront le 31 juillet 2019 - Envoyez vos dossiers de préselection à coloc@2xl.immo **** Quartier Vauban. Dans résidence calme, au 5e et dernier étage, ascenseur. 5 pièces 83 m², entièrement équipé et meublé, excellent état : séjour, cuisine américaine avec lave-vaisselle, terrasse exposée sud-ouest, salle de douche, wc séparés, lave et sèche-linge, 4 chambres toutes avec nombreux placards, literie bon état, bureaux.
+  Bail de 12 mois : 1600€/mois + 400 charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
   Bail court : prix à négocier.")
 
 
@@ -135,7 +135,7 @@ claire = Apartment.create(
   name: "Claire D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 1500,
+  price: 1100,
   living_room: true,
   terrace: true,
   bathroom: 1,
@@ -144,7 +144,7 @@ claire = Apartment.create(
   washing_room: true,
   washing_machine: false,
   kitchen: true,
-  availability: Date.parse("jun 30 2019"),
+  availability: Date.parse("dec 31 2019"),
   description: " Very nice T3 fully furnished and equipped. 2 bedrooms + one in a mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a small flatshare consisting of 2 young professionals. Ideal location in front of the metro, bus and V'Lille stations.
  Short-term rental 6 months maximum renewable.
  1100€/ month + 400€  charges - cleaning 1 hour / week or 400 € per room, all charges included.
@@ -255,15 +255,15 @@ jules = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("nov 30 2018"),
-  description: "Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
+  availability: Date.parse("sep 01 2019"),
+  description: "****Booking starts on 31st July 2019 - Send your file for pre-selection at coloc@2xl.immo **** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
  Lease of 12 months: 455 € / month + 110€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate. SPECIAL OFFER : room #1 free of charge until June, 30th"
 )
 
 Apartment::Translation.create(
   apartment_id: jules.id,
   locale: "fr", location: "Place Maréchal Leclerc - Vauban", nature: "coloc",
-  description: "Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
+  description: "**** Les réservations débuteront le 31 juillet 2019 - Envoyez vos dossiers de préselection à coloc@2xl.immo **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
   Bail de 12 mois : 455  €/mois + 110€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier. OFFRE SPECIALE : Chb #1 Charges offertes jusqu'au 30 juin.")
 
 jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
@@ -305,7 +305,7 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("apr 30 2019"),
+  availability: Date.parse("dec 31 2019"),
   description: "In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, separate toilet, shower room.
@@ -350,9 +350,9 @@ odette = Apartment.create(
   size: 83,
   number_of_rooms: 4,
   name: "Odette D. - Roubaix",
-  category: "flatshare",
-  nature: "flatshare",
-  price: 349,
+  category: "apartment",
+  nature: "apartment",
+  price: 1200,
   bathroom: 1,
   shower_room: 1,
   toilet: 1,
@@ -360,9 +360,9 @@ odette = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jan 01 2019"),
+  availability: Date.parse("aug 01 2019"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
-349€/ month + 95€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
+1200€/ month + 400€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
 
 Apartment::Translation.create(
@@ -370,7 +370,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Jean-Baptiste Lebas - Roubaix", nature: "coloc",
   description: "Bel appartement de 83 m2 excellent état, au 5ème , 4 belles chambres meublées avec grands placards, bureau, literie, 1 salles de douche, 1 salle d’eau, 1 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine.
-  349€/ mois + 95€ de charges (wifi, copropriété, électricité, 1h de ménage par semaine). Frais de dossier pour bail court (inférieur à 12 mois)"
+  1200€/ mois + 400€ de charges (wifi, copropriété, électricité, 1h de ménage par semaine). Frais de dossier pour bail court (inférieur à 12 mois)"
   )
 
 odette_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./sejour.jpg",
@@ -410,7 +410,7 @@ appart302 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jun 30 2019"),
+  availability: Date.parse("sep 01 2019"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 760€/ month +  140€ charges: weekly cleaning, wifi.
 Lease of 1 to 12 months.  
@@ -464,7 +464,7 @@ appart303 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jul 31 2019"),
+  availability: Date.parse("nov 1 2019"),
   description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
     Lease from 1 to 12 months.
     Lease 12 months: 760 €/ month + 140 charges: (single 130 € / couple 170 €), weekly cleaning, laundry, wifi.
@@ -515,7 +515,7 @@ studio = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jun 30 2019"),
+  availability: Date.parse("sep 01 2019"),
   description: "This small apartment is suitable for a student or single person looking for individual accommodation for a few nights a week and for a short duration.
    A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
    Very well located in front of the metro station Cormontaigne.
