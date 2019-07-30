@@ -33,7 +33,7 @@ alice = Apartment.create!(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jul 31 2019"),
+  availability: Date.parse("oct 31 2019"),
   description: "Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
 Lease of 12 months: 465 € / month per room + 110 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
@@ -83,16 +83,16 @@ camille = Apartment.create(
   name: "Camille D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 1600,
+  price: 1740,
   bathroom: 1,
   terrace: true,
   toilet: 1,
   shower_room: 1,
   living_room: true,
-  availability: Date.parse("sep 01 2019"),
+  availability: Date.parse("aug 01 2019"),
   description: "****Booking starts on 31st July 2019 - Send your file for pre-selection at coloc@2xl.immo **** In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
   5 rooms, 83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state.
-  Lease of 12 months: 1600€/ month + 400 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
+  Lease of 12 months: 1740€/ month + 400 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
 )
 
 Apartment::Translation.create(
@@ -101,7 +101,7 @@ Apartment::Translation.create(
   location: "Au pied du métro Port de Lille",
   nature: "appart",
   description: "**** Les réservations débuteront le 31 juillet 2019 - Envoyez vos dossiers de préselection à coloc@2xl.immo **** Quartier Vauban. Dans résidence calme, au 5e et dernier étage, ascenseur. 5 pièces 83 m², entièrement équipé et meublé, excellent état : séjour, cuisine américaine avec lave-vaisselle, terrasse exposée sud-ouest, salle de douche, wc séparés, lave et sèche-linge, 4 chambres toutes avec nombreux placards, literie bon état, bureaux.
-  Bail de 12 mois : 1600€/mois + 400 charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
+  Bail de 12 mois : 1740€/mois + 400 charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
   Bail court : prix à négocier.")
 
 
@@ -256,14 +256,14 @@ jules = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("sep 01 2019"),
-  description: "****Booking starts on 31st July 2019 - Send your file for pre-selection at coloc@2xl.immo **** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
+  description: "****Booking starts on 15th August 2019 - Send your file for pre-selection at coloc@2xl.immo **** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
  Lease of 12 months: 455 € / month + 110€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
   apartment_id: jules.id,
   locale: "fr", location: "Place Maréchal Leclerc - Vauban", nature: "coloc",
-  description: "**** Les réservations débuteront le 31 juillet 2019 - Envoyez vos dossiers de préselection à coloc@2xl.immo **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
+  description: "**** Les réservations débuteront le 15 aout 2019 - Envoyez vos dossiers de préselection à coloc@2xl.immo **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
   Bail de 12 mois : 455  €/mois + 110€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
 
 jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
@@ -352,7 +352,7 @@ odette = Apartment.create(
   name: "Odette D. - Roubaix",
   category: "apartment",
   nature: "apartment",
-  price: 1200,
+  price: 1400,
   bathroom: 1,
   shower_room: 1,
   toilet: 1,
@@ -362,7 +362,7 @@ odette = Apartment.create(
   kitchen: true,
   availability: Date.parse("aug 01 2019"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
-1200€/ month + 400€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
+1400€/ month + 400€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
 
 Apartment::Translation.create(
@@ -370,7 +370,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Jean-Baptiste Lebas - Roubaix", nature: "coloc",
   description: "Bel appartement de 83 m2 excellent état, au 5ème , 4 belles chambres meublées avec grands placards, bureau, literie, 1 salles de douche, 1 salle d’eau, 1 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine.
-  1200€/ mois + 400€ de charges (wifi, copropriété, électricité, 1h de ménage par semaine). Frais de dossier pour bail court (inférieur à 12 mois)"
+  1400€/ mois + 400€ de charges (wifi, copropriété, électricité, 1h de ménage par semaine). Frais de dossier pour bail court (inférieur à 12 mois)"
   )
 
 odette_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./sejour.jpg",
