@@ -33,7 +33,7 @@ alice = Apartment.create!(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("oct 31 2019"),
+  availability: Date.parse("jul 31 2019"),
   description: "Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
 Lease of 12 months: 465 € / month per room + 110 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
@@ -77,31 +77,31 @@ end
 
 
 camille = Apartment.create(
-  location: "In front of the metro station Port de Lille - Vauban",
+  location: "In front of the metro station Port de Lille",
   size: 83,
   number_of_rooms: 4,
   name: "Camille D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 1740,
+  price: 1600,
   bathroom: 1,
   terrace: true,
   toilet: 1,
   shower_room: 1,
   living_room: true,
-  availability: Date.parse("aug 01 2019"),
+  availability: Date.parse("sep 01 2019"),
   description: "****Booking starts on 31st July 2019 - Send your file for pre-selection at coloc@2xl.immo **** In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
   5 rooms, 83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state.
-  Lease of 12 months: 1740€/ month + 400 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
+  Lease of 12 months: 1600€/ month + 400 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
 )
 
 Apartment::Translation.create(
   apartment_id: camille.id,
   locale: "fr",
-  location: "Au pied du métro Port de Lille - Vauban",
+  location: "Au pied du métro Port de Lille",
   nature: "appart",
   description: "**** Les réservations débuteront le 31 juillet 2019 - Envoyez vos dossiers de préselection à coloc@2xl.immo **** Quartier Vauban. Dans résidence calme, au 5e et dernier étage, ascenseur. 5 pièces 83 m², entièrement équipé et meublé, excellent état : séjour, cuisine américaine avec lave-vaisselle, terrasse exposée sud-ouest, salle de douche, wc séparés, lave et sèche-linge, 4 chambres toutes avec nombreux placards, literie bon état, bureaux.
-  Bail de 12 mois : 1740€/mois + 400 charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
+  Bail de 12 mois : 1600€/mois + 400 charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
   Bail court : prix à négocier.")
 
 
@@ -129,7 +129,7 @@ camille_array.each do |url|
 end
 
 claire = Apartment.create(
-  location: "In front of the metro station Cormontaigne - Vauban",
+  location: "In front of the metro station Port de Lille",
   size: 70,
   number_of_rooms: 3,
   name: "Claire D. - Lille",
@@ -155,7 +155,7 @@ claire = Apartment.create(
 Apartment::Translation.create(
   apartment_id: claire.id,
   locale: "fr",
-  location: "Au pied du métro Cormontaigne - Vauban",
+  location: "Au pied du métro Port de Lille",
   nature: "appart",
   description: "Trés joli T3 entièrement meublé et équipé. 2 chambres + mezzanine. Belle terrasse. Idéal couple avec 1 enfant ou petite colocation constituée de 2 jeunes actifs. Emplacement top au pied du métro, bus et station V'Lille.
   Location courte durée 6 mois maximum renouvelable.
@@ -256,7 +256,7 @@ jules = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("sep 01 2019"),
-  description: "****Booking starts on 15th August 2019 - Send your file for pre-selection at coloc@2xl.immo **** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
+  description: "****Booking starts on 31st July 2019 - Send your file for pre-selection at coloc@2xl.immo **** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
  Lease of 12 months: 455 € / month + 110€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
@@ -291,7 +291,7 @@ jules_array.each do |url|
 end
 
 lucie = Apartment.create(
-  location: "In front of the metro station Cormontaigne - Vauban",
+  location: "In front of the metro station Cormontaigne",
   size: 100,
   number_of_rooms: 4,
   name: "Lucie D. - Lille",
@@ -316,7 +316,7 @@ Short lease: price to negotiate."
 
 Apartment::Translation.create(
   apartment_id: lucie.id,
-  locale: "fr", location: "Au pied du métro Cormontaigne - Vauban", nature: "coloc",
+  locale: "fr", location: "Au pied du métro Cormontaigne", nature: "coloc",
   description: "Quartier Vauban.colocation 4 jeunes actif.s.ves, très calmes, non fumeurs.
     Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
     Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, wc séparés, salle de douche.
@@ -362,7 +362,7 @@ odette = Apartment.create(
   kitchen: true,
   availability: Date.parse("aug 01 2019"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
-1800€/ month + 400€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
+1200€/ month + 400€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
 
 Apartment::Translation.create(
