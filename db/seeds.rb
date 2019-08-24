@@ -89,8 +89,8 @@ camille = Apartment.create(
   toilet: 1,
   shower_room: 1,
   living_room: true,
-  availability: Date.parse("sep 01 2019"),
-  description: "****Booking starts on 15th August 2019 - Send your file for pre-selection at coloc@2xl.immo **** In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
+  availability: Date.parse("jan 01 2020"),
+  description: "In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
   5 rooms, 83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state.
   Lease of 12 months: 1760€/ month + 440 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
 )
@@ -100,7 +100,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Au pied du métro Port de Lille",
   nature: "appart",
-  description: "**** Les réservations débuteront le 15 aout 2019 - Envoyez vos dossiers de préselection à coloc@2xl.immo **** Quartier Vauban. Dans résidence calme, au 5e et dernier étage, ascenseur. 5 pièces 83 m², entièrement équipé et meublé, excellent état : séjour, cuisine américaine avec lave-vaisselle, terrasse exposée sud-ouest, salle de douche, wc séparés, lave et sèche-linge, 4 chambres toutes avec nombreux placards, literie bon état, bureaux.
+  description: "Quartier Vauban. Dans résidence calme, au 5e et dernier étage, ascenseur. 5 pièces 83 m², entièrement équipé et meublé, excellent état : séjour, cuisine américaine avec lave-vaisselle, terrasse exposée sud-ouest, salle de douche, wc séparés, lave et sèche-linge, 4 chambres toutes avec nombreux placards, literie bon état, bureaux.
   Bail de 12 mois : 1760€/mois + 440 € charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
   Bail court : prix à négocier.")
 
@@ -144,7 +144,7 @@ claire = Apartment.create(
   washing_room: true,
   washing_machine: false,
   kitchen: true,
-  availability: Date.parse("dec 31 2019"),
+  availability: Date.parse("jan 1 2020"),
   description: " Very nice T3 fully furnished and equipped. 2 bedrooms + one in a mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a small flatshare consisting of 2 young professionals. Ideal location in front of the metro, bus and V'Lille stations.
  Short-term rental 6 months maximum renewable.
  1100€/ month + 400€  charges - cleaning 1 hour / week or 400 € per room, all charges included.
@@ -199,7 +199,7 @@ francine = Apartment.create(
   toilet: 1,
   washing_machine: true,
   kitchen: true,
-  availability: Date.parse("dec 31 2019"),
+  availability: Date.parse("jan 1 2020"),
   description: "In the Vauban neighbourhood, square Maréchal Leclerc. 5 rooms in shared flat with 5 young flatmates, spacious apartment.Great apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, new bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra. 1900€/ month + 500 charges. (Short lease possible price on request)
 "
@@ -248,7 +248,7 @@ jules = Apartment.create(
   name: "Jules D. - Lille",
   category: "flatshare",
   nature: "flatshare",
-  price: 455,
+  price: 333,
   bathroom: 2,
   toilet: 2,
   washing_room: false,
@@ -256,15 +256,15 @@ jules = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("sep 01 2019"),
-  description: "****Booking starts on 15th August 2019 - Send your file for pre-selection at coloc@2xl.immo **** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
- Lease of 12 months: 455 € / month + 110€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
+  description: "****Booking started - Send your file for pre-selection at coloc@2xl.immo **** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
+ Lease of 12 months: 333€ (room 1&2), 438€ (room 3), 458€ (room 5&6), 478€ (room 4) € / month + 117€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
   apartment_id: jules.id,
   locale: "fr", location: "Place Maréchal Leclerc - Vauban", nature: "coloc",
   description: "**** Les réservations débuteront le 15 aout 2019 - Envoyez vos dossiers de préselection à coloc@2xl.immo **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
-  Bail de 12 mois : 455  €/mois + 110€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
+  Bail de 12 mois : 333€ (chb 1&2), 438€ (chb 3), 458€ (chb 5&6), 478€ (room 4) € / month + 117€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
 
 jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./vue.jpg",
@@ -305,7 +305,7 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("sep 01 2019"),
+  availability: Date.parse("jan 01 2019"),
   description: "In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, separate toilet, shower room.
@@ -515,7 +515,7 @@ studio = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("sep 01 2019"),
+  availability: Date.parse("jan 01 2020"),
   description: "This small apartment is suitable for a student or single person looking for individual accommodation for a few nights a week and for a short duration.
    A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
    Very well located in front of the metro station Cormontaigne.
@@ -562,7 +562,7 @@ rollin = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("1 sep 2019"),
+  availability: Date.parse("1 oct 2019"),
   description: "In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located halfway from the Grand Ducal Palace and the Bambëch Forest. By tram, 20 minutes from Auchan shopping center and Kinepolis cinemas.\n
     \n
