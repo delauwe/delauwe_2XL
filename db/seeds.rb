@@ -255,7 +255,7 @@ jules = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("aug 26 2019"),
+  availability: Date.parse("aug 15 2019"),
   description: "****Booking started - Send your file for pre-selection at coloc@2xl.immo **** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
  Lease of 6 months: 333€ (room 1&2), 438€ (room 3), 458€ (room 5&6), 478€ (room 4) € / month + 117€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
