@@ -248,7 +248,7 @@ jules = Apartment.create(
   name: "Jules D. - Lille",
   category: "flatshare",
   nature: "flatshare",
-  price: 333,
+  price: 458,
   bathroom: 2,
   toilet: 2,
   washing_room: false,
@@ -257,14 +257,14 @@ jules = Apartment.create(
   kitchen: true,
   availability: Date.parse("aug 15 2019"),
   description: "****Booking started - Send your file for pre-selection at coloc@2xl.immo **** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
- Lease of 6 months: 333€ (room 1&2), 438€ (room 3), 458€ (room 5&6), 478€ (room 4) € / month + 117€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
+ Lease of 6 months: 458€ (room 5&6), 478€ (room 4) € / month + 117€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
   apartment_id: jules.id,
   locale: "fr", location: "Place Maréchal Leclerc - Vauban", nature: "coloc",
   description: "**** Les réservations ont commencées - Envoyez vos dossiers de préselection à coloc@2xl.immo **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
-  Bail de 6 mois : 333€ (chb 1&2), 438€ (chb 3), 458€ (chb 5&6), 478€ (room 4) € / month + 117€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
+  Bail de 6 mois : 458€ (chb 5&6), 478€ (room 4) € / month + 117€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
 
 jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./vue.jpg",
