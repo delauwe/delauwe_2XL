@@ -81,18 +81,18 @@ camille = Apartment.create(
   size: 83,
   number_of_rooms: 4,
   name: "Camille D. - Lille",
-  category: "apartment",
-  nature: "apartment",
-  price: 1740,
+  category: "flatshare",
+  nature: "flatshare",
+  price: 440,
   bathroom: 1,
   terrace: true,
   toilet: 1,
   shower_room: 1,
   living_room: true,
-  availability: Date.parse("jan 01 2020"),
+  availability: Date.parse("sep 01 2020"),
   description: "In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
   5 rooms, 83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state.
-  Lease of 12 months: 1760€/ month + 440 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
+  Lease of 12 months: 440/ month + 110 € charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
 )
 
 Apartment::Translation.create(
@@ -248,7 +248,7 @@ jules = Apartment.create(
   name: "Jules D. - Lille",
   category: "flatshare",
   nature: "flatshare",
-  price: 458,
+  price: 478,
   bathroom: 2,
   toilet: 2,
   washing_room: false,
@@ -256,15 +256,15 @@ jules = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("aug 15 2019"),
-  description: "****Booking started - Send your file for pre-selection at coloc@2xl.immo **** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
- Lease of 6 months: 458€ (room 5&6), 478€ (room 4) € / month + 117€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
+  description: "Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
+ Lease of 6 months: 478€ (room 4) € / month + 117€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
   apartment_id: jules.id,
   locale: "fr", location: "Place Maréchal Leclerc - Vauban", nature: "coloc",
-  description: "**** Les réservations ont commencées - Envoyez vos dossiers de préselection à coloc@2xl.immo **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
-  Bail de 6 mois : 458€ (chb 5&6), 478€ (room 4) € / month + 117€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
+  description: "Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
+  Bail de 6 mois : 478€ (room 4) € / month + 117€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
 
 jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./vue.jpg",
