@@ -548,7 +548,7 @@ studio_array.each do |url|
 end
 
 rollin = Apartment.create(
-  location: "Luxembourg, 10 minutes walking from the tram station Etoile",
+  location: "Luxembourg, Val Fleury bus stop, 10 minutes walking from the tram station Etoile",
   size: 107,
   number_of_rooms: 4,
   name: "Rollin D. - Luxembourg",
@@ -578,7 +578,8 @@ rollin = Apartment.create(
 Apartment::Translation.create(
   apartment_id: rollin.id,
   locale: "fr",
-  location: "Luxembourg, 10 minutes à pied de la station de tram étoile", nature: "coloc",
+  location: "Luxembourg, arrêt Val Fleury, 10 minutes à pied de la station de tram étoile",
+  nature: "coloc",
   description: "*** 1 chambre libre le 1 oct 2019 *** Dans un bel appartement récent de 107m2, au RDC d'une petite copropriété, à 10 minutes de la station de Tram Etoile, nous proposons 4 chambres à louer en contrat individuel. Il s'agit d'une colocation internationale de jeunes actifs.\n
     Situé rue du Rollingergrund au niveau de l'arrêt de bus Val Fleurie vous êtes situé à mi distance du Palais Grand-ducale et de la forêt de Bambëch. En Tram, à 20 minutes du centre commercial Auchan et des cinémas Kinepolis.\n
 
