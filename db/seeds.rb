@@ -33,8 +33,8 @@ alice = Apartment.create!(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("sep 1 2019"),
-  description: "*** 1 bedroom on 1st oct 2019 *** Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
+  availability: Date.parse("oct 1 2019"),
+  description: "*** 1 bedroom on 1st nov 2019 *** Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
 Lease of 12 months: 465 € / month per room + 110 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
 Short lease: price can be negotiated."
@@ -46,7 +46,7 @@ Apartment::Translation.create(
   locale: "fr",
   nature: "coloc",
   location: "Au pied du métro Cormontaigne",
-  description: "*** 1 chambre libre le 1 oct 2019 *** Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
+  description: "*** 1 chambre libre le 1 nov 2019 *** Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
 En rez-de-chaussée : grand séjour sur terrasse et grande cuisine ouverte. 4 grandes chambres dont 2 en cave anglaise + 1 chambre plus petite à l'étage, buanderie. 2 salles de bains, 1 salle d'eau et 3 WCs. Laverie.
 Bail de 12 mois : 465 €/mois par chambre + 110 € de charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
 Bail court : prix à négocier.")
@@ -81,27 +81,27 @@ camille = Apartment.create(
   size: 83,
   number_of_rooms: 4,
   name: "Camille D. - Lille",
-  category: "apartment",
-  nature: "apartment",
-  price: 1760,
+  category: "flatshare",
+  nature: "flatshare",
+  price: 440,
   bathroom: 1,
   terrace: true,
   toilet: 1,
   shower_room: 1,
   living_room: true,
-  availability: Date.parse("jan 01 2020"),
+  availability: Date.parse("sep 01 2020"),
   description: "In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
   5 rooms, 83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state.
-  Lease of 12 months: 1760€/month + 440€ charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
+  Lease of 3 months: 440€/month + 110€ charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
 )
 
 Apartment::Translation.create(
   apartment_id: camille.id,
   locale: "fr",
   location: "Au pied du métro Port de Lille",
-  nature: "appart",
+  nature: "coloc",
   description: "Quartier Vauban. Dans résidence calme, au 5e et dernier étage, ascenseur. 5 pièces 83 m², entièrement équipé et meublé, excellent état : séjour, cuisine américaine avec lave-vaisselle, terrasse exposée sud-ouest, salle de douche, wc séparés, lave et sèche-linge, 4 chambres toutes avec nombreux placards, literie bon état, bureaux.
-  Bail de 12 mois : 1760 € /mois + 440 € charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
+  Bail de 3 mois : 440 € /mois + 110 € charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
   Bail court : prix à négocier.")
 
 
@@ -464,8 +464,8 @@ appart303 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("nov 1 2019"),
-  description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
+  availability: Date.parse("oct 1 2019"),
+  description: "*** Flat available 1st Nov. 2019 *** Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
     Lease from 1 to 12 months.
     Lease 12 months: 760 €/ month + 140 charges: (single 130 € / couple 170 €), weekly cleaning, laundry, wifi.
     Short term possible to negotiate
@@ -475,7 +475,7 @@ appart303 = Apartment.create(
 Apartment::Translation.create(
   apartment_id: appart303.id,
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "appart",
-  description: "Idéal cadre en déplacement (relocation) ou couple sans enfant. Quartier Vauban, situé au pied métro et commerces. Au 3ème étage d'un bel immeuble ancien, beaux volumes entièrement meublés, lumineux, excellent état. Ménage hebdomadaire. Lingerie. Tous services Wifi.
+  description: "*** Appartement disponible le 1er nov. 2019 **** Idéal cadre en déplacement (relocation) ou couple sans enfant. Quartier Vauban, situé au pied métro et commerces. Au 3ème étage d'un bel immeuble ancien, beaux volumes entièrement meublés, lumineux, excellent état. Ménage hebdomadaire. Lingerie. Tous services Wifi.
   (Bail de 1 à 12 mois).
   Bail 12 mois à 760 €/mois + 140€ de charges (single 140€/couple 170€). Courte durée possible à négocier. Garage possible en sus."
 )
@@ -562,8 +562,8 @@ rollin = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("1 sep 2019"),
-  description: "*** 1 bedroom on 1st oct 2019 *** In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
+  availability: Date.parse("1 jan 2020"),
+  description: "*** 1 bedroom on 1st jan 2020 *** In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located halfway from the Grand Ducal Palace and the Bambëch Forest. By tram, 20 minutes from Auchan shopping center and Kinepolis cinemas.\n
     \n
     In the flat, you will share the living room-kitchen, 2 bathrooms, 2 toilets, the laundry room with washing machines.\n
@@ -580,7 +580,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Luxembourg, arrêt Val Fleury, 10 minutes à pied de la station de tram étoile",
   nature: "coloc",
-  description: "*** 1 chambre libre le 1 oct 2019 *** Dans un bel appartement récent de 107m2, au RDC d'une petite copropriété, à 10 minutes de la station de Tram Etoile, nous proposons 4 chambres à louer en contrat individuel. Il s'agit d'une colocation internationale de jeunes actifs.\n
+  description: "*** 1 chambre libre le 1 janv 2020 *** Dans un bel appartement récent de 107m2, au RDC d'une petite copropriété, à 10 minutes de la station de Tram Etoile, nous proposons 4 chambres à louer en contrat individuel. Il s'agit d'une colocation internationale de jeunes actifs.\n
     Situé rue du Rollingergrund au niveau de l'arrêt de bus Val Fleurie vous êtes situé à mi distance du Palais Grand-ducale et de la forêt de Bambëch. En Tram, à 20 minutes du centre commercial Auchan et des cinémas Kinepolis.\n
 
     Dans la coloc, vous partagerez le séjour-cuisine, 2 salles de bain, 2 wc, la buanderie avec les machines à laver.\n
