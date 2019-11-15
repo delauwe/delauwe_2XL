@@ -85,7 +85,7 @@ camille = Apartment.create(
   nature: "apartment",
   price: 1999,
   bathroom: 1
-    terrace: true,
+  terrace: true,
   toilet: 1,
   shower_room: 1,
   living_room: true,
