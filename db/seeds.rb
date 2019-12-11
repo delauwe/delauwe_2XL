@@ -256,14 +256,14 @@ jules = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("nov 1 2019"),
-  description: "***Bedrooms #1, #3 and #5 availble Dec. 20th.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
+  description: "***Bedrooms #5 and #6 availble Dec. 20th.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
  Lease of 6 months: 333€ (rooms #1&#2), 433 (room #3), 458 (rooms #5&#6) 478€ (room #4) € / month + 117€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
   apartment_id: jules.id,
   locale: "fr", location: "Place Maréchal Leclerc - Vauban", nature: "coloc",
-  description: "***Chambres #1, #3 and #5 disponibles le 20 décembre **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
+  description: "***Chambres #5 and #6 disponibles le 20 décembre **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
   Bail de 6 mois : 333€ (chb #1&#2), 433 (chb #3), 458 (chb #5&#6) 478€ (chb #4) € / mois + 117€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
 
 jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
@@ -297,7 +297,7 @@ lucie = Apartment.create(
   name: "Lucie D. - Lille",
   category: "flatshare",
   nature: "flatshare",
-  price: 450,
+  price: 455,
   bathroom: 1,
   shower_room: 1,
   toilet: 2,
@@ -305,11 +305,11 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jul 01 2020"),
-  description: "In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
+  availability: Date.parse("dec 01 2019"),
+  description: "*** Room 1 available 2Oth Dec. *** In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, separate toilet, shower room.
-Lease of 12 months: 450 € / month + 110 € charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week).
+Lease of 12 months: 455 € / month + 110 € charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week).
 Short lease: price to negotiate."
 )
 
@@ -317,10 +317,10 @@ Short lease: price to negotiate."
 Apartment::Translation.create(
   apartment_id: lucie.id,
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "coloc",
-  description: "Quartier Vauban.colocation 4 jeunes actif.s.ves, très calmes, non fumeurs.
+  description: "*** Chambre 1 disponible le 20 décembre **** Quartier Vauban.colocation 4 jeunes actif.s.ves, très calmes, non fumeurs.
     Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
     Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, wc séparés, salle de douche.
-    Bail de 12 mois : 450  €/mois + 110 € charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
+    Bail de 12 mois : 455  €/mois + 110 € charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
 
 
 lucie_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924713/Lucie.D/sejour.jpg",
