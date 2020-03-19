@@ -34,7 +34,7 @@ alice = Apartment.create!(
   living_room: true,
   kitchen: true,
   availability: Date.parse("Oct 1 2020"),
-  description: "*** 4 / 5 bedrooms on 1st Oct. 2020 *** Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
+  description: "*** 5 bedrooms on 1st Oct. 2020 *** Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
 Lease of 12 months: 465 € / month per room + 110 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
 Short lease: price can be negotiated."
@@ -46,7 +46,7 @@ Apartment::Translation.create(
   locale: "fr",
   nature: "coloc",
   location: "Au pied du métro Cormontaigne",
-  description: "*** 4 / 5 chambres libres le 1er octobre 2020 *** Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
+  description: "*** 5 chambres libres le 1er octobre 2020 *** Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
 En rez-de-chaussée : grand séjour sur terrasse et grande cuisine ouverte. 4 grandes chambres dont 2 en cave anglaise + 1 chambre plus petite à l'étage, buanderie. 2 salles de bains, 1 salle d'eau et 3 WCs. Laverie.
 Bail de 12 mois : 465 €/mois par chambre + 110 € de charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
 Bail court : prix à négocier.")
@@ -200,7 +200,7 @@ francine = Apartment.create(
   washing_machine: true,
   kitchen: true,
   availability: Date.parse("jan 1 2020"),
-  description: "*** Available immediately *** In the Vauban neighbourhood, square Maréchal Leclerc. 5 rooms in shared flat with 5 young flatmates, spacious apartment.Great apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, new bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
+  description: "*** Available immediately *** In the Vauban neighbourhood, square Maréchal Leclerc. 4/5 rooms in shared flat with 5 young flatmates, spacious apartment.Great apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, new bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra. 1900€/ month + 500 charges. (Short lease possible price on request)
 "
 )
@@ -210,7 +210,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Place Maréchal Leclerc - Vauban",
   nature: "appart",
-  description: "*** Disponible immediatement *** Quartier Vauban, Place Maréchal Leclerc. 5 chambres dans colocation de 5 jeunes actifs, spacieux appartement.
+  description: "*** Disponible immediatement *** Quartier Vauban, Place Maréchal Leclerc. 4/5 chambres dans colocation de 5 jeunes actifs, spacieux appartement.
   Grand appartement excellent état au rez-de-chaussée (double accès), dans un immeuble de standing (entrée sécurisée), entièrement meublé et équipé, 5 belles chambres très spacieuses, toutes avec placards, bureau, literie neuve, cuisine très bien équipée (frigo américain, lave-vaisselle), 2 salles de bains, 2 wc. Lave-linge, sèche-linge.
   Les charges comprennent wifi, électricité, charges de copropriété, 2 h ménage par semaine.
   Parking ou box en sus.
