@@ -144,7 +144,7 @@ claire = Apartment.create(
   washing_room: true,
   washing_machine: false,
   kitchen: true,
-  availability: Date.parse("jul 1 2020"),
+  availability: Date.parse("jan 1 2021"),
   description: " Very typical T3 fully furnished and equipped. 2 bedrooms + one in a mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a flatshare consisting of 2/3 young professionals. Ideal location in front of the metro, bus and V'Lille stations.
  Short-term rental 6 months maximum renewable.
  1000€/ month + 450€  charges - cleaning 1 hour / week, all charges included.
@@ -257,14 +257,14 @@ jules = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("nov 1 2019"),
-  description: "***Bedrooms #2 & 6 availble July 15th.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
+  description: "***Bedrooms #6 availble August 1st.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
  Lease of 6 months: 300€ (rooms #1), 350 (room #2&#3), 425 (rooms #4&#5&#6) / month + 150€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
   apartment_id: jules.id,
   locale: "fr", location: "Place Maréchal Leclerc - Vauban", nature: "coloc",
-  description: "***Chambres #2 & 6 disponible le 15 mai **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
+  description: "***Chambre #6 disponible le 1er aout **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
   Bail de 6 mois : 300€ (chb #1), 350 (chb #2&#3), 425 (chb #4&#5&#6) / mois + 150€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
 
 jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
@@ -306,7 +306,7 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jul 01 2020"),
+  availability: Date.parse("jan 31 2021"),
   description: "In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, separate toilet, shower room.
@@ -564,7 +564,7 @@ rollin = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("1 Jul 2020"),
-  description: "*** 1 bedrooms on 1st July 2020 *** In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
+  description: "*** 1 bedrooms on 1st August 2020 *** In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located 10 minutes from historical city center. By tram, 20 minutes from Kirchberg (Auchan shopping center, Kinepolis cinemas, ...).\n
     \n
     In the flat, you will share the living room-kitchen, 2 bathrooms, 2 toilets, the laundry room with washing machines+ dryer.\n
@@ -581,7 +581,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Luxembourg, arrêt Val Fleury, 10 minutes à pied de la station de tram étoile",
   nature: "coloc",
-  description: "*** 1 chambre libre le 1er julliet 2020 *** Dans un bel appartement récent de 107m2, au RDC d'une petite copropriété, à 10 minutes de la station de Tram Etoile, nous proposons 4 chambres à louer en contrat individuel. Il s'agit d'une colocation internationale de jeunes actifs.\n
+  description: "*** 1 chambre libre le 1er aout 2020 *** Dans un bel appartement récent de 107m2, au RDC d'une petite copropriété, à 10 minutes de la station de Tram Etoile, nous proposons 4 chambres à louer en contrat individuel. Il s'agit d'une colocation internationale de jeunes actifs.\n
     Rue du Rollingergrund au niveau de l'arrêt de bus Val Fleurie vous êtes situé à 10 min du centre historique. En Tram, à 20 minutes du Kircherg (centre commercial Auchan, cinémas).\n
 
     Dans la coloc, vous partagerez le séjour-cuisine, 2 salles de bain, 2 wc, la buanderie (lave-linge + sèche linge).\n
