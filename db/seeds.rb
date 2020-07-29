@@ -249,7 +249,7 @@ jules = Apartment.create(
   name: "Jules D. - Lille",
   category: "flatshare",
   nature: "flatshare",
-  price: 350,
+  price: 425,
   bathroom: 2,
   toilet: 2,
   washing_room: false,
