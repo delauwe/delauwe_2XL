@@ -188,21 +188,21 @@ end
 
 francine = Apartment.create(
   location: "Place Maréchal Leclerc - Vauban",
-  size: 136,
-  number_of_rooms: 5,
+  size: 130,
+  number_of_rooms: 4,
   name: "Francine D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 2000,
+  price: 1900,
   living_room: true,
   bathroom: 2,
   toilet: 1,
   washing_machine: true,
   kitchen: true,
   availability: Date.parse("sep 15 2020"),
-  description: "*** Available SEP 2020 *** In the Vauban neighbourhood, square Maréchal Leclerc. 4/5 rooms in shared flat with 4/5 young flatmates, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
+  description: "*** Available 15 SEP 2020 *** In the Vauban neighbourhood, square Maréchal Leclerc. 4 rooms in shared flat with 4 young flatmates, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra. 
-1900€/ month + 650 charges. (4 bedrooms / short lease possible price on request)
+1900€/ month + 450 charges. (5 bedrooms / short lease possible price on request)
 "
 )
 
@@ -211,11 +211,11 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Place Maréchal Leclerc - Vauban",
   nature: "appart",
-  description: "*** Disponible SEP 2020 *** Quartier Vauban, Place Maréchal Leclerc. 4/5 chambres dans colocation de jeunes 4/5 actifs, spacieux appartement.
-  Appartement excellent état au rez-de-chaussée (double accès), dans un immeuble de standing (entrée sécurisée), entièrement meublé et équipé, 5 belles chambres très spacieuses, toutes avec placards, bureau, literie récente, cuisine très bien équipée (frigo américain, lave-vaisselle), 2 salles de bains, 2 wc. Lave-linge, sèche-linge.
+  description: "*** Disponible 15 SEP 2020 *** Quartier Vauban, Place Maréchal Leclerc. 4 chambres pour colocation de jeunes 4 actifs, spacieux appartement.
+  Appartement excellent état au rez-de-chaussée (double accès), dans un immeuble de standing (entrée sécurisée), entièrement meublé et équipé, 4 belles chambres spacieuses, toutes avec placards, bureau, literie récente, cuisine très bien équipée (frigo américain, lave-vaisselle), 2 salles de bains, 2 wc. Lave-linge, sèche-linge.
   Les charges comprennent wifi, électricité, charges de copropriété, 2 h ménage par semaine.
   Parking ou box en sus.
-  1900€/ mois + 650 de charges. (4 chambres / bail court possible prix sur demande)"
+  1900€/ mois + 450 de charges. (5 chambres / bail court possible prix sur demande)"
 )
 
 francine_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924486/Francine%20D./sejour.jpg",
@@ -257,14 +257,14 @@ jules = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("nov 1 2019"),
-  description: "***Bedrooms #6 availble August 1st.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
+  description: "***Bedrooms #6 availble August 15th.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
  Lease of 6 months: 300€ (rooms #1), 350 (room #2&#3), 425 (rooms #4&#5&#6) / month + 150€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
   apartment_id: jules.id,
   locale: "fr", location: "Place Maréchal Leclerc - Vauban", nature: "coloc",
-  description: "***Chambre #6 disponible le 1er aout **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
+  description: "***Chambre #6 disponible le 15 aout **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
   Bail de 6 mois : 300€ (chb #1), 350 (chb #2&#3), 425 (chb #4&#5&#6) / mois + 150€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
 
 jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
@@ -411,9 +411,9 @@ appart302 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jul 01 2021"),
+  availability: Date.parse("Sep 01 2020"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
-750€/ month +  150€ charges: weekly cleaning, wifi.
+750€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
 Garage possible in addition.
 Short term to negotiate.
@@ -427,7 +427,7 @@ Apartment::Translation.create(
   description: "T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
   Courte durée à négocier. Quartier Vauban, situé au pied du métro et commerces.
   Au 2ème étage d'une maison ancienne, très beau 2 pièces de 45 m² entièrement meublé, lumineux, très bon état.
-  Ménage hebdomadaire. Lingerie. Tous services Wifi. (Bail de 1 à 6 mois). 750€/mois + 150€ de charges.
+  Ménage hebdomadaire. Lingerie. Tous services Wifi. (Bail de 1 à 6 mois). 750€/mois + 200€ de charges.
   Garage possible en sus.")
 
 appart302_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-salon.jpg",
@@ -465,10 +465,10 @@ appart303 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Dec 1 2020"),
+  availability: Date.parse("Oct 1 2020"),
   description: "deal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
-    Lease from 1 to 12 months.
-    Lease 6 months: 750 €/ month + 150 charges: (single 150 € / couple 200 €), weekly cleaning, laundry, wifi.
+    Lease from 1 to 6 months.
+    Lease 6 months: 750 €/ month + 200 € charges, weekly cleaning, laundry, wifi.
     Short term possible to negotiate
     Garage possible in addition."
 )
@@ -477,8 +477,8 @@ Apartment::Translation.create(
   apartment_id: appart303.id,
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "appart",
   description: "Idéal cadre en déplacement (relocation) ou couple sans enfant. Quartier Vauban, situé au pied métro et commerces. Au 3ème étage d'un bel immeuble ancien, beaux volumes entièrement meublés, lumineux, excellent état. Ménage hebdomadaire. Lingerie. Tous services Wifi.
-  (Bail de 1 à 12 mois).
-  Bail 6 mois à 750 €/mois + 150€ de charges (single 150€/couple 200€). Courte durée possible à négocier. Garage possible en sus."
+  (Bail de 1 à 6 mois).
+  Bail 6 mois à 750 €/mois + 200€ de charges. Courte durée possible à négocier. Garage possible en sus."
 )
 
 
@@ -516,7 +516,7 @@ studio = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("may 01 2020"),
+  availability: Date.parse("dec 01 2020"),
   description: "This small apartment is suitable for a student or single person looking for individual accommodation for a few nights a week and for a short duration.
    A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
    Very well located in front of the metro station Cormontaigne.
@@ -564,7 +564,7 @@ rollin = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("1 Jul 2020"),
-  description: "*** 1 bedrooms on 1st August 2020 *** In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
+  description: "*** 1 bedrooms on 1st Sept 2020 *** In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located 10 minutes from historical city center. By tram, 20 minutes from Kirchberg (Auchan shopping center, Kinepolis cinemas, ...).\n
     \n
     In the flat, you will share the living room-kitchen, 2 bathrooms, 2 toilets, the laundry room with washing machines+ dryer.\n
@@ -581,7 +581,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Luxembourg, arrêt Val Fleury, 10 minutes à pied de la station de tram étoile",
   nature: "coloc",
-  description: "*** 1 chambre libre le 1er aout 2020 *** Dans un bel appartement récent de 107m2, au RDC d'une petite copropriété, à 10 minutes de la station de Tram Etoile, nous proposons 4 chambres à louer en contrat individuel. Il s'agit d'une colocation internationale de jeunes actifs.\n
+  description: "*** 1 chambre libre le 1er Sept 2020 *** Dans un bel appartement récent de 107m2, au RDC d'une petite copropriété, à 10 minutes de la station de Tram Etoile, nous proposons 4 chambres à louer en contrat individuel. Il s'agit d'une colocation internationale de jeunes actifs.\n
     Rue du Rollingergrund au niveau de l'arrêt de bus Val Fleurie vous êtes situé à 10 min du centre historique. En Tram, à 20 minutes du Kircherg (centre commercial Auchan, cinémas).\n
 
     Dans la coloc, vous partagerez le séjour-cuisine, 2 salles de bain, 2 wc, la buanderie (lave-linge + sèche linge).\n
