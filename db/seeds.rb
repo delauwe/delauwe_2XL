@@ -306,8 +306,8 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jul 31 2021"),
-  description: "***1 bedroom left 520€ 11*** In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
+  availability: Date.parse("jul 31 2020"),
+  description: "***1 bedroom left 520€ *** In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, separate toilet, shower room.
 Lease of 6 months: 400 € / month + 150 € charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week).
