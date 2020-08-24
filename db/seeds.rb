@@ -199,8 +199,8 @@ francine = Apartment.create(
   toilet: 1,
   washing_machine: true,
   kitchen: true,
-  availability: Date.parse("sep 15 2020"),
-  description: "*** Available 15 SEP 2020 *** In the Vauban neighbourhood, square Maréchal Leclerc. 4 rooms in shared flat with 4 young flatmates, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
+  availability: Date.parse("jan 1 2021"),
+  description: "*** Available 1 janv 2021 *** In the Vauban neighbourhood, square Maréchal Leclerc. 4 rooms in shared flat with 4 young flatmates, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra. 
 1900€/ month + 450 charges. (5 bedrooms / short lease possible price on request)
 "
@@ -211,7 +211,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Place Maréchal Leclerc - Vauban",
   nature: "appart",
-  description: "*** Disponible 15 SEP 2020 *** Quartier Vauban, Place Maréchal Leclerc. 4 chambres pour colocation de jeunes 4 actifs, spacieux appartement.
+  description: "*** Disponible 1 jan 2021 *** Quartier Vauban, Place Maréchal Leclerc. 4 chambres pour colocation de jeunes 4 actifs, spacieux appartement.
   Appartement excellent état au rez-de-chaussée (double accès), dans un immeuble de standing (entrée sécurisée), entièrement meublé et équipé, 4 belles chambres spacieuses, toutes avec placards, bureau, literie récente, cuisine très bien équipée (frigo américain, lave-vaisselle), 2 salles de bains, 2 wc. Lave-linge, sèche-linge.
   Les charges comprennent wifi, électricité, charges de copropriété, 2 h ménage par semaine.
   Parking ou box en sus.
@@ -256,15 +256,15 @@ jules = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("nov 1 2019"),
-  description: "***Bedrooms #6 availble August 15th.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
+  availability: Date.parse("oct 1 2020"),
+  description: "***Bedrooms next availble October 1st.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
  Lease of 6 months: 300€ (rooms #1), 350 (room #2&#3), 425 (rooms #4&#5&#6) / month + 150€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
   apartment_id: jules.id,
   locale: "fr", location: "Place Maréchal Leclerc - Vauban", nature: "coloc",
-  description: "***Chambre #6 disponible le 15 aout **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
+  description: "***Prochaine chambre disponible le 1er octobre **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
   Bail de 6 mois : 300€ (chb #1), 350 (chb #2&#3), 425 (chb #4&#5&#6) / mois + 150€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
 
 jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
@@ -306,8 +306,8 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jan 31 2021"),
-  description: "In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
+  availability: Date.parse("jul 31 2021"),
+  description: "***1 bedroom left 520€ 11*** In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, separate toilet, shower room.
 Lease of 6 months: 400 € / month + 150 € charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week).
@@ -318,7 +318,7 @@ Short lease: price to negotiate."
 Apartment::Translation.create(
   apartment_id: lucie.id,
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "coloc",
-  description: "Quartier Vauban.colocation 4 jeunes actifs, très calmes, non fumeurs.
+  description: "***1 chambre libre 520€ *** Quartier Vauban.colocation 4 jeunes actifs, très calmes, non fumeurs.
     Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
     Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, wc séparés, salle de douche.
     Bail de 6 mois : 400  €/mois + 150 € charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
@@ -411,7 +411,7 @@ appart302 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Sep 01 2020"),
+  availability: Date.parse("Aug 01 2020"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 750€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
