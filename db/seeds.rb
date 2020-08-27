@@ -33,8 +33,8 @@ alice = Apartment.create!(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Oct 1 2020"),
-  description: "*** 5 bedrooms on 1st Oct. 2020 *** Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
+  availability: Date.parse("Apr 1 2021"),
+  description: "Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
 Lease of 12 months: 435 € / month per room + 140 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
 Short lease: price can be negotiated."
@@ -46,7 +46,7 @@ Apartment::Translation.create(
   locale: "fr",
   nature: "coloc",
   location: "Au pied du métro Cormontaigne",
-  description: "*** 5 chambres libres le 1er octobre 2020 *** Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
+  description: "Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
 En rez-de-chaussée : grand séjour sur terrasse et grande cuisine ouverte. 4 grandes chambres dont 2 en cave anglaise + 1 chambre plus petite à l'étage, buanderie. 2 salles de bains, 1 salle d'eau et 3 WCs. Laverie.
 Bail de 12 mois : 435 €/mois par chambre + 140 € de charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
 Bail court : prix à négocier.")
@@ -256,15 +256,15 @@ jules = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("oct 1 2020"),
-  description: "***Bedrooms next availble October 1st.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
+  availability: Date.parse("jan 1 2021"),
+  description: "***Bedrooms #4 availble Jan 1st 2021.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
  Lease of 6 months: 300€ (rooms #1), 350 (room #2&#3), 425 (rooms #4&#5&#6) / month + 150€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
   apartment_id: jules.id,
   locale: "fr", location: "Place Maréchal Leclerc - Vauban", nature: "coloc",
-  description: "***Prochaine chambre disponible le 1er octobre **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
+  description: "***Chambre #4 disponible le 1er janvier 2021 **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
   Bail de 6 mois : 300€ (chb #1), 350 (chb #2&#3), 425 (chb #4&#5&#6) / mois + 150€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
 
 jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
@@ -306,8 +306,8 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jul 31 2020"),
-  description: "***1 bedroom left 520€ *** In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
+  availability: Date.parse("Jan 1 2021"),
+  description: "*** bedroom left 550€ on Jan 1st 2021*** In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, separate toilet, shower room.
 Lease of 6 months: 400 € / month + 150 € charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week).
@@ -318,7 +318,7 @@ Short lease: price to negotiate."
 Apartment::Translation.create(
   apartment_id: lucie.id,
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "coloc",
-  description: "***1 chambre libre 520€ *** Quartier Vauban.colocation 4 jeunes actifs, très calmes, non fumeurs.
+  description: "*** chambre #2 libre 550€ on Jan 1st 2021 *** Quartier Vauban.colocation 4 jeunes actifs, très calmes, non fumeurs.
     Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
     Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, wc séparés, salle de douche.
     Bail de 6 mois : 400  €/mois + 150 € charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
@@ -361,7 +361,7 @@ odette = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Oct 01 2020"),
+  availability: Date.parse("Jul 01 2021"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th/top floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
 1160€/ month + 440€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
