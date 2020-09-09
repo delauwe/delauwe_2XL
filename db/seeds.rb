@@ -411,7 +411,7 @@ appart302 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Aug 01 2020"),
+  availability: Date.parse("Jan 01 2021"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 750€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
@@ -564,7 +564,7 @@ rollin = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("1 Jul 2020"),
-  description: "*** 1 bedrooms on 1st Sept 2020 *** In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
+  description: "*** 1 bedrooms on 15th Sept 2020 *** In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located 10 minutes from historical city center. By tram, 20 minutes from Kirchberg (Auchan shopping center, Kinepolis cinemas, ...).\n
     \n
     In the flat, you will share the living room-kitchen, 2 bathrooms, 2 toilets, the laundry room with washing machines+ dryer.\n
@@ -581,7 +581,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Luxembourg, arrêt Val Fleury, 10 minutes à pied de la station de tram étoile",
   nature: "coloc",
-  description: "*** 1 chambre libre le 1er Sept 2020 *** Dans un bel appartement récent de 107m2, au RDC d'une petite copropriété, à 10 minutes de la station de Tram Etoile, nous proposons 4 chambres à louer en contrat individuel. Il s'agit d'une colocation internationale de jeunes actifs.\n
+  description: "*** 1 chambre libre le 15 Sept 2020 *** Dans un bel appartement récent de 107m2, au RDC d'une petite copropriété, à 10 minutes de la station de Tram Etoile, nous proposons 4 chambres à louer en contrat individuel. Il s'agit d'une colocation internationale de jeunes actifs.\n
     Rue du Rollingergrund au niveau de l'arrêt de bus Val Fleurie vous êtes situé à 10 min du centre historique. En Tram, à 20 minutes du Kircherg (centre commercial Auchan, cinémas).\n
 
     Dans la coloc, vous partagerez le séjour-cuisine, 2 salles de bain, 2 wc, la buanderie (lave-linge + sèche linge).\n
