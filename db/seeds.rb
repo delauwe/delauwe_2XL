@@ -201,7 +201,7 @@ francine = Apartment.create(
   kitchen: true,
   availability: Date.parse("jul 1 2021"),
   description: "*** Available 1 juillet 2021 *** In the Vauban neighbourhood, square Maréchal Leclerc. 4 rooms in shared flat with 4 young flatmates, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
-Possibility to rent parking or box in extra. 
+Possibility to rent parking or box in extra.
 1900€/ month + 450 charges. (5 bedrooms / short lease possible price on request)
 "
 )
@@ -529,7 +529,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Au pied du métro Cormontaigne", nature: "appart",
   description: "Ce petit appartement conviendra à un étudiant ou personne seule désirant un logement individuel pour quelques nuits par semaine et pour une durée courte.
-    Une pièce de 14 m2 avec faible hauteur sous plafond (ne convient pas à une personne de grande taille). Une salle de bain avec douche et WC. Une kitchenette séparée. 
+    Une pièce de 14 m2 avec faible hauteur sous plafond (ne convient pas à une personne de grande taille). Une salle de bain avec douche et WC. Une kitchenette séparée.
     Très bien situé au pied du métro Cormontaigne.
     Bail court (3 mois renouvelable).
     350€/mois + 150€ de charges (wifi et ménage inclus)"
