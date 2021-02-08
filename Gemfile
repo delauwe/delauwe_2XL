@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.6.3'
+ruby '2.6.6'
 
 gem 'bootsnap', require: false
 gem 'sassc-rails', '~> 2.0.0'
