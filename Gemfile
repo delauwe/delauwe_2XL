@@ -1,25 +1,20 @@
 source 'https://rubygems.org'
-ruby '2.4.4'
+ruby '2.4.6'
 
 gem 'bootsnap', require: false
+gem 'sassc-rails', '~> 2.0.0'
 gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma'
-gem 'rails', '5.2.0'
+gem 'rails', '5.2.1'
 gem 'redis'
 gem 'pundit'
 gem 'figaro'
 gem 'jquery_mobile_rails'
-gem "breadcrumbs_on_rails"
-gem "actionpack-page_caching"
-
-
-
-
-
+gem 'breadcrumbs_on_rails'
+gem 'actionpack-page_caching'
 gem 'activeadmin'
-
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'font-awesome-sass', '~> 5.0.9'
@@ -29,12 +24,12 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'carrierwave', '~> 1.2'
 gem 'cloudinary'
+gem 'omniauth', '~> 1.9.1'
 gem 'omniauth-facebook'
 gem 'globalize', git: 'https://github.com/globalize/globalize'
 gem 'activemodel-serializers-xml'
-
-
-
+gem 'coffee-rails'
+gem 'rails_best_practices'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
