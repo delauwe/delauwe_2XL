@@ -3,10 +3,10 @@
       ["@babel/env", {
         "modules": false,
         "targets": {
-          "browsers": "> 1%",
-          "forceAllTransforms": true
+          "browsers": "> 1%"
         },
-        "useBuiltIns": false
+        "useBuiltIns": false,
+        "forceAllTransforms": true
       }]
     ],
   
