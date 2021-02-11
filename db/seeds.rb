@@ -256,15 +256,15 @@ jules = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("apr 1 2021"),
-  description: "***Bedrooms #5 availble Apr 1st 2021.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
+  availability: Date.parse("feb 1 2021"),
+  description: "***Bedrooms #2 availble Mar 1st 2021.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
  Lease of 6 months: 300€ (rooms #1), 350 (room #2&#3), 425 (rooms #4&#5&#6) / month + 150€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
   apartment_id: jules.id,
   locale: "fr", location: "Place Maréchal Leclerc - Vauban", nature: "coloc",
-  description: "***Chambre #5 disponible le 1er avril 2021 **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
+  description: "***Chambre #2 disponible le 1er avril 2021 **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
   Bail de 6 mois : 300€ (chb #1), 350 (chb #2&#3), 425 (chb #4&#5&#6) / mois + 150€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
 
 jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
@@ -465,8 +465,8 @@ appart303 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Apr 1 2021"),
-  description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
+  availability: Date.parse("Feb 1 2021"),
+  description: "* from 1st April * Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
     Lease from 1 to 6 months.
     Lease 6 months: 750 €/ month + 200 € charges, weekly cleaning, laundry, wifi.
     Short term possible to negotiate
@@ -476,7 +476,7 @@ appart303 = Apartment.create(
 Apartment::Translation.create(
   apartment_id: appart303.id,
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "appart",
-  description: "Idéal cadre en déplacement (relocation) ou couple sans enfant. Quartier Vauban, situé au pied métro et commerces. Au 3ème étage d'un bel immeuble ancien, beaux volumes entièrement meublés, lumineux, excellent état. Ménage hebdomadaire. Lingerie. Tous services Wifi.
+  description: "*A partir du 1er Avril * Idéal cadre en déplacement (relocation) ou couple sans enfant. Quartier Vauban, situé au pied métro et commerces. Au 3ème étage d'un bel immeuble ancien, beaux volumes entièrement meublés, lumineux, excellent état. Ménage hebdomadaire. Lingerie. Tous services Wifi.
   (Bail de 1 à 6 mois).
   Bail 6 mois à 750 €/mois + 200€ de charges. Courte durée possible à négocier. Garage possible en sus."
 )
@@ -516,7 +516,7 @@ studio = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Feb 01 2021"),
+  availability: Date.parse("Mar 01 2021"),
   description: "This small apartment is suitable for a student or single person looking for individual accommodation for a few nights a week and for a short duration.
    A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
    Very well located in front of the metro station Cormontaigne.
