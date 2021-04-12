@@ -199,7 +199,7 @@ francine = Apartment.create(
   toilet: 1,
   washing_machine: true,
   kitchen: true,
-  availability: Date.parse("avr 1 2021"),
+  availability: Date.parse("apr 1 2021"),
   description: " In the Vauban neighbourhood, square Maréchal Leclerc. 4 rooms in shared flat with 4 young flatmates, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra.
 1900€/ month + 450 charges. (5 bedrooms / short lease possible price on request)
