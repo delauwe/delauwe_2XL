@@ -402,7 +402,7 @@ appart302 = Apartment.create(
   size: 45,
   number_of_rooms: 1,
   name: "Appart 302  - Lille",
-  price: 750,
+  price: 650,
   category: "apartment",
   nature: "apartment",
   bathroom: 1,
@@ -413,7 +413,7 @@ appart302 = Apartment.create(
   kitchen: true,
   availability: Date.parse("Jun 01 2021"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
-750€/ month +  200€ charges: weekly cleaning, wifi.
+650€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
 Garage possible in addition.
 Short term to negotiate.
@@ -427,7 +427,7 @@ Apartment::Translation.create(
   description: "T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
   Courte durée à négocier. Quartier Vauban, situé au pied du métro et commerces.
   Au 2ème étage d'une maison ancienne, très beau 2 pièces de 45 m² entièrement meublé, lumineux, très bon état.
-  Ménage hebdomadaire. Lingerie. Tous services Wifi. (Bail de 1 à 6 mois). 750€/mois + 200€ de charges.
+  Ménage hebdomadaire. Lingerie. Tous services Wifi. (Bail de 1 à 6 mois). 650€/mois + 200€ de charges.
   Garage possible en sus.")
 
 appart302_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-salon.jpg",
@@ -458,7 +458,7 @@ appart303 = Apartment.create(
   name: "Appart 303 - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 750,
+  price: 650,
   bathroom: 1,
   toilet: 1,
   washing_room: true,
@@ -468,7 +468,7 @@ appart303 = Apartment.create(
   availability: Date.parse("Feb 1 2021"),
   description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
     Lease from 1 to 6 months.
-    Lease 6 months: 750 €/ month + 200 € charges, weekly cleaning, laundry, wifi.
+    Lease 6 months: 50 €/ month + 200 € charges, weekly cleaning, laundry, wifi.
     Short term possible to negotiate
     Garage possible in addition."
 )
@@ -478,7 +478,7 @@ Apartment::Translation.create(
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "appart",
   description: "Idéal cadre en déplacement (relocation) ou couple sans enfant. Quartier Vauban, situé au pied métro et commerces. Au 3ème étage d'un bel immeuble ancien, beaux volumes entièrement meublés, lumineux, excellent état. Ménage hebdomadaire. Lingerie. Tous services Wifi.
   (Bail de 1 à 6 mois).
-  Bail 6 mois à 750 €/mois + 200€ de charges. Courte durée possible à négocier. Garage possible en sus."
+  Bail 6 mois à 650 €/mois + 200€ de charges. Courte durée possible à négocier. Garage possible en sus."
 )
 
 
@@ -555,7 +555,7 @@ rollin = Apartment.create(
   name: "Rollin D. - Luxembourg",
   category: "flatshare",
   nature: "flatshare",
-  price: 750,
+  price: 765,
   bathroom: 2,
   toilet: 2,
   terrace: true,
@@ -573,7 +573,7 @@ rollin = Apartment.create(
     \n
     The charges include: cold and hot water, electricity, heating, wifi, charge of the building and cleaning for 1 to 2 hours per week.\n
     \n
-    The price is 750€ + 145€ charges or 895€ all charges included."
+    The price is 765€ + 155€ charges or 920€ all charges included."
 )
 
 Apartment::Translation.create(
@@ -590,7 +590,7 @@ Apartment::Translation.create(
     \n
     Les charges comprennent : eau froide et chaude, électricité, chauffage, wifi, charges de l'immeuble et le ménage à raison de 1 à 2 heures par semaine.\n
     \n
-    Le prix est de 750 euro + 145 euro de charges soit 895 euro toutes charges comprises."
+    Le prix est de 765 euro + 920 euro de charges soit 895 euro toutes charges comprises."
 )
 
 rollin_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1541647628/Rollin%20D./living_room_2.jpg",
