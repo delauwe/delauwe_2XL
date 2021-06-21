@@ -361,7 +361,7 @@ odette = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jul 01 2022"),
+  availability: Date.parse("sep 15 2021"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th/top floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
 1160€/ month + 440€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
@@ -458,7 +458,7 @@ appart303 = Apartment.create(
   name: "Appart 303 - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 750,
+  price: 650,
   bathroom: 1,
   toilet: 1,
   washing_room: true,
@@ -468,7 +468,7 @@ appart303 = Apartment.create(
   availability: Date.parse("Aug 1 2021"),
   description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
     Lease from 1 to 6 months.
-    Lease 6 months: 750 €/ month + 200 € charges, weekly cleaning, laundry, wifi.
+    Lease 6 months: 650 €/ month + 200 € charges, weekly cleaning, laundry, wifi.
     Short term possible to negotiate
     Garage possible in addition."
 )
@@ -478,7 +478,7 @@ Apartment::Translation.create(
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "appart",
   description: "Idéal cadre en déplacement (relocation) ou couple sans enfant. Quartier Vauban, situé au pied métro et commerces. Au 3ème étage d'un bel immeuble ancien, beaux volumes entièrement meublés, lumineux, excellent état. Ménage hebdomadaire. Lingerie. Tous services Wifi.
   (Bail de 1 à 6 mois).
-  Bail 6 mois à 750 €/mois + 200€ de charges. Courte durée possible à négocier. Garage possible en sus."
+  Bail 6 mois à 650 €/mois + 200€ de charges. Courte durée possible à négocier. Garage possible en sus."
 )
 
 
@@ -516,7 +516,7 @@ studio = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Mar 01 2021"),
+  availability: Date.parse("Jun 01 2021"),
   description: "This small apartment is suitable for a student or single person looking for individual accommodation for a few nights a week and for a short duration.
    A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
    Very well located in front of the metro station Cormontaigne.
