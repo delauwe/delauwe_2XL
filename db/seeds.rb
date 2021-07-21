@@ -249,7 +249,7 @@ jules = Apartment.create(
   name: "Jules D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 425,
+  price: 2340,
   bathroom: 2,
   toilet: 2,
   washing_room: false,
@@ -258,7 +258,7 @@ jules = Apartment.create(
   kitchen: true,
   availability: Date.parse("feb 1 2021"),
   description: "*** FULL FLAT - ONE CONTRAT.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
- Lease of 6 months: 2940 euro charges included (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Short lease: price to negotiate."
+ Lease of 6 months: 2940 euro charges included (wifi, co-ownership fees, electricity, 2 hour of cleaning per week). Short lease: price to negotiate."
 )
 
 Apartment::Translation.create(
