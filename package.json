@@ -2,13 +2,14 @@
   "name": "delauwe_2XL",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "5.2.0",
+    "@rails/webpacker": "5.4.3",
     "bootstrap": "3",
     "jquery": "^3.5.0",
-    "sweetalert": "^2.1.0"
+    "sweetalert": "^2.1.0",
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
-    "webpack": "^4.43.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack": "^4.46.0",
+    "webpack-dev-server": "^3"
   }
 }
