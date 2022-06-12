@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_12_071630) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_12_082106) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -91,6 +91,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_12_071630) do
     t.boolean "washing_room", default: false
     t.date "availability"
     t.string "nature"
+    t.string "slug"
+    t.index ["slug"], name: "index_apartments_on_slug", unique: true
   end
 
   create_table "photos", force: :cascade do |t|

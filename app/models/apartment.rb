@@ -1,4 +1,6 @@
 class Apartment < ApplicationRecord
+   extend FriendlyId
+   friendly_id :name, use: :slugged
    mount_uploader :photo, PhotoUploader
    has_many :rooms
    has_many :photos

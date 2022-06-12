@@ -54,7 +54,7 @@ class ApartmentsController < ApplicationController
   private
 
   def set_apartment
-    @apartment = Apartment.find(params[:id])
+    @apartment = Apartment.friendly.find(params[:id])
     authorize @apartment
   end
 

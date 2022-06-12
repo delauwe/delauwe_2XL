@@ -30,6 +30,7 @@ gem 'globalize', git: 'https://github.com/globalize/globalize'
 gem 'activemodel-serializers-xml'
 gem 'coffee-rails'
 gem 'rails_best_practices'
+gem 'friendly_id', '~> 5.4.0'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
