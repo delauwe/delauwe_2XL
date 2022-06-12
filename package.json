@@ -5,10 +5,11 @@
     "@rails/webpacker": "5.2.0",
     "bootstrap": "3",
     "jquery": "^3.5.0",
-    "sweetalert": "^2.1.0"
-  },
-  "devDependencies": {
+    "sweetalert": "^2.1.0",
     "webpack": "^4.43.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }

@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '3.0.0'
+ruby '3.1.2'
 
 gem 'bootsnap', require: false
 gem 'sassc-rails', '~> 2.0.0'
@@ -7,7 +7,7 @@ gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'pg'
 gem 'puma'
-gem 'rails', '6.1.1'
+gem 'rails', '7.0.3'
 gem 'redis'
 gem 'pundit'
 gem 'figaro'
