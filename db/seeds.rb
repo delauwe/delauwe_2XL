@@ -307,21 +307,24 @@ lucie = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("Jul 1 2022"),
-  description: "In the Vauban neighbourhood. Flatshare of  4 young professionals, very calm, non smoking.
+  description: "In the Vauban neighbourhood. Appartement ideal for a family (2+2) or  young professionals gathering together (4) in a flatshare. 
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
-Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, separate toilet, shower room.
-Lease of 6 months: 400 € / month + 150 € charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week).
-Short lease: price to negotiate."
+Our requirements : very calm, no event, no smoking, no animals in order to comply with this old house and other flats’ tenants.
+Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, 2 separate toilet, shower room.
+Lease of 6 months: 1500 € for rent + 600 € for charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week).
+Shorter lease is possible subject to rent negotiation.
+"
 )
 
 
 Apartment::Translation.create(
   apartment_id: lucie.id,
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "coloc",
-  description: "Quartier Vauban.colocation 4 jeunes actifs, très calmes, non fumeurs.
+  description: "Quartier Vauban. Appartement idéal pour famille (2+2) ou jeunes actifs (4) en coloc constituée.  Calme, non fumeur, pas d’animaux.
     Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
     Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, wc séparés, salle de douche.
-    Bail de 6 mois : 400  €/mois + 150 € charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail court : prix à négocier.")
+    Bail de 6 mois : 1500 € loyer net + 600€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail plus court possible à négocier.
+")
 
 
 lucie_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924713/Lucie.D/sejour.jpg",
