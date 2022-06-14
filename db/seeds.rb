@@ -296,9 +296,9 @@ lucie = Apartment.create(
   size: 100,
   number_of_rooms: 4,
   name: "Lucie D. - Lille",
-  category: "flatshare",
-  nature: "flatshare",
-  price: 400,
+  category: "apartment",
+  nature: "apartment",
+  price: 1500,
   bathroom: 1,
   shower_room: 1,
   toilet: 2,
@@ -306,7 +306,7 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jul 1 2022"),
+  availability: Date.parse("Jun 1 2022"),
   description: "In the Vauban neighbourhood. Appartement ideal for a family (2+2) or  young professionals gathering together (4) in a flatshare. 
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Our requirements : very calm, no event, no smoking, no animals in order to comply with this old house and other flats’ tenants.
