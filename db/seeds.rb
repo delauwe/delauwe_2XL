@@ -630,7 +630,7 @@ appart_281 = Apartment.create(
   size: 50,
   number_of_rooms: 1,
   name: "Appart 281 - Lille",
-  price: 900,
+  price: 750,
   category: "apartment",
   nature: "apartment",
   bathroom: 1,
