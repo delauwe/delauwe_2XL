@@ -306,7 +306,7 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jan 1 2023"),
+  availability: Date.parse("Jun 1 2023"),
   description: "In the Vauban neighbourhood. Appartement ideal for a family (2+2) or  young professionals gathering together (4) in a flatshare. 
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Our requirements : very calm, no event, no smoking, no animals in order to comply with this old house and other flats’ tenants.
@@ -414,7 +414,7 @@ appart302 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jan 01 2023"),
+  availability: Date.parse("Jul 01 2023"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 750€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
@@ -519,7 +519,7 @@ studio = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jan 01 2023"),
+  availability: Date.parse("Jul 01 2023"),
   description: "This small apartment is suitable for a student or single person looking for individual accommodation for a few nights a week and for a short duration.
    A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
    Very well located in front of the metro station Cormontaigne.
@@ -566,7 +566,7 @@ rollin = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Apr 1 2023"),
+  availability: Date.parse("Mar 1 2023"),
   description: "In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located 10 minutes from historical city center. By tram, 20 minutes from Kirchberg (Auchan shopping center, Kinepolis cinemas, ...).\n
     \n
@@ -641,7 +641,7 @@ appart_281 = Apartment.create(
   kitchen: true,
   availability: Date.parse("Jan 01 2023"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
-900€/ month +  200€ charges: weekly cleaning, wifi.
+750€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
 Garage possible in addition.
 Short term to negotiate.
@@ -655,7 +655,7 @@ Apartment::Translation.create(
   description: "T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
   Courte durée à négocier. Quartier Vauban, situé au pied du métro et commerces.
   Au 1er étage d'une maison ancienne, très beau 2 pièces de 45 m² entièrement meublé, lumineux, très bon état.
-  Ménage hebdomadaire. Tous services Wifi. (Bail de 1 à 6 mois). 900€/mois + 200€ de charges.
+  Ménage hebdomadaire. Tous services Wifi. (Bail de 1 à 6 mois). 750€/mois + 200€ de charges.
   Garage possible en sus.")
 
 appart_281_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1671213081/Appart-2xl-281/281_chambre.jpg",
