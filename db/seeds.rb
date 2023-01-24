@@ -630,7 +630,7 @@ appart_281 = Apartment.create(
   size: 50,
   number_of_rooms: 1,
   name: "Appart 281 - Lille",
-  price: 750,
+  price: 850,
   category: "apartment",
   nature: "apartment",
   bathroom: 1,
@@ -639,9 +639,9 @@ appart_281 = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jan 01 2023"),
+  availability: Date.parse("Jul 01 2023"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
-750€/ month +  200€ charges: weekly cleaning, wifi.
+850€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
 Garage possible in addition.
 Short term to negotiate.
@@ -655,7 +655,7 @@ Apartment::Translation.create(
   description: "T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
   Courte durée à négocier. Quartier Vauban, situé au pied du métro et commerces.
   Au 1er étage d'une maison ancienne, très beau 2 pièces de 45 m² entièrement meublé, lumineux, très bon état.
-  Ménage hebdomadaire. Tous services Wifi. (Bail de 1 à 6 mois). 750€/mois + 200€ de charges.
+  Ménage hebdomadaire. Tous services Wifi. (Bail de 1 à 6 mois). 850€/mois + 200€ de charges.
   Garage possible en sus.")
 
 appart_281_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1671213081/Appart-2xl-281/281_chambre.jpg",
