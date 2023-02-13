@@ -558,7 +558,7 @@ rollin = Apartment.create(
   name: "Rollin D. - Luxembourg",
   category: "flatshare",
   nature: "flatshare",
-  price: 765,
+  price: 800,
   bathroom: 2,
   toilet: 2,
   terrace: true,
@@ -566,7 +566,7 @@ rollin = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Mar 1 2023"),
+  availability: Date.parse("Avr 1 2023"),
   description: "In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located 10 minutes from historical city center. By tram, 20 minutes from Kirchberg (Auchan shopping center, Kinepolis cinemas, ...).\n
     \n
@@ -576,7 +576,7 @@ rollin = Apartment.create(
     \n
     The charges include: cold and hot water, electricity, heating, wifi, charge of the building and cleaning for 1 to 2 hours per week.\n
     \n
-    The price is 800€ + 160€ charges: 960€ all charges included."
+    The price is 800 + 180€ charges: 980€ all charges included."
 )
 
 Apartment::Translation.create(
@@ -593,7 +593,7 @@ Apartment::Translation.create(
     \n
     Les charges comprennent : eau froide et chaude, électricité, chauffage, wifi, charges de l'immeuble et le ménage à raison de 1 à 2 heures par semaine.\n
     \n
-    Le prix est de 800 € + 160 € de charges soit 960 € toutes charges comprises."
+    Le prix est de 800 € + 180 € de charges soit 980 € toutes charges comprises."
 )
 
 rollin_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1541647628/Rollin%20D./living_room_2.jpg",
