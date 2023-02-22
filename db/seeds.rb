@@ -22,7 +22,7 @@ alice = Apartment.create!(
   size: 130,
   number_of_rooms: 5,
   name: "Alice D. - Lille",
-  price: 435,
+  price: 400,
   category: "flatshare",
   nature: "flatshare",
   bathroom: 3,
@@ -33,10 +33,10 @@ alice = Apartment.create!(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Apr 1 2023"),
+  availability: Date.parse("feb 1 2023"),
   description: " Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
-Lease of 6 months: 435 € / month per room + 140 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
+Lease of 6 months: 400 € / month per room + 160 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
 Short lease: price can be negotiated."
   )
 # alice.save!
@@ -48,7 +48,7 @@ Apartment::Translation.create(
   location: "Au pied du métro Cormontaigne",
   description: "Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
 En rez-de-chaussée : grand séjour sur terrasse et grande cuisine ouverte. 4 grandes chambres dont 2 en cave anglaise + 1 chambre plus petite à l'étage, buanderie. 2 salles de bains, 1 salle d'eau et 3 WCs. Laverie.
-Bail de 6 mois : 435 €/mois par chambre + 140 € de charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
+Bail de 6 mois : 400 €/mois par chambre + 160 € de charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
 Bail court : prix à négocier.")
 
 
@@ -414,7 +414,7 @@ appart302 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Mar 01 2023"),
+  availability: Date.parse("Jul 01 2023"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 795€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
