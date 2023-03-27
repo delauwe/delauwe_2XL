@@ -33,10 +33,10 @@ alice = Apartment.create!(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("feb 1 2023"),
+  availability: Date.parse("oct 1 2023"),
   description: " Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
-Lease of 6 months: 400 € / month per room + 160 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
+Lease of 6 months: 400 € / month per room + 200 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
 Short lease: price can be negotiated."
   )
 # alice.save!
@@ -135,7 +135,7 @@ claire = Apartment.create(
   name: "Claire D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 1000,
+  price: 820,
   living_room: true,
   terrace: true,
   bathroom: 1,
@@ -144,10 +144,10 @@ claire = Apartment.create(
   washing_room: true,
   washing_machine: false,
   kitchen: true,
-  availability: Date.parse("may 15 2023"),
+  availability: Date.parse("jul 15 2023"),
   description: " Very typical T3 fully furnished and equipped. 2 bedrooms + one in a mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a flatshare consisting of 2/3 young professionals. Ideal location in front of the metro, bus and V'Lille stations.
  Short-term rental 6 months maximum renewable.
- 1000€/ month + 450€  charges - cleaning 1 hour / week, all charges included.
+ 820€/ month + 480€  charges - cleaning 1 hour / week, all charges included.
  Possibility to rent a box in extra.
 "
 )
@@ -159,7 +159,7 @@ Apartment::Translation.create(
   nature: "appart",
   description: "T3 de charme entièrement meublé et équipé. 2 chambres + mezzanine. Belle terrasse. Idéal couple avec 1 enfant ou  colocation constituée de 2/3 jeunes actifs. Emplacement top au pied du métro, bus et station V'Lille.
   Location courte durée 6 mois maximum renouvelable.
-  1000€/mois + 450€ de charges - ménage 1h/semaine.
+  820€/mois + 480€ de charges - ménage 1h/semaine.
   Possibilité de louer un box en sus.")
 
 
@@ -193,7 +193,7 @@ francine = Apartment.create(
   name: "Francine D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 1900,
+  price: 1560,
   living_room: true,
   bathroom: 2,
   toilet: 1,
@@ -202,7 +202,7 @@ francine = Apartment.create(
   availability: Date.parse("jul 1 2023"),
   description: " In the Vauban neighbourhood, square Maréchal Leclerc. 4 rooms in shared flat with 4 young flatmates, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra.
-1900€/ month + 450 charges. (5 bedrooms or short lease: price on request)
+1560€/ month + 640 charges. (5 bedrooms or short lease: price on request)
 "
 )
 
@@ -215,7 +215,7 @@ Apartment::Translation.create(
   Appartement excellent état au rez-de-chaussée (double accès), dans un immeuble de standing (entrée sécurisée), entièrement meublé et équipé, 4 belles chambres spacieuses, toutes avec placards, bureau, literie récente, cuisine très bien équipée (frigo américain, lave-vaisselle), 2 salles de bains, 2 wc. Lave-linge, sèche-linge.
   Les charges comprennent wifi, électricité, charges de copropriété, 2 h ménage par semaine.
   Parking ou box en sus.
-  1900€/ mois + 450 de charges. (5 chambres ou bail court : prix sur demande)"
+  1560€/ mois + 640 de charges. (5 chambres ou bail court : prix sur demande)"
 )
 
 francine_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924486/Francine%20D./sejour.jpg",
@@ -461,7 +461,7 @@ appart303 = Apartment.create(
   name: "Appart 303 - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 650,
+  price: 795,
   bathroom: 1,
   toilet: 1,
   washing_room: true,
@@ -471,7 +471,7 @@ appart303 = Apartment.create(
   availability: Date.parse("Jul 1 2023"),
   description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
     Lease from 1 to 6 months.
-    Lease 6 months: 650 €/ month + 200 € charges, weekly cleaning, laundry, wifi.
+    Lease 6 months: 795 €/ month + 200 € charges, weekly cleaning, laundry, wifi.
     Short term possible to negotiate
     Garage possible in addition."
 )
@@ -481,7 +481,7 @@ Apartment::Translation.create(
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "appart",
   description: "Idéal cadre en déplacement (relocation) ou couple sans enfant. Quartier Vauban, situé au pied métro et commerces. Au 3ème étage d'un bel immeuble ancien, beaux volumes entièrement meublés, lumineux, excellent état. Ménage hebdomadaire. Lingerie. Tous services Wifi.
   (Bail de 1 à 6 mois).
-  Bail 6 mois à 650 €/mois + 200€ de charges. Courte durée possible à négocier. Garage possible en sus."
+  Bail 6 mois à 795 €/mois + 200€ de charges. Courte durée possible à négocier. Garage possible en sus."
 )
 
 
@@ -524,7 +524,7 @@ studio = Apartment.create(
    A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
    Very well located in front of the metro station Cormontaigne.
    Short lease (3 months renewable).
-   350€/mois + 150€ charges (wifi and cleaning included)"
+   350€/mois + 160€ charges (wifi and cleaning included)"
 )
 
 Apartment::Translation.create(
@@ -535,7 +535,7 @@ Apartment::Translation.create(
     Une pièce de 14 m2 avec faible hauteur sous plafond (ne convient pas à une personne de grande taille). Une salle de bain avec douche et WC. Une kitchenette séparée.
     Très bien situé au pied du métro Cormontaigne.
     Bail court (3 mois renouvelable).
-    350€/mois + 150€ de charges (wifi et ménage inclus)"
+    350€/mois + 160€ de charges (wifi et ménage inclus)"
   )
 
 studio_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532944220/studio/sejour.jpg",
@@ -566,7 +566,7 @@ rollin = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Apr 1 2023"),
+  availability: Date.parse("Jun 1 2023"),
   description: "In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located 10 minutes from historical city center. By tram, 20 minutes from Kirchberg (Auchan shopping center, Kinepolis cinemas, ...).\n
     \n
