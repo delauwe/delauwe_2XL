@@ -306,8 +306,8 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jun 1 2023"),
-  description: "In the Vauban neighbourhood. Appartement ideal for a family (2+2) or  young professionals gathering together (4) in a flatshare. 
+  availability: Date.parse("mar 1 2023"),
+  description: "***Available June 1st, 2023 **** In the Vauban neighbourhood. Appartement ideal for a family (2+2) or  young professionals gathering together (4) in a flatshare. 
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Our requirements : very calm, no event, no smoking, no animals in order to comply with this old house and other flats’ tenants.
 Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, 2 separate toilet, shower room.
@@ -320,7 +320,7 @@ Shorter lease is possible subject to rent negotiation.
 Apartment::Translation.create(
   apartment_id: lucie.id,
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "coloc",
-  description: "Quartier Vauban. Appartement idéal pour famille (2+2) ou jeunes actifs (4) en coloc constituée.  Calme, non fumeur, pas d’animaux.
+  description: "***Disponible 1er juin 2023" Quartier Vauban. Appartement idéal pour famille (2+2) ou jeunes actifs (4) en coloc constituée.  Calme, non fumeur, pas d’animaux.
     Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
     Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, wc séparés, salle de douche.
     Bail de 6 mois : 1500 € loyer net + 600€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail plus court possible à négocier.
