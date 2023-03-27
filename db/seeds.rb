@@ -36,7 +36,7 @@ alice = Apartment.create!(
   availability: Date.parse("oct 1 2023"),
   description: " Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
-Lease of 6 months: 400 € / month per room + 200 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
+Lease of 6 months: 400 € / month per room + 160 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
 Short lease: price can be negotiated."
   )
 # alice.save!
