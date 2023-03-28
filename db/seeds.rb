@@ -320,7 +320,7 @@ Shorter lease is possible subject to rent negotiation.
 Apartment::Translation.create(
   apartment_id: lucie.id,
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "coloc",
-  description: "***Disponible 1er juin 2023" Quartier Vauban. Appartement idéal pour famille (2+2) ou jeunes actifs (4) en coloc constituée.  Calme, non fumeur, pas d’animaux.
+  description: "***Disponible 1er juin 2023*** Quartier Vauban. Appartement idéal pour famille (2+2) ou jeunes actifs (4) en coloc constituée.  Calme, non fumeur, pas d’animaux.
     Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
     Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, wc séparés, salle de douche.
     Bail de 6 mois : 1500 € loyer net + 600€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail plus court possible à négocier.
