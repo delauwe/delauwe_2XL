@@ -639,8 +639,8 @@ appart_281 = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jul 01 2023"),
-  description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
+  availability: Date.parse("Apr 01 2023"),
+  description: "***AVAILABLE 29 April*** One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 890€/ month +  210€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
 Garage possible in addition.
@@ -652,7 +652,7 @@ Apartment::Translation.create(
   apartment_id: appart_281.id,
   locale: "fr",
   location: "Au pied du métro Cormontaigne", nature: "appart",
-  description: "T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
+  description: "***DISPO 29 Avril***T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
   Courte durée à négocier. Quartier Vauban, situé au pied du métro et commerces.
   Au 1er étage d'une maison ancienne, très beau 2 pièces de 45 m² entièrement meublé, lumineux, très bon état.
   Ménage hebdomadaire. Tous services Wifi. (Bail de 1 à 6 mois). 890€/mois + 210€ de charges.
