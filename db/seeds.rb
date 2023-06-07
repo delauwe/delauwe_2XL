@@ -678,3 +678,118 @@ appart_281_array.each do |url|
   photo.apartment = appart_281
   photo.save!
 end
+
+auguste = Apartment.create(
+  location: "Luxembourg, rue auguste charles, Bonnevoie-Verlorenkost.",
+  size: 120,
+  number_of_rooms: 4,
+  name: "Auguste C. - Luxembourg",
+  category: "flatshare",
+  nature: "flatshare",
+  price: 2800,
+  bathroom: 1,
+  toilet: 2,
+  terrace: true,
+  washing_room: true,
+  washing_machine: true,
+  living_room: true,
+  kitchen: true,
+  availability: Date.parse("Jul 1 2023"),
+  description: "Lovely small house of approximately 120 sqm centrally located in the Luxembourg-Bonnevoie neighborhood. Shared accommodation for three people is welcome! Available in July 2023.\n
+  \n
+  The house is spread over three levels:\n
+  \n
+  - On the ground floor: entrance hall, living room (+/- 16 sqm), open equipped kitchen / dining room (+/- 22 sqm), separate toilet, interior courtyard for storing a few bicycles.\n
+  - On the 1st floor: a 1st bedroom (+/- 14 sqm), a 2nd small bedroom-office or dressing room, a bathroom with bathtub, shower, toilet, and window (+/- 8 sqm), a storage room.\n
+  - On the 2nd floor: a 3rd bedroom (+/- 16.5 sqm) and a last attic bedroom (+/- 14.8 sqm).\n
+  - Very clean basement (+/- 11.2 sqm) with washing machine connections.\n
+  \n
+  Technical features: double glazing, manual shutters, natural gas, Energy Performance Certificate: F.\n
+  \n
+  Furnished rental possible upon request.\n
+  \n
+  Free parking with the resident permit in front of the house (3 small parking spaces), bus stops nearby (lines 15, 3, 30, 31). Strategic location: approximately 1 km from the train station, approximately 2 km from the pedestrian city center, approximately 4 km from Gasperich/la Cloche d'Or, and approximately 200 m from the Alzette river, a route in nature for joggers and cyclists.\n
+  \n
+  Conditions:\n
+  \n
+  Monthly rent: €2800
+  Electricity, water, and gas subscriptions in the tenants' names
+  Minimum 1-year renewable lease
+  Deposit: €8000
+  Agency fees: 1-month rent + 16% VAT\n
+  \n
+  **** Contact: Send your application and availability for a visit to coloc@2xl.immo"
+)
+
+Apartment::Translation.create(
+  apartment_id: auguste.id,
+  locale: "fr",
+  location: "Luxembourg, rue auguste charles, Bonnevoie-Verlorenkost.",
+  nature: "coloc",
+  description: "Jolie maisonnette d'environ 120 m2 habitable centralement située dans le quartier de Luxembourg-Bonnevoie. Colocation à trois bienvenue ! Disponible courant juillet 2023.\n
+  \n
+  La maison se déploie sur trois niveaux :\n
+  \n
+  - Au rez-de-chaussée : hall, salon (+/-16m2), cuisine ouverte équipée / salle-à-manger (+/-22m2), wc séparé, cour intérieure pour stockage de quelques vélos\n
+  - Au 1er étage : une 1ère chambre (+/-14m2), une 2nde petite chambre-bureau ou dressing, une salle-de-bain avec baignoire, douche, wc et fenêtre (+/-8m2), un débarras.\n
+  - Au 2e étage : une 3e chambre (+/-16,5m2) et une dernière (+/-14,8m2) mansardée.\n
+  - Sous-sol très propre (+/-11,2 m2) avec raccordements machine à laver le linge.\n
+  \n
+  
+  Caractéristiques techniques : double vitrage, volets manuels, gaz de ville, CPE : F.\n
+  \n
+  
+  Possible de louer meublé sur demande.\n
+  \n
+  
+  Stationnements gratuits avec la vignette de résident devant la maison (3 petits parkings), arrêts de bus non loin (lignes 15, 3, 30, 31). Situation stratégique : à +/-1km de la Gare, à +/-2km du centre-ville piéton, à +/-4km de Gasperich/la Cloche d'Or et à +/-200m de l'Alzette, itinéraire dans la nature pour joggeurs et cyclistes.\n
+  \n
+  
+  Conditions :\n
+  \n 
+  - loyer mensuel : 2800€,\n
+  - abonnements d'électricité, eau et gaz aux noms des locataires,\n
+  - bail d'au minimum 1 an renouvelable,\n
+  - caution 8000€,\n
+  - frais de dossier d'1 mois + TVA 16%.\n
+
+  \n
+  ****
+  **** contact : envoyer votre dossier et disponibilité pour une visite à coloc@2xl.immo
+  ****
+  \n
+
+  Sale Details\n
+  - Honoraires à la charge: locataire\n
+  - Frais de dossier: 2800.00 €\n
+  - Charges mensuelles: 0.00 €\n
+  - Montant caution: 0.00 €\n
+  - TVA appliquée: 16.00%\n
+  - Isolation thermique: F"
+)
+
+auguste_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/1.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/2.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/3.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/4.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/5.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/6.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/7.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/8.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/9.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/10.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/11.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/12.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/13.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/13.jpg",
+]
+
+auguste_array.each do |url|
+  rollin.remote_photo_url = url
+end
+
+auguste_array.each do |url|
+  photo = Photo.new(url: url)
+  photo.apartment = rollin
+  photo.save!
+end
