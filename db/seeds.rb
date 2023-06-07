@@ -779,7 +779,6 @@ auguste_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v16861417
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/11.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/12.jpg",
   "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/13.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/13.jpg",
 ]
 
 auguste_array.each do |url|
