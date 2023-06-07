@@ -766,19 +766,19 @@ Apartment::Translation.create(
   - Isolation thermique: F"
 )
 
-auguste_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/1.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/3.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/4.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/5.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/6.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/7.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/8.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/9.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/10.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/11.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/12.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/13.jpg",
+auguste_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/10.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/11.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/1.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/2.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/3.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/4.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/5.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/6.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/7.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/8.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/9.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/12.jpg",
+"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/13.jpg",
 ]
 
 auguste_array.each do |url|
