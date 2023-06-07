@@ -754,9 +754,7 @@ Apartment::Translation.create(
   - frais de dossier d'1 mois + TVA 16%.\n
 
   \n
-  ****
   **** contact : envoyer votre dossier et disponibilité pour une visite à coloc@2xl.immo
-  ****
   \n
 
   Sale Details\n
@@ -785,11 +783,11 @@ auguste_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v16861417
 ]
 
 auguste_array.each do |url|
-  rollin.remote_photo_url = url
+  auguste.remote_photo_url = url
 end
 
 auguste_array.each do |url|
   photo = Photo.new(url: url)
-  photo.apartment = rollin
+  photo.apartment = auguste
   photo.save!
 end
