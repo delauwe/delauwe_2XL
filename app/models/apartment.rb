@@ -1,9 +1,9 @@
 class Apartment < ApplicationRecord
-   extend FriendlyId
-   friendly_id :name, use: :slugged
-   mount_uploader :photo, PhotoUploader
-   has_many :rooms
-   has_many :photos
+  extend FriendlyId
+  friendly_id :name, use: :slugged
+  mount_uploader :photo, PhotoUploader
+  has_many :rooms
+  has_many :photos
 
   translates :location, :nature, :description
 
@@ -11,7 +11,7 @@ class Apartment < ApplicationRecord
     self.photos.order(id: :asc)
   end
 
-   def self.any_available?
+  def self.any_available?
     self.find do |apartment|
       apartment.availability <= Date.today
     end
