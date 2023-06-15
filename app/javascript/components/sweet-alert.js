@@ -39,10 +39,10 @@ function sweetAlertContact() {
         }).then(value => {
           switch (value) {
             case "flatshare":
-              location.href = "https://www.facebook.com/2XL.appart.coloc.lille.luxembourg";
+              location.href = "https://www.messenger.com/t/314138672074369";
               break;
             case "apartment":
-              location.href ='http://m.me/2xl.appartement';
+              location.href = "https://www.messenger.com/t/314138672074369";
               break;
           };
         });
