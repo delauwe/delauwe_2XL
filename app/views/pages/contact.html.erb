@@ -1,13 +1,25 @@
 <div class="container">
   <div class="contact">
     <h1>Contact</h1>
+    <p class="info"><%= t('contact.info') %></p>
+    <div class="button-container">
+      <%= link_to MESSENGER_LINK, target: '_blank', rel: 'noopener noreferrer', class: 'messenger_btn' do %>
+        <%= t('contact.messenger_contact') %>
+        <%= image_tag 'messenger.svg', height: 20 , class: "messenger_icon" %>
+      <% end %>
+    </div>
     <div class="contact-content">
-      <div class="contact-images">
-        <%= image_tag "etienne.jpg", height: 200 %>
-        <%= image_tag "salim.jpg", height: 200 %>
+      <div class="no_fb">
+        <p> <%= t('contact.no_fb') %></p>
       </div>
-      <div class="info">
-        <p> <%= t('contact.info') %></p>
+      <div class="contact_info">
+        <p class="city_name">Lille</p>
+        <p>Email : <%= link_to CONTACT_EMAIL_LILLE, "mailto:#{CONTACT_EMAIL_LILLE}", class: "email_link" %></p>
+        <p>Tel : <%= PHONE_NUMBER_LILLE %> </p>
+
+        <p class="city_name" style="margin-top: 20px">Luxembourg</p>
+        <p>Email : <%= link_to CONTACT_EMAIL_LUX, "mailto:#{CONTACT_EMAIL_LUX}", class: "email_link" %></p>
+        <p>Tel : <%= PHONE_NUMBER_LUX %> </p>
       </div>
     </div>
   </div>

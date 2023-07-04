@@ -67,7 +67,9 @@ fr:
     title: "2XL - Votre logement idéal jeunes actifs"
 
   contact:
-    info: "Si vous n'avez pas de profil Facebook veuillez nous laisser un message au +33 9 77 19 77 99 ou un email à coloc@2xl.immo. Nous ne répondons qu’aux messages présentant votre profil et votre recherche de façons détaillées."
+    info: "Nous privilégions Messenger pour communiquer avec nos locataires. Merci de nous envoyer un message via notre page Appart & Coloc 2XL - Lille Luxembourg."
+    messenger_contact: "Contactez-nous sur Messenger"  
+    no_fb: "Si vous n'avez pas de profil Facebook, veuillez nous contacter par mail ou téléphone."
 
   breadcrumb:
     home: "Accueil"

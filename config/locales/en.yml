@@ -97,7 +97,9 @@ en:
     title: "2XL - Your ideal flat as a young professional"
 
   contact:
-    info: "If you do not have a Facebook profil, you can send us a message: +33 9 77 19 77 99  or an email at coloc@2xl.immo. We will only answer messages which fully describe your profil and your flat search. "
+    info: "We prefer Messenger to communicate with our tenants. Please send us a message via our Appart & Coloc 2XL - Lille Luxembourg page."
+    messenger_contact: "Contact us on Messenger"  
+    no_fb: "If you do not have a Facebook profil, please contact us by email or phone number. "
 
   breadcrumb:
     home: "Home"

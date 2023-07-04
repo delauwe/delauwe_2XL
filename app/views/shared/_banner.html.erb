@@ -6,8 +6,8 @@
       <%= link_to t('home.call-to-action'), apartments_path, class: "btn btn-border-pink btn-large btn-color-white btn-home" %>
     </div>
     <div class="banner-buttons">
-      <p class="btn btn-border-gray btn-medium btn-color-white btn-long btn-home sweet-alert-reservation"><%= t('home.pre-book') %></p>
-      <p class="btn btn-border-gray btn-medium btn-color-white btn-home sweet-alert-contact"><%= t('home.contact') %></p>
+      <%= link_to t('home.pre-book'), BOOKING_FORM, target: "_blank", class: "btn btn-border-gray btn-medium btn-color-white btn-long btn-home" %>
+      <%= link_to t('home.contact'), contact_path, class: "btn btn-border-gray btn-medium btn-color-white btn-home" %>
     </div>
   </div>
 </div>
