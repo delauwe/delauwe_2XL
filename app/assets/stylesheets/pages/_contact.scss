@@ -1,16 +1,12 @@
 .contact {
   h1 {
     text-align: center;
+    font-weight: 400;
   }
-
-
 }
 
 .contact-content {
-  // display: flex;
-  // justify-content: space-evenly;
-  // align-items: center;
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
 
   a {
@@ -22,12 +18,20 @@
   }
 
 }
+.contact_info {
+  margin-top: 40px;
+  .city_name {
+    font-weight: 600;
+  }
+  .email_link {
+    color: #333333
+  }
+
+}
 
 .contact-images {
   display: flex;
   img {
-    // height: 200px;
-    // width: 200px;
     border-radius: 50%;
     border: solid 3px $dark-gray;
     display: block;
@@ -37,7 +41,39 @@
 }
 
 .info {
-  margin-top: 50px;
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.no_fb {
+  margin-top: 40px;
+}
+.button-container {
+ display: flex;
+ justify-content: center;
+}
+
+.messenger_btn {
+  background-color: #0084FF;
+  border: none; 
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 300;
+  .messenger_icon {
+    padding-left: 5px
+  }
+  &:hover {
+    color: white
+  }
+  &:focus {
+    color: white
+  }
+  &:focus-visible {
+    color: white
+  }
+  
 }
 
 @media(max-width: 768px){
