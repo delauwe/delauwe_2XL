@@ -538,8 +538,15 @@ Apartment::Translation.create(
     350€/mois + 160€ de charges (wifi et ménage inclus)"
   )
 
-studio_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532944220/studio/sejour.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1532944221/studio/cuisine.jpg"]
+studio_array = [
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488438/studio/sejour1.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488438/studio/lit.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488438/studio/sejour2.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488437/studio/sejour3.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488437/studio/couloir.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488437/studio/sdb.jpg",
+  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488437/studio/cuisine.jpg"
+]
 
 studio_array.each do |url|
   studio.remote_photo_url = url
