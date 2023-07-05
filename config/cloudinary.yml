@@ -1,9 +1,9 @@
 development: 
-  cloud_name: "elsaszymczak"
+  cloud_name: "delauwe"
   api_key: <%= ENV['CLOUNDINARY_API_KEY'] %>
   secure: true
 
 production:
-  cloud_name: "elsaszymczak"
+  cloud_name: "delauwe"
   api_key: <%= ENV['CLOUNDINARY_API_KEY'] %>
   secure: true
