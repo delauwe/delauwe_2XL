@@ -732,7 +732,7 @@ Apartment::Translation.create(
   apartment_id: auguste.id,
   locale: "fr",
   location: "Luxembourg, rue auguste charles, Bonnevoie-Verlorenkost.",
-  nature: "coloc",
+  nature: "apartment",
   description: "Jolie maisonnette d'environ 120 m2 habitable centralement située dans le quartier de Luxembourg-Bonnevoie. Colocation à trois bienvenue ! Disponible courant juillet 2023.\n
   \n
   La maison se déploie sur trois niveaux :\n
