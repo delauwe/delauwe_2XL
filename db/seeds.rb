@@ -414,7 +414,7 @@ appart302 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("May 30 2023"),
+  availability: Date.parse("Dec 31 2023"),
   description: "***AVAILABLE 15 July*** One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 795€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
@@ -468,7 +468,7 @@ appart303 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jul 1 2023"),
+  availability: Date.parse("Dec 31 2023"),
   description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
     Lease from 1 to 6 months.
     Lease 6 months: 795 €/ month + 200 € charges, weekly cleaning, laundry, wifi.
@@ -512,7 +512,7 @@ studio = Apartment.create(
   name: "Studio 28S - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 350,
+  price: 450,
   bathroom: 1,
   toilet: 1,
   washing_room: true,
@@ -524,7 +524,7 @@ studio = Apartment.create(
    A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
    Very well located in front of the metro station Cormontaigne.
    Short lease (3 months renewable).
-   350€/mois + 160€ charges (wifi and cleaning included)"
+   450€/mois + 100€ charges (wifi and cleaning included)"
 )
 
 Apartment::Translation.create(
@@ -535,7 +535,7 @@ Apartment::Translation.create(
     Une pièce de 14 m2 avec faible hauteur sous plafond (ne convient pas à une personne de grande taille). Une salle de bain avec douche et WC. Une kitchenette séparée.
     Très bien situé au pied du métro Cormontaigne.
     Bail court (3 mois renouvelable).
-    350€/mois + 160€ de charges (wifi et ménage inclus)"
+    450€/mois + 100€ de charges (wifi et ménage inclus)"
   )
 
 studio_array = [
@@ -573,7 +573,7 @@ rollin = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jun 1 2023"),
+  availability: Date.parse("Aug 31 2023"),
   description: "In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located 10 minutes from historical city center. By tram, 20 minutes from Kirchberg (Auchan shopping center, Kinepolis cinemas, ...).\n
     \n
@@ -691,8 +691,8 @@ auguste = Apartment.create(
   size: 120,
   number_of_rooms: 4,
   name: "Auguste C. - Luxembourg",
-  category: "flatshare",
-  nature: "flatshare",
+  category: "apartment",
+  nature: "apartment",
   price: 2800,
   bathroom: 1,
   toilet: 2,
