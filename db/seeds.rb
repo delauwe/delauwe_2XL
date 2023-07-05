@@ -53,17 +53,17 @@ Bail court : prix à négocier.")
 
 
 
-alice_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924962/Alice%20D./sejour.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924962/Alice%20D./sejour2.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924963/Alice%20D./terrasse.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924961/Alice%20D./cuisine.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924961/Alice%20D./couloir.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924961/Alice%20D./chambre1.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925746/Alice%20D./chambre%202/chambre2.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925756/Alice%20D./chambre%203/chambre3.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925764/Alice%20D./chambre%204/chambre4.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924962/Alice%20D./salle_de_bain.jpg"
- ]
+alice_array = ["https://res.cloudinary.com/delauwe/image/upload/v1531924962/Alice%20D./sejour.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924962/Alice%20D./sejour2.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924963/Alice%20D./terrasse.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924961/Alice%20D./cuisine.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924961/Alice%20D./couloir.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924961/Alice%20D./chambre1.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925746/Alice%20D./chambre%202/chambre2.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925756/Alice%20D./chambre%203/chambre3.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925764/Alice%20D./chambre%204/chambre4.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924962/Alice%20D./salle_de_bain.jpg"
+]
 
 alice_array.each do |url|
   alice.remote_photo_url = url
@@ -105,18 +105,19 @@ Apartment::Translation.create(
   Bail court : prix à négocier.")
 
 
-camille_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531925061/Camille%20D./sejour.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925061/Camille%20D./sejour2.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925059/Camille%20D./cuisine.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925059/Camille%20D./cuisine2.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925058/Camille%20D./couloir.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925056/Camille%20D./chambre1.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925058/Camille%20D./chambre2.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925059/Camille%20D./chambre3.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925061/Camille%20D./salle_de_bain.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925061/Camille%20D./douche.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925059/Camille%20D./plan.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531925060/Camille%20D./plan2.jpg"]
+camille_array = ["https://res.cloudinary.com/delauwe/image/upload/v1531925061/Camille%20D./sejour.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925061/Camille%20D./sejour2.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925059/Camille%20D./cuisine.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925059/Camille%20D./cuisine2.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925058/Camille%20D./couloir.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925056/Camille%20D./chambre1.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925058/Camille%20D./chambre2.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925059/Camille%20D./chambre3.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925061/Camille%20D./salle_de_bain.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925061/Camille%20D./douche.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925059/Camille%20D./plan.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531925060/Camille%20D./plan2.jpg"
+]
 
 camille_array.each do |url|
   camille.remote_photo_url = url
@@ -164,16 +165,16 @@ Apartment::Translation.create(
 
 
 
-claire_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924331/Claire%20D./sejour.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924331/Claire%20D./sejour2.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924331/Claire%20D./terrasse.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924330/Claire%20D./cuisine.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924330/Claire%20D./cuisine2.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924330/Claire%20D./chambre1.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924330/Claire%20D./chambre2.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924330/Claire%20D./salle_de_bain.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924331/Claire%20D./toilettes.jpg",
- "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924330/Claire%20D./laverie.jpg"
+claire_array = ["https://res.cloudinary.com/delauwe/image/upload/v1531924331/Claire%20D./sejour.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924331/Claire%20D./sejour2.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924331/Claire%20D./terrasse.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924330/Claire%20D./cuisine.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924330/Claire%20D./cuisine2.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924330/Claire%20D./chambre1.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924330/Claire%20D./chambre2.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924330/Claire%20D./salle_de_bain.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924331/Claire%20D./toilettes.jpg",
+ "https://res.cloudinary.com/delauwe/image/upload/v1531924330/Claire%20D./laverie.jpg"
 ]
 
 claire_array.each do |url|
@@ -218,19 +219,19 @@ Apartment::Translation.create(
   1560€/ mois + 640 de charges. (5 chambres ou bail court : prix sur demande)"
 )
 
-francine_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924486/Francine%20D./sejour.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924484/Francine%20D./cuisine.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924484/Francine%20D./cuisine2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924484/Francine%20D./couloir.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531990135/Francine%20D./chambre1.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924484/Francine%20D./chambre2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924484/Francine%20D./chambre3.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924484/Francine%20D./chambre4.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924484/Francine%20D./chambre5.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924485/Francine%20D./salle_de_bain.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924485/Francine%20D./toilettes.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924485/Francine%20D./lavelinge.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924485/Francine%20D./plan.jpg"
+francine_array = ["https://res.cloudinary.com/delauwe/image/upload/v1531924486/Francine%20D./sejour.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./cuisine.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./cuisine2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./couloir.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531990135/Francine%20D./chambre1.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./chambre2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./chambre3.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./chambre4.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./chambre5.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924485/Francine%20D./salle_de_bain.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924485/Francine%20D./toilettes.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924485/Francine%20D./lavelinge.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924485/Francine%20D./plan.jpg"
 ]
  francine_array.each do |url|
   francine.remote_photo_url = url
@@ -267,18 +268,18 @@ Apartment::Translation.create(
   description: "***Bail solidaire **** Bel appartement de 140 m2 excellent état , au 7ème et dernier étage , 6 belles chambres meublées avec grands placards, bureau, literie, 2 salles de bain, 2 WC, cuisine équipée (lave linge et lave vaisselle), très fonctionnel. Cuisine américaine, séjour. Salle de douche.
   Bail de 6 mois : loyer 2940 euro charges comprises (wifi, copropriété, électricité, 2h de ménage par semaine). Bail court : prix à négocier.")
 
-jules_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./sejour.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./vue.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./couloir.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./cuisine.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./cuisine2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./chambre1.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./chambre2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./chambre3.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./chambre4.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924597/Jules%20D./salle_de_bain.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./salle_de_bain2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924598/Jules%20D./plan.jpg"
+jules_array = [ "https://res.cloudinary.com/delauwe/image/upload/v1531924598/Jules%20D./sejour.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924598/Jules%20D./vue.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924597/Jules%20D./couloir.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924597/Jules%20D./cuisine.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924597/Jules%20D./cuisine2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924597/Jules%20D./chambre1.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924597/Jules%20D./chambre2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924597/Jules%20D./chambre3.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924597/Jules%20D./chambre4.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924597/Jules%20D./salle_de_bain.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924598/Jules%20D./salle_de_bain2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924598/Jules%20D./plan.jpg"
 ]
 
 jules_array.each do |url|
@@ -327,16 +328,16 @@ Apartment::Translation.create(
 ")
 
 
-lucie_array = [ "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924713/Lucie.D/sejour.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924712/Lucie.D/cuisine.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924712/Lucie.D/cuisine2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924711/Lucie.D/couloir.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924710/Lucie.D/chambre1.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924711/Lucie.D/chambre2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924710/Lucie.D/chambre3.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924712/Lucie.D/chambre5.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924714/Lucie.D/salle_de_bain.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924712/Lucie.D/douche.jpg"
+lucie_array = [ "https://res.cloudinary.com/delauwe/image/upload/v1531924713/Lucie.D/sejour.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924712/Lucie.D/cuisine.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924712/Lucie.D/cuisine2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924711/Lucie.D/couloir.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924710/Lucie.D/chambre1.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924711/Lucie.D/chambre2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924710/Lucie.D/chambre3.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924712/Lucie.D/chambre5.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924714/Lucie.D/salle_de_bain.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924712/Lucie.D/douche.jpg"
 ]
 
 lucie_array.each do |url|
@@ -377,17 +378,17 @@ Apartment::Translation.create(
   1160€/ mois + 440€ de charges (wifi, copropriété, électricité, 1h de ménage par semaine). Frais de dossier pour bail court (inférieur à 12 mois)"
   )
 
-odette_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./sejour.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./sejour2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./terrasse.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./vue.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924785/Odette%20D./chambre1.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924785/Odette%20D./chambre2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924785/Odette%20D./chambre3.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./plan.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./plan2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./salle_de_bain.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1531924786/Odette%20D./toilettes.jpg",
+odette_array = ["https://res.cloudinary.com/delauwe/image/upload/v1531924786/Odette%20D./sejour.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924786/Odette%20D./sejour2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924786/Odette%20D./terrasse.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924786/Odette%20D./vue.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924785/Odette%20D./chambre1.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924785/Odette%20D./chambre2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924785/Odette%20D./chambre3.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924786/Odette%20D./plan.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924786/Odette%20D./plan2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924786/Odette%20D./salle_de_bain.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1531924786/Odette%20D./toilettes.jpg",
 ]
 
 odette_array.each do |url|
@@ -433,15 +434,15 @@ Apartment::Translation.create(
   Ménage hebdomadaire. Lingerie. Tous services Wifi. (Bail de 1 à 6 mois). 795€/mois + 200€ de charges.
   Garage possible en sus 90€/mois.")
 
-appart302_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-salon.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-salle_a_manger.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-pieces.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-cuisine.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-cuisine2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-chambre2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-chambre.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-_salle_de_bain.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436374/Appart-2xl%20302/302-toilette.jpg"
+appart302_array = ["https://res.cloudinary.com/delauwe/image/upload/v1532436374/Appart-2xl%20302/302-salon.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436374/Appart-2xl%20302/302-salle_a_manger.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436374/Appart-2xl%20302/302-pieces.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436374/Appart-2xl%20302/302-cuisine.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436374/Appart-2xl%20302/302-cuisine2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436374/Appart-2xl%20302/302-chambre2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436374/Appart-2xl%20302/302-chambre.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436374/Appart-2xl%20302/302-_salle_de_bain.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436374/Appart-2xl%20302/302-toilette.jpg"
 ]
 
 appart302_array.each do |url|
@@ -485,14 +486,14 @@ Apartment::Translation.create(
 )
 
 
-appart303_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1532436563/Appart%20-%20303/303_-_sejour.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436563/Appart%20-%20303/303_-_salon.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436564/Appart%20-%20303/303_-_cuisine.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436563/Appart%20-%20303/303_-_couloir.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436564/Appart%20-%20303/303-chambre2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436563/Appart%20-%20303/303_-_chambre.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436563/Appart%20-%20303/303_-_salle_de_bain.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1532436564/Appart%20-%20303/303-_toilette.jpg"
+appart303_array = ["https://res.cloudinary.com/delauwe/image/upload/v1532436563/Appart%20-%20303/303_-_sejour.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436563/Appart%20-%20303/303_-_salon.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436564/Appart%20-%20303/303_-_cuisine.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436563/Appart%20-%20303/303_-_couloir.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436564/Appart%20-%20303/303-chambre2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436563/Appart%20-%20303/303_-_chambre.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436563/Appart%20-%20303/303_-_salle_de_bain.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1532436564/Appart%20-%20303/303-_toilette.jpg"
 ]
 
 appart303_array.each do |url|
@@ -539,13 +540,13 @@ Apartment::Translation.create(
   )
 
 studio_array = [
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488438/studio/sejour1.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488438/studio/lit.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488438/studio/sejour2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488437/studio/sejour3.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488437/studio/couloir.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488437/studio/sdb.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1688488437/studio/cuisine.jpg"
+  "https://res.cloudinary.com/delauwe/image/upload/v1688488438/studio/sejour1.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1688488438/studio/lit.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1688488438/studio/sejour2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1688488437/studio/sejour3.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1688488437/studio/couloir.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1688488437/studio/sdb.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1688488437/studio/cuisine.jpg"
 ]
 
 studio_array.each do |url|
@@ -603,22 +604,22 @@ Apartment::Translation.create(
     Le prix est de 800 € + 180 € de charges soit 980 € toutes charges comprises."
 )
 
-rollin_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1541647628/Rollin%20D./living_room_2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647618/Rollin%20D./living_room_3.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647616/Rollin%20D./living_room.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./terrace.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./kitchen_2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./kitchen_1.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647617/Rollin%20D./room_1.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647618/Rollin%20D./room_2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647617/Rollin%20D./room_3.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./room_4.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./bathroom.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647614/Rollin%20D./bathroom_2.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541647615/Rollin%20D./corridor.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1539179963/Rollin%20D./Coloc_Rollin_D_-_Plan.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541730650/Rollin%20D./Coloc_Rollin_D_Re%CC%81seau_Bus_Tram_1.jpg",
-  "https://res.cloudinary.com/elsaszymczak/image/upload/v1541730552/Rollin%20D./Coloc_Rollin_D_Re%CC%81seau_Bus_Tram_Zoom_1.jpg"
+rollin_array = ["https://res.cloudinary.com/delauwe/image/upload/v1541647628/Rollin%20D./living_room_2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541647618/Rollin%20D./living_room_3.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541647616/Rollin%20D./living_room.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541647615/Rollin%20D./terrace.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541647615/Rollin%20D./kitchen_2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541647614/Rollin%20D./kitchen_1.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541647617/Rollin%20D./room_1.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541647618/Rollin%20D./room_2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541647617/Rollin%20D./room_3.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541647615/Rollin%20D./room_4.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541647614/Rollin%20D./bathroom.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541647614/Rollin%20D./bathroom_2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541647615/Rollin%20D./corridor.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1539179963/Rollin%20D./Coloc_Rollin_D_-_Plan.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541730650/Rollin%20D./Coloc_Rollin_D_Re%CC%81seau_Bus_Tram_1.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1541730552/Rollin%20D./Coloc_Rollin_D_Re%CC%81seau_Bus_Tram_Zoom_1.jpg"
 
 ]
 
@@ -665,14 +666,14 @@ Apartment::Translation.create(
   Ménage hebdomadaire. Tous services Wifi. (Bail de 1 à 6 mois). 890€/mois + 210€ de charges.
   Garage possible en sus.")
 
-appart_281_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1671213081/Appart-2xl-281/281_chambre.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1671213081/Appart-2xl-281/281_chambre_2.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1671213081/Appart-2xl-281/281_salon_2.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1671213081/Appart-2xl-281/281_salon.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1671213081/Appart-2xl-281/281_toilettes.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1671213081/Appart-2xl-281/281_sdb.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1671213081/Appart-2xl-281/281_entree.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1671213081/Appart-2xl-281/281_cuisine_2.jpg"
+appart_281_array = ["https://res.cloudinary.com/delauwe/image/upload/v1671213081/Appart-2xl-281/281_chambre.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1671213081/Appart-2xl-281/281_chambre_2.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1671213081/Appart-2xl-281/281_salon_2.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1671213081/Appart-2xl-281/281_salon.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1671213081/Appart-2xl-281/281_toilettes.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1671213081/Appart-2xl-281/281_sdb.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1671213081/Appart-2xl-281/281_entree.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1671213081/Appart-2xl-281/281_cuisine_2.jpg"
 
 ]
 
@@ -773,19 +774,19 @@ Apartment::Translation.create(
   - Isolation thermique: F"
 )
 
-auguste_array = ["https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/10.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/11.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/1.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/2.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/3.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141737/auguste/4.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/5.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/6.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/7.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/8.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/9.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/12.jpg",
-"https://res.cloudinary.com/elsaszymczak/image/upload/v1686141736/auguste/13.jpg",
+auguste_array = ["https://res.cloudinary.com/delauwe/image/upload/v1686141736/auguste/10.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1686141736/auguste/11.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1686141737/auguste/1.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1686141737/auguste/2.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1686141737/auguste/3.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1686141737/auguste/4.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1686141736/auguste/5.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1686141736/auguste/6.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1686141736/auguste/7.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1686141736/auguste/8.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1686141736/auguste/9.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1686141736/auguste/12.jpg",
+"https://res.cloudinary.com/delauwe/image/upload/v1686141736/auguste/13.jpg",
 ]
 
 auguste_array.each do |url|
