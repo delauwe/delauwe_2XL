@@ -200,7 +200,7 @@ francine = Apartment.create(
   toilet: 1,
   washing_machine: true,
   kitchen: true,
-  availability: Date.parse("May 30 2023"),
+  availability: Date.parse("jan 01 2024"),
   description: "***AVAILABLE 01 July*** In the Vauban neighbourhood, square Maréchal Leclerc. 4 rooms in shared flat with 4 young flatmates, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra.
 1560€/ month + 640 charges. (5 bedrooms or short lease: price on request)
@@ -307,7 +307,7 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Mar 1 2023"),
+  availability: Date.parse("jan 01 2024"),
   description: "***Available June 1st, 2023 **** In the Vauban neighbourhood. Appartement ideal for a family (2+2) or  young professionals gathering together (4) in a flatshare. 
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Our requirements : very calm, no event, no smoking, no animals in order to comply with this old house and other flats’ tenants.
@@ -520,7 +520,7 @@ studio = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jul 01 2023"),
+  availability: Date.parse("jan 01 2024"),
   description: "This small apartment is suitable for a student or single person looking for individual accommodation for a few nights a week and for a short duration.
    A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
    Very well located in front of the metro station Cormontaigne.
