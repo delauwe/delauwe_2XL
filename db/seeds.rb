@@ -89,7 +89,7 @@ camille = Apartment.create(
   toilet: 1,
   shower_room: 1,
   living_room: true,
-  availability: Date.parse("jan 01 2024"),
+  availability: Date.parse("jun 01 2024"),
   description: "In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
   5 rooms, 83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state.
   Lease of 12 months: 400€/month + 150€ charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
@@ -145,7 +145,7 @@ claire = Apartment.create(
   washing_room: true,
   washing_machine: false,
   kitchen: true,
-  availability: Date.parse("jul 15 2023"),
+  availability: Date.parse("jul 15 2024"),
   description: " Very typical T3 fully furnished and equipped. 2 bedrooms + one in a mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a flatshare consisting of 2/3 young professionals. Ideal location in front of the metro, bus and V'Lille stations.
  Short-term rental 6 months maximum renewable.
  820€/ month + 480€  charges - cleaning 1 hour / week, all charges included.
@@ -365,7 +365,7 @@ odette = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("sep 15 2023"),
+  availability: Date.parse("sep 15 2024"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th/top floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
 1160€/ month + 440€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
@@ -416,7 +416,7 @@ appart302 = Apartment.create(
   living_room: true,
   kitchen: true,
   availability: Date.parse("Dec 31 2023"),
-  description: "***AVAILABLE 15 July*** One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
+  description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 795€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
 Garage possible in addition (90€/month).
@@ -428,7 +428,7 @@ Apartment::Translation.create(
   apartment_id: appart302.id,
   locale: "fr",
   location: "Au pied du métro Cormontaigne", nature: "appart",
-  description: "***DISPO 15 juillet*** T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
+  description: "T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
   Courte durée à négocier. Quartier Vauban, situé au pied du métro et commerces.
   Au 2ème étage d'une maison ancienne, très beau 2 pièces de 45 m² entièrement meublé, lumineux, très bon état.
   Ménage hebdomadaire. Lingerie. Tous services Wifi. (Bail de 1 à 6 mois). 795€/mois + 200€ de charges.
@@ -647,8 +647,8 @@ appart_281 = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Sep 01 2023"),
-  description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
+  availability: Date.parse("Jul 01 2023"),
+  description: "*** September, 1st **** One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 890€/ month +  210€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
 Garage possible in addition.
@@ -660,7 +660,7 @@ Apartment::Translation.create(
   apartment_id: appart_281.id,
   locale: "fr",
   location: "Au pied du métro Cormontaigne", nature: "appart",
-  description: "T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
+  description: "*** à partir du 1er septembre 2023 *** T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
   Courte durée à négocier. Quartier Vauban, situé au pied du métro et commerces.
   Au 1er étage d'une maison ancienne, très beau 2 pièces de 45 m² entièrement meublé, lumineux, très bon état.
   Ménage hebdomadaire. Tous services Wifi. (Bail de 1 à 6 mois). 890€/mois + 210€ de charges.
@@ -702,7 +702,7 @@ auguste = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jul 1 2023"),
+  availability: Date.parse("Jul 1 2025"),
   description: "Lovely small house of approximately 120 sqm centrally located in the Luxembourg-Bonnevoie neighborhood. Shared accommodation for three people is welcome! Available in July 2023.\n
   \n
   The house is spread over three levels:\n
