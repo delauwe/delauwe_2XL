@@ -219,19 +219,23 @@ Apartment::Translation.create(
   1560€/ mois + 640 de charges. (5 chambres ou bail court : prix sur demande)"
 )
 
-francine_array = ["https://res.cloudinary.com/delauwe/image/upload/v1531924486/Francine%20D./sejour.jpg",
-  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./cuisine.jpg",
-  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./cuisine2.jpg",
-  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./couloir.jpg",
-  "https://res.cloudinary.com/delauwe/image/upload/v1531990135/Francine%20D./chambre1.jpg",
-  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./chambre2.jpg",
-  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./chambre3.jpg",
-  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./chambre4.jpg",
-  "https://res.cloudinary.com/delauwe/image/upload/v1531924484/Francine%20D./chambre5.jpg",
-  "https://res.cloudinary.com/delauwe/image/upload/v1531924485/Francine%20D./salle_de_bain.jpg",
-  "https://res.cloudinary.com/delauwe/image/upload/v1531924485/Francine%20D./toilettes.jpg",
-  "https://res.cloudinary.com/delauwe/image/upload/v1531924485/Francine%20D./lavelinge.jpg",
-  "https://res.cloudinary.com/delauwe/image/upload/v1531924485/Francine%20D./plan.jpg"
+francine_array = ["https://res.cloudinary.com/delauwe/image/upload/v1699904290/Francine%20D./salle_a_manger.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904289/Francine%20D./salle_de_bain.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904288/Francine%20D./cuisine.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904284/Francine%20D./couloir.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904288/Francine%20D./salon.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904287/Francine%20D./couloir2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904286/Francine%20D./chambre.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904286/Francine%20D./salon2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904286/Francine%20D./chambre2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904285/Francine%20D./salle_a_manger2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904285/Francine%20D./chambre3.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904285/Francine%20D./toilettes.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904285/Francine%20D./salle_de_bain2.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904284/Francine%20D./chambre4.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904284/Francine%20D./salle_a_manger3.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904289/Francine%20D./entree.jpg",
+  "https://res.cloudinary.com/delauwe/image/upload/v1699904289/Francine%20D./garage.jpg"
 ]
  francine_array.each do |url|
   francine.remote_photo_url = url
