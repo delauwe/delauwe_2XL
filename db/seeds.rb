@@ -33,7 +33,7 @@ alice = Apartment.create!(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("oct 1 2025"),
+  ability: Date.parse("Mar 31 2024"),
   description: " Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
 Lease of 6 months: 400 € / month per room + 160 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
@@ -200,7 +200,7 @@ francine = Apartment.create(
   toilet: 1,
   washing_machine: true,
   kitchen: true,
-  availability: Date.parse("jan 01 2025"),
+  availability: Date.parse("jul 14 2024"),
   description: "In the Vauban neighbourhood, square Maréchal Leclerc. 4 rooms in shared flat with 4 young flatmates, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra.
 1560€/ month + 640 charges. (5 bedrooms or short lease: price on request)
@@ -311,7 +311,7 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jan 01 2025"),
+  availability: Date.parse("Jul 14 2024"),
   description: "In the Vauban neighbourhood. Appartement ideal for a family (2+2) or  young professionals gathering together (4) in a flatshare. 
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Our requirements : very calm, no event, no smoking, no animals in order to comply with this old house and other flats’ tenants.
@@ -369,7 +369,7 @@ odette = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("sep 15 2026"),
+  availability: Date.parse("sep 15 2024"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th/top floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
 1160€/ month + 440€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
@@ -419,7 +419,7 @@ appart302 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Dec 31 2024"),
+  availability: Date.parse("Jun 30 2024"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 795€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
@@ -473,7 +473,7 @@ appart303 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Dec 31 2024"),
+  availability: Date.parse("Jun 30 2024"),
   description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
     Lease from 1 to 6 months.
     Lease 6 months: 795 €/ month + 200 € charges, weekly cleaning, laundry, wifi.
@@ -524,7 +524,7 @@ studio = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jan 01 2025"),
+  availability: Date.parse("Jul 14 2024"),
   description: "This small apartment is suitable for a student or single person looking for individual accommodation for a few nights a week and for a short duration.
    A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
    Very well located in front of the metro station Cormontaigne.
@@ -578,7 +578,7 @@ rollin = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Aug 31 2025"),
+  availability: Date.parse("Aug 31 2024"),
   description: "In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located 10 minutes from historical city center. By tram, 20 minutes from Kirchberg (Auchan shopping center, Kinepolis cinemas, ...).\n
     \n
@@ -651,7 +651,7 @@ appart_281 = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jul 01 2025"),
+  availability: Date.parse("Aug 31 2024"),
   description: "One bedroom apartment of 55 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 800€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of to 6 months.  
@@ -705,8 +705,8 @@ auguste = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jul 1 2025"),
-  description: "Lovely small house of approximately 120 sqm centrally located in the Luxembourg-Bonnevoie neighborhood. Shared accommodation for three people is welcome! Available in July 2023.\n
+  availability: Date.parse("Jul 1 2024"),
+  description: "Lovely small house of approximately 120 sqm centrally located in the Luxembourg-Bonnevoie neighborhood. Shared accommodation for three people is welcome! able in July 2023.\n
   \n
   The house is spread over three levels:\n
   \n
@@ -729,7 +729,7 @@ auguste = Apartment.create(
   Deposit: €8000
   Agency fees: 1-month rent + 16% VAT\n
   \n
-  **** Contact: Send your application and availability for a visit to coloc@2xl.immo"
+  **** Contact: Send your application and ability for a visit to coloc@2xl.immo"
 )
 
 Apartment::Translation.create(
