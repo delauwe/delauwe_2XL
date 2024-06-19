@@ -89,7 +89,7 @@ camille = Apartment.create(
   toilet: 1,
   shower_room: 1,
   living_room: true,
-  availability: Date.parse("Sep 01 2024"),
+  availability: Date.parse("Jan 01 2025"),
   description: "In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
   5 rooms, 83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state.
   Lease of 12 months: 400€/month + 150€ charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
@@ -136,7 +136,7 @@ claire = Apartment.create(
   name: "Claire D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 820,
+  price: 920,
   living_room: true,
   terrace: true,
   bathroom: 1,
@@ -145,10 +145,10 @@ claire = Apartment.create(
   washing_room: true,
   washing_machine: false,
   kitchen: true,
-  availability: Date.parse("aug 01 2024"),
+  availability: Date.parse("Jun 01 2024"),
   description: " Very typical T3 fully furnished and equipped. 2 bedrooms + one in a mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a flatshare consisting of 2/3 young professionals. Ideal location in front of the metro, bus and V'Lille stations.
  Short-term rental 6 months maximum renewable.
- 820€/ month + 480€  charges - cleaning 1 hour / week, all charges included.
+ 920€/ month + 280€  charges - cleaning 1 hour / week, all charges included.
  Possibility to rent a box in extra.
 "
 )
@@ -160,7 +160,7 @@ Apartment::Translation.create(
   nature: "appart",
   description: "T3 de charme entièrement meublé et équipé. 2 chambres + mezzanine. Belle terrasse. Idéal couple avec 1 enfant ou  colocation constituée de 2/3 jeunes actifs. Emplacement top au pied du métro, bus et station V'Lille.
   Location courte durée 6 mois maximum renouvelable.
-  820€/mois + 480€ de charges - ménage 1h/semaine.
+  920€/mois + 280€ de charges - ménage 1h/semaine.
   Possibilité de louer un box en sus.")
 
 
@@ -194,16 +194,16 @@ francine = Apartment.create(
   name: "Francine D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 1560,
+  price: 1660,
   living_room: true,
   bathroom: 2,
   toilet: 1,
   washing_machine: true,
   kitchen: true,
-  availability: Date.parse("aug 31 2024"),
-  description: "In the Vauban neighbourhood, square Maréchal Leclerc. 4 rooms in shared flat with 4 young flatmates, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
+  availability: Date.parse("Jun 1 2024"),
+  description: "*** September, 1st *** In the Vauban neighbourhood, square Maréchal Leclerc. 4 rooms in shared flat with 4 young flatmates, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra.
-1560€/ month + 640 charges. (5 bedrooms or short lease: price on request)
+1660€/ month + 640 charges. (5 bedrooms or short lease: price on request)
 "
 )
 
@@ -212,11 +212,11 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Place Maréchal Leclerc - Vauban",
   nature: "appart",
-  description: "Quartier Vauban, Place Maréchal Leclerc. 4 chambres pour colocation de jeunes 4 actifs, spacieux appartement.
+  description: "*** libre 1er septembre *** Quartier Vauban, Place Maréchal Leclerc. 4 chambres pour colocation de jeunes 4 actifs, spacieux appartement.
   Appartement excellent état au rez-de-chaussée (double accès), dans un immeuble de standing (entrée sécurisée), entièrement meublé et équipé, 4 belles chambres spacieuses, toutes avec placards, bureau, literie récente, cuisine très bien équipée (frigo américain, lave-vaisselle), 2 salles de bains, 2 wc. Lave-linge, sèche-linge.
   Les charges comprennent wifi, électricité, charges de copropriété, 2 h ménage par semaine.
   Parking ou box en sus.
-  1560€/ mois + 640 de charges. (5 chambres ou bail court : prix sur demande)"
+  1660€/ mois + 640 de charges. (5 chambres ou bail court : prix sur demande)"
 )
 
 francine_array = ["https://res.cloudinary.com/delauwe/image/upload/v1699904290/Francine%20D./salle_a_manger.jpg",
@@ -261,7 +261,7 @@ jules = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("sep 01 2024"),
+  availability: Date.parse("jan 01 2025"),
   description: "*** FULL FLAT - ONE CONTRAT.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
  Lease of 6 months: 2940 euro charges included (wifi, co-ownership fees, electricity, 2 hour of cleaning per week). Short lease: price to negotiate."
 )
@@ -311,7 +311,7 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("dec 31 2024"),
+  availability: Date.parse("jan 1 2025"),
   description: "In the Vauban neighbourhood. Appartement ideal for a family (2+2) or  young professionals gathering together (4) in a flatshare. 
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Our requirements : very calm, no event, no smoking, no animals in order to comply with this old house and other flats’ tenants.
@@ -369,7 +369,7 @@ odette = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("sep 15 2024"),
+  availability: Date.parse("jan 1 2025"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th/top floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
 1160€/ month + 440€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
@@ -419,7 +419,7 @@ appart302 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("May 01 2024"),
+  availability: Date.parse("Sep 01 2024"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 795€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
@@ -473,7 +473,7 @@ appart303 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jun 30 2024"),
+  availability: Date.parse("Jul 01 2024"),
   description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
     Lease from 1 to 6 months.
     Lease 6 months: 795 €/ month + 200 € charges, weekly cleaning, laundry, wifi.
@@ -524,7 +524,7 @@ studio = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("dec 31 2024"),
+  availability: Date.parse("Jan 1 2025"),
   description: "This small apartment is suitable for a student or single person looking for individual accommodation for a few nights a week and for a short duration.
    A room of 14 m2 with low ceiling height (not suitable for a tall person). A bathroom with shower and toilet. A separate kitchenette.
    Very well located in front of the metro station Cormontaigne.
@@ -578,7 +578,7 @@ rollin = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("aug 31 2024"),
+  availability: Date.parse("aug 1 2024"),
   description: "In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located 10 minutes from historical city center. By tram, 20 minutes from Kirchberg (Auchan shopping center, Kinepolis cinemas, ...).\n
     \n
@@ -651,7 +651,7 @@ appart_281 = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("dec 31 2024"),
+  availability: Date.parse("mar 1 2025"),
   description: "One bedroom apartment of 55 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 800€/ month +  200€ charges: weekly cleaning, wifi.
 Lease of to 6 months.  
@@ -705,7 +705,7 @@ auguste = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jul 01 2024"),
+  availability: Date.parse("jul 01 2025"),
   description: "Lovely small house of approximately 120 sqm centrally located in the Luxembourg-Bonnevoie neighborhood. Shared accommodation for three people is welcome! able in July 2023.\n
   \n
   The house is spread over three levels:\n
