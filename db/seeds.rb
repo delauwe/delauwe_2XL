@@ -33,10 +33,10 @@ alice = Apartment.create!(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jul 16 2025"),
-  description: " *** 1 room available 16 July for a boy *** Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
+  availability: Date.parse("oct 1 2025"),
+  description: " *** 1 room available Oct 1st for a boy *** Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
-Lease of 6 months: 420 € / month per room + 170 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
+Lease of 6 months: 430 € / month per room + 170 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
 Short lease: price can be negotiated."
   )
 # alice.save!
@@ -46,9 +46,9 @@ Apartment::Translation.create(
   locale: "fr",
   nature: "coloc",
   location: "Au pied du métro Cormontaigne",
-  description: "***1 chambre à partir du 15 juillet pour un garçon*** Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
+  description: "***1 chambre à partir du 1 oct pour un garçon*** Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
 En rez-de-chaussée : grand séjour sur terrasse et grande cuisine ouverte. 4 grandes chambres dont 2 en cave anglaise + 1 chambre plus petite à l'étage, buanderie. 2 salles de bains, 1 salle d'eau et 3 WCs. Laverie.
-Bail de 6 mois : 420 €/mois par chambre + 170 € de charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
+Bail de 6 mois : 430 €/mois par chambre + 170 € de charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
 Bail court : prix à négocier.")
 
 
@@ -192,18 +192,18 @@ francine = Apartment.create(
   size: 130,
   number_of_rooms: 4,
   name: "Francine D. - Lille",
-  category: "flatshare",
-  nature: "flatshare",
-  price: 450,
+  category: "apartment",
+  nature: "apartment",
+  price: 1800,
   living_room: true,
   bathroom: 2,
   toilet: 1,
   washing_machine: true,
   kitchen: true,
   availability: Date.parse("Feb 1 2026"),
-  description: "In the Vauban neighbourhood, Place Maréchal Leclerc. 1 room available in a shared flat with 4 young flatmates, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
+  description: "In the Vauban neighbourhood, Place Maréchal Leclerc. 4 rooms available, spacious apartment. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra.
-450€/ month + 145 charges."
+1800€/ month + 580€ charges."
 )
 
 Apartment::Translation.create(
@@ -211,11 +211,11 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Place Maréchal Leclerc - Vauban",
   nature: "coloc",
-  description: " Quartier Vauban, Place Maréchal Leclerc. 1 chambre libre dans une colocation de jeunes 4 actifs, spacieux appartement.
+  description: " Quartier Vauban, Place Maréchal Leclerc. Colocation de jeunes 4 actifs, spacieux appartement.
   Appartement au rez-de-chaussée (double accès), dans un immeuble de standing (entrée sécurisée), entièrement meublé et équipé, 4 belles chambres spacieuses, toutes avec placards, bureau, literie récente, cuisine très bien équipée (frigo américain, lave-vaisselle), 2 salles de bains, 2 wc. Lave-linge, sèche-linge.
   Les charges comprennent wifi, électricité, charges de copropriété, 2 h ménage par semaine.
   Parking ou box en sus.
-  450€/ mois + 145 de charges."
+  1800 €/ mois + 580 €  de charges."
 )
 
 francine_array = ["https://res.cloudinary.com/delauwe/image/upload/v1699904290/Francine%20D./salle_a_manger.jpg",
@@ -302,7 +302,7 @@ lucie = Apartment.create(
   name: "Lucie D. - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 1500,
+  price: 1550,
   bathroom: 1,
   shower_room: 1,
   toilet: 2,
@@ -310,12 +310,12 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jul 14 2025"),
+  availability: Date.parse("jan 14 2026"),
   description: "In the Vauban neighbourhood. Appartement ideal for a family (2+2) or  young professionals gathering together (4) in a flatshare. 
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Our requirements : very calm, no event, no smoking, no animals in order to comply with this old house and other flats’ tenants.
 Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 4 bedrooms, 2 separate toilet, shower room.
-Lease of 6 months: 1500 € for rent + 600 € for charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week).
+Lease of 6 months: 1550 € for rent + 650 € for charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week).
 Shorter lease is possible subject to rent negotiation.
 "
 )
@@ -327,7 +327,7 @@ Apartment::Translation.create(
   description: "Quartier Vauban. Appartement idéal pour famille (2+2) ou jeunes actifs (4) en coloc constituée.  Calme, non fumeur, pas d’animaux.
     Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
     Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, wc séparés, salle de douche.
-    Bail de 6 mois : 1500 € loyer net + 600€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail plus court possible à négocier.
+    Bail de 6 mois : 1550 € loyer net + 650€ charges (wifi, copropriété, électricité, 1h de ménage par semaine). Bail plus court possible à négocier.
 ")
 
 
@@ -409,7 +409,7 @@ appart302 = Apartment.create(
   size: 45,
   number_of_rooms: 1,
   name: "Appart 302  - Lille",
-  price: 765,
+  price: 780,
   category: "apartment",
   nature: "apartment",
   bathroom: 1,
@@ -420,7 +420,7 @@ appart302 = Apartment.create(
   kitchen: true,
   availability: Date.parse("jan 01 2026"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
-765€/ month +  200€ charges: weekly cleaning, wifi.
+780€/ month +  220€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  
 Garage possible in addition (90€/month).
 Short term to negotiate.
@@ -434,7 +434,7 @@ Apartment::Translation.create(
   description: "T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
   Courte durée à négocier. Quartier Vauban, situé au pied du métro et commerces.
   Au 2ème étage d'une maison ancienne, très beau 2 pièces de 45 m² entièrement meublé, lumineux, très bon état.
-  Ménage hebdomadaire. Lingerie. Tous services Wifi. (Bail de 1 à 6 mois). 795€/mois + 200€ de charges.
+  Ménage hebdomadaire. Lingerie. Tous services Wifi. (Bail de 1 à 6 mois). 780€/mois + 220€ de charges.
   Garage possible en sus 90€/mois.")
 
 appart302_array = ["https://res.cloudinary.com/delauwe/image/upload/v1532436374/Appart-2xl%20302/302-salon.jpg",
@@ -465,7 +465,7 @@ appart303 = Apartment.create(
   name: "Appart 303 - Lille",
   category: "apartment",
   nature: "apartment",
-  price: 795,
+  price: 780,
   bathroom: 1,
   toilet: 1,
   washing_room: true,
@@ -475,7 +475,7 @@ appart303 = Apartment.create(
   availability: Date.parse("Jul 1 2025"),
   description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
     Lease from 1 to 6 months.
-    Lease 6 months: 795 €/ month + 200 € charges, weekly cleaning, laundry, wifi.
+    Lease 6 months: 780 €/ month + 220 € charges, weekly cleaning, laundry, wifi.
     Short term possible to negotiate
     Garage possible in addition."
 )
@@ -485,7 +485,7 @@ Apartment::Translation.create(
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "appart",
   description: "Idéal cadre en déplacement (relocation) ou couple sans enfant. Quartier Vauban, situé au pied métro et commerces. Au 3ème étage d'un bel immeuble ancien, beaux volumes entièrement meublés, lumineux, excellent état. Ménage hebdomadaire. Lingerie. Tous services Wifi.
   (Bail de 1 à 6 mois).
-  Bail 6 mois à 795 €/mois + 200€ de charges. Courte durée possible à négocier. Garage possible en sus."
+  Bail 6 mois à 780 €/mois + 220€ de charges. Courte durée possible à négocier. Garage possible en sus."
 )
 
 
@@ -577,8 +577,8 @@ rollin = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("aug 01 2025"),
-  description: "*** Aug 1st ****, In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
+  availability: Date.parse("sep 01 2025"),
+  description: "*** Sep 1st ****, In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located 10 minutes from historical city center. By tram, 20 minutes from Kirchberg (Auchan shopping center, Kinepolis cinemas, ...).\n
     \n
     In the flat, you will share the living room-kitchen, 2 bathrooms, 2 toilets, the laundry room with washing machines+ dryer.\n
@@ -595,7 +595,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Luxembourg, arrêt Val Fleury, 10 minutes à pied de la station de tram étoile",
   nature: "coloc",
-  description: "*** 1 juillet 2025 *** Dans un bel appartement récent de 107m2, au RDC d'une petite copropriété, à 10 minutes de la station de Tram Etoile, nous proposons 4 chambres à louer en contrat individuel. Il s'agit d'une colocation internationale de jeunes actifs.\n
+  description: "*** 1 septembre 2025 *** Dans un bel appartement récent de 107m2, au RDC d'une petite copropriété, à 10 minutes de la station de Tram Etoile, nous proposons 4 chambres à louer en contrat individuel. Il s'agit d'une colocation internationale de jeunes actifs.\n
     Rue du Rollingergrund au niveau de l'arrêt de bus Val Fleurie vous êtes situé à 10 min du centre historique. En Tram, à 20 minutes du Kircherg (centre commercial Auchan, cinémas).\n
 
     Dans la coloc, vous partagerez le séjour-cuisine, 2 salles de bain, 2 wc, la buanderie (lave-linge + sèche linge).\n
@@ -641,7 +641,7 @@ appart_281 = Apartment.create(
   size: 55,
   number_of_rooms: 1,
   name: "Appart 281 - Lille",
-  price: 800,
+  price: 850,
   category: "apartment",
   nature: "apartment",
   bathroom: 1,
@@ -652,7 +652,7 @@ appart_281 = Apartment.create(
   kitchen: true,
   availability: Date.parse("Jan 01 2026"),
   description: "One bedroom apartment of 55 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
-800€/ month +  200€ charges: weekly cleaning, wifi.
+850€/ month +  220€ charges: weekly cleaning, wifi.
 Lease of to 6 months.  
 Garage possible in addition.
 "
@@ -665,7 +665,7 @@ Apartment::Translation.create(
   description: "T2 charme et proximité. Idéal cadre en déplacement (relocation) ou couple sans enfant.
   Quartier Vauban, situé au pied du métro et commerces.
   Au 1er étage d'une maison ancienne, très beau 2 pièces de 55 m² entièrement meublé, lumineux, très bon état.
-  Ménage hebdomadaire. Tous services Wifi. (Bail de 6 mois). 800€/mois + 200€ de charges.
+  5Ménage hebdomadaire. Tous services Wifi. (Bail de 6 mois). 850€/mois + 220€ de charges.
   Garage possible en sus.")
 
 appart_281_array = ["https://res.cloudinary.com/delauwe/image/upload/v1671213081/Appart-2xl-281/281_chambre.jpg",
