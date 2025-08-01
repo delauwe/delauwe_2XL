@@ -472,8 +472,8 @@ appart303 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jan 15 2025"),
-  description: "Ideal for an executive on the move (relocation) or couple without children .In the Vauban neighborhood, located  in front of the metro station and several shops .In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
+  availability: Date.parse("Jan 15 2026"),
+  description: "Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located  in front of the metro station and several shops. In the 3rd floor of a beautiful old building, high ceiling rooms entirely furnished, bright and in excellent state.
     Lease from 1 to 6 months.
     Lease 6 months: 820 €/ month + 180 € charges, weekly cleaning, laundry, wifi.
     Short term possible to negotiate
