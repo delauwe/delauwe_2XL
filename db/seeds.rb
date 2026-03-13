@@ -22,7 +22,7 @@ alice = Apartment.create!(
   size: 130,
   number_of_rooms: 5,
   name: "Alice D. - Lille",
-  price: 430,
+  price: 525,
   category: "flatshare",
   nature: "flatshare",
   bathroom: 3,
@@ -34,10 +34,9 @@ alice = Apartment.create!(
   living_room: true,
   kitchen: true,
   availability: Date.parse("Apr 1 2026"),
-  description: " *** 1 room available Apr 1st, 2026 for a boy *** Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
-Large living room, terrace and large open kitchen, 4 large bedrooms including 2 in the cellar + 1 smaller room upstairs, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
-Lease of 6 months: 430 € / month per room + 190 € of charges: Wifi (fiber optic), co-ownership, Electricity, 1 hour of cleaning per week.
-Short lease: price can be negotiated."
+  description: " *** Availlable Apr, 1st / Small Room 525€ / Big Room 575 € / Processeing Fee 185 € *** Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
+Large living room, terrace and large open kitchen, 2 large bedrooms + 3 smaller including 2 in the cellar, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
+Lease of 1-6 months  wifi (fiber optic), Condo/Services, Electricity, weekly cleaning"
   )
 # alice.save!
 
@@ -46,10 +45,10 @@ Apartment::Translation.create(
   locale: "fr",
   nature: "coloc",
   location: "Au pied du métro Cormontaigne",
-  description: "***1 chambre à partir du 1 avril 2026 pour un garçon*** Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
-En rez-de-chaussée : grand séjour sur terrasse et grande cuisine ouverte. 4 grandes chambres dont 2 en cave anglaise + 1 chambre plus petite à l'étage, buanderie. 2 salles de bains, 1 salle d'eau et 3 WCs. Laverie.
-Bail de 6 mois : 430 €/mois par chambre + 190 € de charges : Wifi (fibre optique), copropriété, Électricité, 1h de ménage par semaine.
-Bail court : prix à négocier.")
+  description: "*** Dispo 1er avril/ Petite chambre 525€ / Grande chambre 525€ / Frais de dossier 185€ *** Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
+En rez-de-chaussée : grand séjour sur terrasse et grande cuisine ouverte. 2 grandes chambres + 3 chambres plus petite dont 2 en cave anglaise, buanderie. 2 salles de bains, 1 salle d'eau et 3 WCs. Laverie.
+Bail de 1 à 6 mois - Charges = xifi (fibre optique), copropriété, électricité, ménage hebdomaraire."
+)
 
 
 
