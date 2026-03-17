@@ -699,7 +699,7 @@ auguste = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jul 01 2026"),
+  availability: Date.parse("jul 01 2027"),
   description: "Lovely small house of approximately 120 sqm centrally located in the Luxembourg-Bonnevoie neighborhood. Shared accommodation for three people is welcome! able in July 2023.\n
   \n
   The house is spread over three levels:\n
