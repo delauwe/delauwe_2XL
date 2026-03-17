@@ -33,8 +33,8 @@ alice = Apartment.create!(
   dining_room: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Apr 1 2026"),
-  description: " *** Availlable Apr, 1st / Small Room 525€ / Big Room 575€ / Processeing Fee 185€ / Full Flat 3050€ *** Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
+  availability: Date.parse("Mar 1 2026"),
+  description: " *** Availlable Apr, 1st / Small Room 525€ / Big Room 575€ / Deposit 1000€ / Processeing Fee 185€ / Full Flat 3050€ *** Charming and spacious 180 sqm, 3 floors, furnished with 5 bedrooms. Young flatmates. Metro station Cormontaigne.
 Large living room, terrace and large open kitchen, 2 large bedrooms + 3 smaller including 2 in the cellar, 2 bathrooms, 1 shower room, 3 toilets and a laundry.
 Lease of 1-6 months all charges included : wifi (fiber optic), condo/services, heating, water, electricity, weekly cleaning"
   )
@@ -45,7 +45,7 @@ Apartment::Translation.create(
   locale: "fr",
   nature: "coloc",
   location: "Au pied du métro Cormontaigne",
-  description: "*** Dispo 1er avril/ Petite chambre 525€ / Grande chambre 575€ / Frais de dossier 185€ / Coloc constituée 3050€ *** Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
+  description: "*** Dispo 1er avril/ Petite chambre 525€ / Grande chambre 575€ / Dépot de garantie 1000€ /  Frais de dossier 185€ / Coloc constituée 3050€ *** Charme et espace de 180 m² au sol triplex meublé de 5 chambres. Colocation jeunes salariés. Métro Cormontaigne.
 En rez-de-chaussée : grand séjour sur terrasse et grande cuisine ouverte. 2 grandes chambres + 3 chambres plus petite dont 2 en cave anglaise, buanderie. 2 salles de bains, 1 salle d'eau et 3 WCs. Laverie.
 Bail meublé résidence secondaire de 1 à 6 mois - Charges = wifi (fibre optique), copropriété, chauffage, eau, électricité, ménage hebdomaraire.
    Bail individuel ou solidaire pour une coloc constituée. "
@@ -89,7 +89,7 @@ camille = Apartment.create(
   toilet: 1,
   shower_room: 1,
   living_room: true,
-  availability: Date.parse("Jul 01 2026"),
+  availability: Date.parse("Aug 01 2026"),
   description: "In the Vauban Neighborhood. In a quiet residence, on the 5th and last floor with elevator.
   5 rooms, 83 sqm, fully equipped and furnished, excellent condition: living room, kitchen with dishwasher, south-west facing terrace, shower room, separate toilet, washing and drying machine, 4 bedrooms, all with many closets, desks and good bedding state.
   Lease of 12 months: 400€/month + 150€ charges: Wifi (fiber optic), co-ownership, electricity, 1 hour of cleaning per week. Short lease: price can be negotiated."
@@ -146,7 +146,7 @@ claire = Apartment.create(
   washing_machine: false,
   kitchen: true,
   availability: Date.parse("Jul 01 2026"),
-  description: " *** Availlable Jul, 1st / Small Room 525€ / Big Room 575€ / Processeing Fee 185€ / Full Flat 1400€ *** Very typical T3 fully furnished and equipped. 2 large bedrooms + one small in a mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a flatshare consisting of 2/3 young professionals. Ideal location in front of the metro, bus and V'Lille stations.
+  description: " *** Availlable Jul, 1st / Small Room 525€ / Big Room 575€ / Deposit 1000€ / Processeing Fee 185€ / Full Flat 1400€ *** Very typical T3 fully furnished and equipped. 2 large bedrooms + one small in a mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a flatshare consisting of 2/3 young professionals. Ideal location in front of the metro, bus and V'Lille stations.
  Lease of 1-6 months all charges included : wifi (fiber optic), condo/services, heating, water, electricity, weekly cleaning. Individual lease or joint lease for a shared tenancy.
  Possibility to rent a box in extra.
 "
@@ -157,7 +157,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Au pied du métro Cormontaigne",
   nature: "coloc",
-  description: "*** Dispo 1er avril/ Petite chambre 525€ / Grande chambre 575€ / Frais de dossier 185€ / Coloc constituée 1400€ ***
+  description: "*** Dispo 1er avril/ Petite chambre 525€ / Grande chambre 575€ / Dépot de garantie 1000€ / Frais de dossier 185€ / Coloc constituée 1400€ ***
   T3 de charme entièrement meublé et équipé. 2 grandes chambres + 1 petite chambre en mezzanine. Belle terrasse. Idéal couple avec 1 enfant ou  colocation constituée de 2/3 jeunes actifs. Emplacement top au pied du métro, bus et station V'Lille.
   Bail meublé résidence secondaire de 1 à 6 mois - Charges = wifi (fibre optique), copropriété, chauffage, eau, électricité, ménage hebdomaraire.
    Bail individuel ou solidaire pour une coloc constituée. Possibilité de louer un box en sus.")
@@ -200,7 +200,7 @@ francine = Apartment.create(
   washing_machine: true,
   kitchen: true,
   availability: Date.parse("Apr 20 2026"),
-  description: " *** Availlable Apr, 20th / Small Room 525€ / Big Room 575 € / Processeing Fee 185 € / Full Flat 2600€ *** In the Vauban neighbourhood, Place Maréchal Leclerc. 3 spacious bedrooms + 2 smallest bedrooms. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
+  description: " *** Availlable Apr, 20th / Small Room 525€ / Big Room 575 € / Deposit 1000€ / Processeing Fee 185 € / Full Flat 2600€ *** In the Vauban neighbourhood, Place Maréchal Leclerc. 3 spacious bedrooms + 2 smallest bedrooms. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra. Lease of 1-6 months all charges included : wifi (fiber optic), condo/services, heating, water, electricity, weekly cleaning. Individual lease or joint lease for a shared tenancy."
 )
 
@@ -209,7 +209,7 @@ Apartment::Translation.create(
   locale: "fr",
   location: "Place Maréchal Leclerc - Vauban",
   nature: "coloc",
-  description: "*** Dispo 20 avril/ Petite chambre 525€ / Grande chambre 575€ / Frais de dossier 185€ / Coloc constituée 2600€ *** Quartier Vauban, Place Maréchal Leclerc. Colocation de jeunes 4 actifs, spacieux appartement.
+  description: "*** Dispo 20 avril/ Petite chambre 525€ / Grande chambre 575€ / Dépot de garantie 1000€ / Frais de dossier 185€ / Coloc constituée 2600€ *** Quartier Vauban, Place Maréchal Leclerc. Colocation de jeunes 4 actifs, spacieux appartement.
   Appartement au rez-de-chaussée (double accès), dans un immeuble de standing (entrée sécurisée), entièrement meublé et équipé, 5 belles chambres dont 3 grandes et 2 petites, toutes avec placards, bureau, literie récente, cuisine très bien équipée (frigo américain, lave-vaisselle), 2 salles de bains, 2 wc. Lave-linge, sèche-linge.
   Bail meublé résidence secondaire de 1 à 6 mois. Les charges comprise : wifi, chauffage, eau, électricité, charges de copropriété, ménage hebdomadaire.
    Bail individuel ou solidaire pour une coloc constituée. Parking ou box en sus."
@@ -257,7 +257,7 @@ jules = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jul 01 2026"),
+  availability: Date.parse("Aug 01 2026"),
   description: "*** FULL FLAT - ONE CONTRAT.**** Nice apartment of 140 m2 in excellent condition, on the 7th and last floor, 6 bedrooms furnished with large closets, desk, bedding, 2 bathrooms, 2 toilets, kitchen (washing machine and dishwasher), very functional. American kitchen, living room.
  Lease of 6 months: 2940 euro charges included (wifi, co-ownership fees, electricity, 2 hour of cleaning per week). Short lease: price to negotiate."
 )
@@ -307,8 +307,8 @@ lucie = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("apr 1 2026"),
-  description: "*** Availlable Apr, 1st / Small Room 525€ / Large Room 575 € / Processeing Fee 185 € / Coloc constituée 2440€ *** In the Vauban neighbourhood. Appartement ideal young professionals. 
+  availability: Date.parse("Mar 1 2026"),
+  description: "*** Availlable Apr, 1st / Small Room 525€ / Large Room 575 € / Deposit 1000€ / Processeing Fee 185 € / Coloc constituée 2440€ *** In the Vauban neighbourhood. Appartement ideal young professionals. 
 Beautiful and charming apartment, fully furnished and equipped, in front of the metro station Cormontaigne.
 Our requirements : very calm, no event, no smoking, no animals in order to comply with this old house and other flats’ tenants.
 Very close to the Catho University, 2nd, 3rd and last floor: kitchen, living room, 2 large bedrooms + 2 small bedrooms, 2 separate toilet, shower room.
@@ -319,7 +319,7 @@ Lease of 1-6 months all charges included : wifi (fiber optic), condo/services, h
 Apartment::Translation.create(
   apartment_id: lucie.id,
   locale: "fr", location: "Au pied du métro Cormontaigne", nature: "coloc",
-  description: "*** Dispo 1er avril/ Petite chambre 525€ / Grande chambre 575€ / Frais de dossier 185€ / Coloc constituée 2440€ *** Quartier Vauban. Appartement idéal pour famille (2+2) ou jeunes actifs (4) en coloc constituée.  Calme, non fumeur, pas d’animaux.
+  description: "*** Dispo 1er avril/ Petite chambre 525€ / Grande chambre 575€/ Dépot de garantie 1000€ / Frais de dossier 185€ / Coloc constituée 2440€ *** Quartier Vauban. Appartement idéal pour famille (2+2) ou jeunes actifs (4) en coloc constituée.  Calme, non fumeur, pas d’animaux.
     Bel appartement de charme et standing, entièrement meublé et équipé, au pied du métro Cormontaigne.
     Très proche de la Catho, au 2éme et 3éme et dernier étage : cuisine équipée, séjour, 4 chambres, 2 grandes + 2 petites, wc séparés, salle de douche.
     Bail meublé résidence secondaire de 1 à 6 mois. Bail individuel ou solidaire pour une coloc constituée. Charges incluses : wifi, copropriété, eau, chauffage, électricité, ménage hebdomadaire).
@@ -363,7 +363,7 @@ odette = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("jul 1 2026"),
+  availability: Date.parse("sep 1 2026"),
   description: "Beautiful apartment of 83 sqm in  excellent state, on the 5th/top floor, 4 nice rooms furnished with big closets, desk, bedding, 1 shower room, 1 water room, 1 toilet, equipped kitchen (dishwasher and washing machine), very functional. American kitchen.
 1160€/ month + 440€ charges (wifi, co-ownership fees, electricity, 1 hour of cleaning per week). Fee for short lease (less than 12 months)"
 )
