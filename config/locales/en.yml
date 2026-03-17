@@ -35,7 +35,7 @@ en:
     tagline-2: "Rooms and flats 2XL"
     call-to-action: "Discover"
     contact: "Contact us"
-    pre-book: "Pre-book"
+    pre-book: "Visit request"
     available-now: "Available now"
     flatshares: "Our flatshares"
     apartments: "Our apartments"
@@ -82,7 +82,7 @@ en:
     kitchen: "kitchen"
     washing-room: "washing room"
     washing-machine: "washing machine"
-    reservation: "Pre-book"
+    reservation: "Visit request or booking"
     contact: "Contact us"
     utilities: "utilities"
 
