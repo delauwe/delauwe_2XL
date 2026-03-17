@@ -1,16 +1,16 @@
 fr:
   home:
     tagline: "Votre logement idéal jeunes actifs"
-    tagline-2: "Appart et Coloc 2XL"
+    tagline-2: "Appart et Coliving 2XL"
     call-to-action: "Découvrir"
     contact: "Nous contacter"
-    pre-book: "Pré-réserver"
+    pre-book: "Visiter ou Pré-réserver"
     available-now: "Disponible immédiatement"
-    flatshares: "Nos colocs"
+    flatshares: "Nos coliving"
     apartments: "Nos apparts"
     lux: "Luxembourg"
     lille: "Lille"
-    call-to-action-2: "Découvrir toutes nos colocs"
+    call-to-action-2: "Découvrir toutes nos coliving"
 
 
   swal:
@@ -29,7 +29,7 @@ fr:
 
   index:
     title:
-      flatshare: "Nos colocs"
+      flatshare: "Nos coliving"
       apartment: "Nos apparts"
 
   show:
@@ -57,7 +57,7 @@ fr:
     utilities: "charges"
 
   navbar:
-    flatshares: "Colocs"
+    flatshares: "Coliving"
     apartments: "Appartements"
 
   footer:
@@ -67,7 +67,7 @@ fr:
     title: "2XL - Votre logement idéal jeunes actifs"
 
   contact:
-    info: "Nous privilégions Messenger pour communiquer avec nos locataires. Merci de nous envoyer un message via notre page Appart & Coloc 2XL - Lille Luxembourg."
+    info: "Nous privilégions Messenger pour communiquer avec nos locataires. Merci de nous envoyer un message via notre page Appart & Coliving 2XL - Lille Luxembourg."
     messenger_contact: "Contactez-nous sur Messenger"  
     no_fb: "Si vous n'avez pas de profil Facebook, veuillez nous contacter par mail ou téléphone."
 
