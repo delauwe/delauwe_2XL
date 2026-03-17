@@ -10,7 +10,7 @@ fr:
     apartments: "Nos apparts"
     lux: "Luxembourg"
     lille: "Lille"
-    call-to-action-2: "Découvrir toutes nos coliving"
+    call-to-action-2: "Découvrir tous nos coliving"
 
 
   swal:
@@ -52,7 +52,7 @@ fr:
     kitchen: "cuisine"
     washing-room: "laverie"
     washing-machine: "machine à laver"
-    reservation: "Pré-réserver"
+    reservation: "Visiter ou Pré-réserver"
     contact: "Nous contacter"
     utilities: "charges"
 
