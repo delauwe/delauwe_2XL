@@ -413,7 +413,7 @@ appart302 = Apartment.create(
   washing_machine: false,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Oct 01 2025"),
+  availability: Date.parse("Oct 15 2026"),
   description: "One bedroom apartment of 45 sqm fully furnished, bright, very good condition. Ideal for an executive on the move (relocation) or couple without children. In the Vauban neighborhood, located in front of the metro station and several shops. On the 2nd floor of an old house, beautiful 2 rooms (1 bedroom and 1 living room). Laundry.
 800€/ month +  180€/230€ charges: weekly cleaning, wifi.
 Lease of 1 to 6 months.  Individual lease or joint lease for a shared tenancy. 
