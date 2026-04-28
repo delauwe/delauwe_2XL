@@ -572,7 +572,7 @@ rollin = Apartment.create(
   washing_machine: true,
   living_room: true,
   kitchen: true,
-  availability: Date.parse("Jul 01 2026"),
+  availability: Date.parse("Oct 01 2026"),
   description: "*** Jul 1st, 2026 ****, In a beautiful recent apartment of 107m2, on the ground floor of a small condominium, 10 minutes from the station Tram Etoile, we offer 4 rooms for rent in individual contract. It is an international flat for young actives.\n
     Located rue du Rollingergrund at the Val Fleurie bus stop, located 10 minutes from historical city center. By tram, 20 minutes from Kirchberg (Auchan shopping center, Kinepolis cinemas, ...).\n
     \n
