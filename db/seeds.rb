@@ -22,7 +22,7 @@ alice = Apartment.create!(
   size: 130,
   number_of_rooms: 5,
   name: "Alice D. - Lille",
-  price: 525,
+  price: 360,
   category: "flatshare",
   nature: "flatshare",
   bathroom: 3,
@@ -145,7 +145,7 @@ claire = Apartment.create(
   washing_room: true,
   washing_machine: false,
   kitchen: true,
-  availability: Date.parse("Jul 01 2026"),
+  availability: Date.parse("Jun 01 2026"),
   description: " *** Availlable Jul, 1st / Big Room 600€ / Processeing Fee 185€ / Full Flat 1200€ *** Very typical T2b fully furnished and equipped. 2 large bedrooms + one mezzanine. Beautiful terrace. Ideal for a couple with 1 child or a flatshare consisting of 2/3 young professionals. Ideal location in front of the metro, bus and V'Lille stations.
  Lease of 1-6 months all charges included : wifi (fiber optic), condo/services, heating, water, electricity, weekly cleaning. Individual lease or joint lease for a shared tenancy.
  Possibility to rent a box in extra.
@@ -199,7 +199,7 @@ francine = Apartment.create(
   toilet: 1,
   washing_machine: true,
   kitchen: true,
-  availability: Date.parse("Jun 20 2026"),
+  availability: Date.parse("Jun 1 2026"),
   description: " *** Availlable Jul, 1st / Small Room 525€ / Big Room 575 € / Deposit 1000€ / Processeing Fee 185 € / Full Flat 2625€ *** In the Vauban neighbourhood, Place Maréchal Leclerc. 3 spacious bedrooms + 2 smallest bedrooms. Apartment, excellent condition, on the ground floor (double access), in a luxury building (secure entrance), fully furnished and equipped, 5 beautiful spacious rooms, all with wardrobes, desks, recent bedding, very well equipped kitchen ( American fridge, dishwasher), 2 bathrooms, 2 toilets. Washing machine, tumble dryer. Charges include wifi, electricity, co-ownership  fees, 2h cleaning per week.
 Possibility to rent parking or box in extra. Lease of 1-6 months all charges included : wifi (fiber optic), condo/services, heating, water, electricity, weekly cleaning. Individual lease or joint lease for a shared tenancy."
 )
